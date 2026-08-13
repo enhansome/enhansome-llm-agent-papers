@@ -1,0 +1,3724 @@
+{
+  "items": [
+    {
+      "description": "Topics covered: cognitive architectures · ReAct & reasoning-and-acting · long-horizon planning · agent memory · tool-augmented LLMs · multi-agent collaboration · web / code / embodied agents · agent benchmarks & evaluation · safety, alignment & indirect prompt injection.\nThis repository collects must-read papers on LLM-based agents: language models equipped with planning, memory, tool use, and multi-agent coordination to pursue goals over long horizons. Papers follow the taxonomy of the accompanying survey, covering the core components of an agent, the environments and applications they are deployed in, and the cross-cutting concerns of evaluation and safety. Each entry links to the paper and, where an official implementation exists, to its code.\nThis is a curated, continuously updated selection, and a strict superset of the survey rather than a copy of its bibliography. The paper cites 228 references, each verified against its primary source; this list has grown well past that with work published since the paper was fixed, verified under the same rule. Sections are collapsed by default. Click Show N papers to expand.\n",
+      "items": [],
+      "title": "✨ Highlights"
+    },
+    {
+      "description": "New to the area? These ten papers are a good place to start.\n",
+      "items": [],
+      "title": "⭐ Starter Kit"
+    },
+    {
+      "description": "Fresh 2026 work that is already drawing attention.\n↑ Back to Contents",
+      "items": [],
+      "title": "🔥 10 to Watch (2026)"
+    },
+    {
+      "description": "",
+      "items": [],
+      "title": "🧭 Background"
+    },
+    {
+      "description": "Corresponds to §1-§3 (Introduction, Background, Taxonomy).",
+      "items": [
+        {
+          "node_type": "item",
+          "title": "HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in Hugging Face (Shen et al., NeurIPS 2023) - Foundational example of the 'LLM-as-orchestrator-of-tools/models' agent pattern. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2025-07-29T13:44:13Z",
+            "owner": "microsoft",
+            "repo": "JARVIS",
+            "stars": 25160
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Generative Agents: Interactive Simulacra of Human Behavior (Park et al., arXiv 2023) - Foundational demonstration of LLM-driven agent societies/simulation. ⭐ [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2024-08-05T21:38:56Z",
+            "owner": "joonspk-research",
+            "repo": "generative_agents",
+            "stars": 21927
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "The Rise and Potential of Large Language Model Based Agents: A Survey (Xi et al., arXiv 2023) - Co-foundational with Wang et al. 2023 as one of the two seminal general surveys. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2025-09-12T03:08:58Z",
+            "owner": "WooooDyy",
+            "repo": "LLM-Agent-Paper-List",
+            "stars": 8170
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Voyager: An Open-Ended Embodied Agent with Large Language Models (Wang et al., TMLR 2023) - Seminal example of embodied, code-skill-based, lifelong-learning LLM agents. ⭐ [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "JavaScript",
+            "last_commit": "2024-04-03T18:51:36Z",
+            "owner": "MineDojo",
+            "repo": "Voyager",
+            "stars": 7137
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "ReAct: Synergizing Reasoning and Acting in Language Models (Yao et al., ICLR 2023) - The single most-cited technical precursor of modern LLM agents. ⭐ [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Jupyter Notebook",
+            "last_commit": "2024-02-06T02:34:32Z",
+            "owner": "ysymyth",
+            "repo": "ReAct",
+            "stars": 4107
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Reflexion: Language Agents with Verbal Reinforcement Learning (Shinn et al., NeurIPS 2023) - Established the 'self-reflection + memory' loop as an alternative to gradient-based RL for agent self-improvement. ⭐ [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2025-01-14T07:54:02Z",
+            "owner": "noahshinn",
+            "repo": "reflexion",
+            "stars": 3228
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "A Survey on Large Language Model based Autonomous Agents (Wang et al., arXiv 2023) - The canonical, most-cited general-purpose LLM-agent survey. ⭐ [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2025-02-20T00:59:30Z",
+            "owner": "Paitesanshi",
+            "repo": "LLM-Agent-Survey",
+            "stars": 2911
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Large Language Model Agent: A Survey on Methodology, Applications and Challenges (Luo et al., arXiv 2025) - One of the most comprehensive and recent (2025) general surveys. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2025-11-07T09:27:28Z",
+            "owner": "luo-junyu",
+            "repo": "Awesome-Agent-Papers",
+            "stars": 2821
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Agentic Reasoning for Large Language Models (Wei et al., arXiv 2026) - Survey organizing agentic reasoning into single-agent, self-evolving, and multi-agent layers, bridging in-context reasoning and post-training. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2026-03-09T20:08:02Z",
+            "owner": "weitianxin",
+            "repo": "Awesome-Agentic-Reasoning",
+            "stars": 1342
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Large Language Model based Multi-Agents: A Survey of Progress and Challenges (Guo et al., IJCAI 2024) - The standard reference survey specifically for the multi-agent branch of LLM agents. ⭐ [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2026-07-12T04:34:30Z",
+            "owner": "taichengguo",
+            "repo": "LLM_MultiAgents_Survey_Papers",
+            "stars": 1302
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Cognitive Architectures for Language Agents (Sumers et al., TMLR 2023) - The most widely adopted conceptual/architectural vocabulary for describing LLM agents. ⭐ [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "TeX",
+            "last_commit": "2025-01-16T19:58:19Z",
+            "owner": "ysymyth",
+            "repo": "awesome-language-agents",
+            "stars": 1247
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "A Survey on the Memory Mechanism of Large Language Model based Agents (Zhang et al., arXiv 2024) - The standard survey for the memory subsystem of LLM agents. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2025-07-28T01:46:49Z",
+            "owner": "nuster1128",
+            "repo": "LLM_Agent_Memory_Survey",
+            "stars": 506
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Tool Learning with Large Language Models: A Survey (Qu et al., arXiv 2024) - The definitive survey for the tool-use pillar of LLM agents. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2025-08-09T02:24:38Z",
+            "owner": "quchangle1",
+            "repo": "LLM-Tool-Survey",
+            "stars": 486
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Igniting Language Intelligence: The Hitchhiker's Guide From Chain-of-Thought Reasoning to Language Agents (Zhang et al., arXiv 2023) - Bridges the reasoning (CoT) literature and agent literature. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2023-11-25T01:29:28Z",
+            "owner": "Zoeyyao27",
+            "repo": "CoT-Igniting-Agent",
+            "stars": 365
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Self-Improvements in Modern Agentic Systems: A Survey (Ren et al., arXiv 2026) - Frames a modern agent as a foundation model plus an operational scaffold, and organizes self-improvement by what gets updated (weights or scaffold) and which signal drives the change. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "TeX",
+            "last_commit": "2026-08-12T12:53:07Z",
+            "owner": "selfimproving-agent",
+            "repo": "Awesome-Self-Improving-Agents",
+            "stars": 353
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "LLM-Based Human-Agent Collaboration and Interaction Systems: A Survey (Zou et al., arXiv 2025) - Covers the human-agent cooperation branch identified in the earliest foundational surveys. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2026-07-23T05:33:51Z",
+            "owner": "HenryPengZou",
+            "repo": "Awesome-Human-Agent-Collaboration-Interaction-Systems",
+            "stars": 231
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "From Question Answering to Task Completion: A Survey on Agent System and Harness Design (Guo et al., arXiv 2026) - Reads agents through a model-versus-harness lens, decomposing the harness into six runtime responsibilities and asking where the performance bottleneck actually sits. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2026-06-17T11:12:32Z",
+            "owner": "ggjy",
+            "repo": "Awesome-Agent-Engineering",
+            "stars": 60
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "From Storage to Experience: A Survey on the Evolution of LLM Agent Memory Mechanisms (Luo et al., arXiv 2026) - Surveys agent memory through a three-stage evolution from storage to reflection to experience, driven by consistency, dynamics, and continual learning. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2026-04-13T06:53:12Z",
+            "owner": "FeishuLuo",
+            "repo": "Evolving-LLM-Agent-Memory-Survey",
+            "stars": 43
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Bridging the Agent-World Gap: Text World Models for LLM-based Agents (Li et al., arXiv 2026) - Systematizes text world models (LLM-as-WM vs code-as-WM) that give agents explicit environment prediction for planning and verification. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2026-06-09T02:37:22Z",
+            "owner": "sustech-nlp",
+            "repo": "awesome-text-world-models",
+            "stars": 14
+          }
+        }
+      ],
+      "title": "📚 Surveys & Position Papers (52)"
+    },
+    {
+      "description": "Corresponds to §2 (Background) and the running examples throughout.",
+      "items": [
+        {
+          "node_type": "item",
+          "title": "MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework (Hong et al., ICLR 2024) - Widely cited framework showing how single-agent role/procedure templates improve reliability, marking the transition point between single- and multi-agent framework design. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-01-21T10:12:33Z",
+            "owner": "FoundationAgents",
+            "repo": "MetaGPT",
+            "stars": 69799
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering (Yang et al., NeurIPS 2024) - Demonstrates how interface design materially changes single-agent capability, now standard in coding-agent design. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-08-10T22:08:15Z",
+            "owner": "SWE-agent",
+            "repo": "SWE-agent",
+            "stars": 20053
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "GenericAgent: A Token-Efficient Self-Evolving LLM Agent via Contextual Information Density Maximization (Liang et al., arXiv 2026) - Token-efficient self-evolving agent that accumulates contextual experience; one of the most-starred 2026 agent frameworks. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-08-13T02:20:00Z",
+            "owner": "lsdefine",
+            "repo": "GenericAgent",
+            "stars": 13755
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Gorilla: Large Language Model Connected with Massive APIs (Patil et al., NeurIPS 2024) - Key single-agent tool-use paper demonstrating that fine-tuning plus retrieval can make an agent reliably invoke large real-world API catalogs. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-04-13T03:19:45Z",
+            "owner": "ShishirPatil",
+            "repo": "gorilla",
+            "stars": 12992
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Kimi K2: Open Agentic Intelligence (Kimi Team, arXiv 2025) - Flagship open model built explicitly around agentic post-training at scale. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2026-01-21T05:33:12Z",
+            "owner": "MoonshotAI",
+            "repo": "Kimi-K2",
+            "stars": 11102
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "AppAgent: Multimodal Agents as Smartphone Users (Zhang et al., CHI 2025) - Representative recent single-agent architecture extending the ReAct/tool-use paradigm to GUI/mobile control. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2025-03-19T11:01:38Z",
+            "owner": "TencentQQGYLab",
+            "repo": "AppAgent",
+            "stars": 6844
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Tree of Thoughts: Deliberate Problem Solving with Large Language Models (Yao et al., NeurIPS 2023) - A core deliberate-search reasoning architecture underpinning later single-agent planning/search frameworks like LATS. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2025-01-16T20:02:00Z",
+            "owner": "princeton-nlp",
+            "repo": "tree-of-thought-llm",
+            "stars": 6047
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "AgentBench: Evaluating LLMs as Agents (Liu et al., ICLR 2024) - The standard reference benchmark for measuring general single-agent capability across heterogeneous environments. ⭐ [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-02-08T17:01:05Z",
+            "owner": "THUDM",
+            "repo": "AgentBench",
+            "stars": 3664
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "OS-Copilot: Towards Generalist Computer Agents with Self-Improvement (Wu et al., arXiv 2024) - A leading recent example of a general-purpose, self-improving OS-level single agent, extending AutoGPT-style autonomy to real computer environments. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2024-09-09T02:11:13Z",
+            "owner": "OS-Copilot",
+            "repo": "OS-Copilot",
+            "stars": 1794
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Executable Code Actions Elicit Better LLM Agents (Wang et al., ICML 2024) - Established 'code-as-action' as a leading alternative action-space design for single agents. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2024-05-23T23:14:59Z",
+            "owner": "xingyaoww",
+            "repo": "code-act",
+            "stars": 1696
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "WebArena: A Realistic Web Environment for Building Autonomous Agents (Zhou et al., ICLR 2024) - The de facto standard testbed for web-browsing single-agent architectures. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2025-11-26T21:16:00Z",
+            "owner": "web-arena-x",
+            "repo": "webarena",
+            "stars": 1576
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Ouroboros: A Self-Developing Frontier Coding Agent with Reviewed Core Evolution (Razzhigaev et al., arXiv 2026) - A coding-agent harness whose tools, prompts, context assembly, and core implementation improve through reviewed commits that become the runtime for later work; reports 86.74% on Terminal-Bench 2.1 and 90.69% on OSWorld-Verified from frozen snapshots, while a separate 161-day deployment keeps evolving live. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-08-13T03:34:16Z",
+            "owner": "razzant",
+            "repo": "ouroboros",
+            "stars": 1125
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "ReWOO: Decoupling Reasoning from Observations for Efficient Augmented Language Models (Xu et al., arXiv 2023) - Influential efficiency-oriented alternative to the ReAct loop, illustrating the plan-then-execute vs. interleaved architectural design axis. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2023-07-28T16:30:54Z",
+            "owner": "billxbf",
+            "repo": "ReWOO",
+            "stars": 943
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Molt: A Scalable PyTorch-Native Training Framework for Agentic Reinforcement Learning (Hu et al., arXiv 2026) - Shows a compact PyTorch-native agentic RL trainer, small enough for a researcher or coding assistant to read end to end, stays statistically comparable to a Megatron-based stack. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-08-13T02:44:48Z",
+            "owner": "NVIDIA-NeMo",
+            "repo": "labs-molt",
+            "stars": 904
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "CORAL: Towards Autonomous Multi-Agent Evolution for Open-Ended Discovery (Qu et al., COLM 2026) - Replaces hard-coded exploration rules with long-running agents that explore, reflect and collaborate through shared persistent memory, under isolated workspaces and evaluator separation; sets state of the art on 10 optimization tasks at 3 to 10 times the improvement rate per evaluation, and four co-evolving agents take Anthropic's kernel task from 1363 to 1103 cycles. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-08-12T04:40:48Z",
+            "owner": "Human-Agent-Society",
+            "repo": "CORAL",
+            "stars": 887
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Language Agent Tree Search Unifies Reasoning, Acting, and Planning in Language Models (Zhou et al., ICML 2024) - Represents the state-of-the-art convergence of search-based planning with the ReAct/Reflexion lineage. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2024-07-30T20:29:27Z",
+            "owner": "lapisrocks",
+            "repo": "LanguageAgentTreeSearch",
+            "stars": 849
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "SELF-REFINE: Iterative Refinement with Self-Feedback (Madaan et al., NeurIPS 2023) - A minimal, widely-adopted single-agent self-improvement loop that is reused as a subroutine inside many larger agent architectures. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2024-10-04T21:06:28Z",
+            "owner": "madaan",
+            "repo": "self-refine",
+            "stars": 818
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "LLM-as-a-Verifier: A General-Purpose Verification Framework (Kwok et al., arXiv 2026) - Treats verification as its own scaling axis: continuous scores from scoring-token logits, scaled by granularity, repeated evaluation and criteria decomposition, reach 86.5% on Terminal-Bench V2 without extra training. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-08-07T16:32:28Z",
+            "owner": "llm-as-a-verifier",
+            "repo": "llm-as-a-verifier",
+            "stars": 635
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Describe, Explain, Plan and Select: Interactive Planning with Large Language Models Enables Open-World Multi-Task Agents (Wang et al., NeurIPS 2023) - Key single-agent planning architecture for open-world/embodied tasks. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2023-08-03T16:51:30Z",
+            "owner": "CraftJarvis",
+            "repo": "MC-Planner",
+            "stars": 294
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Codified Context: Infrastructure for AI Agents in a Complex Codebase (Vasilopoulos et al., arXiv 2026) - Proposes a three-component infrastructure (a conventions constitution, 19 specialized agents, and a knowledge base of 34 specification documents) to give LLM coding assistants persistent context. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-04-01T05:13:10Z",
+            "owner": "arisvas4",
+            "repo": "codified-context-infrastructure",
+            "stars": 182
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Orchestral AI: A Framework for Agent Orchestration (Roman et al., arXiv 2026) - Framework for composing and orchestrating specialized agents behind a single interface. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2026-01-07T22:32:53Z",
+            "owner": "orchestralAI",
+            "repo": "orchestral-ai",
+            "stars": 109
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "AgentArk: Distilling Multi-Agent Intelligence into a Single LLM Agent (Luo et al., arXiv 2026) - Distills multi-agent intelligence into a single LLM agent, retaining collaboration gains at lower cost. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-05-09T18:45:07Z",
+            "owner": "AIFrontierLab",
+            "repo": "AgentArk",
+            "stars": 104
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "AgentFactory: A Self-Evolving Framework Through Executable Subagent Accumulation and Reuse (Zhang et al., arXiv 2026) - Accumulates capability by saving successful solutions as reusable executable subagent code rather than textual prompts, refined by execution feedback. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-07-10T23:19:50Z",
+            "owner": "zzatpku",
+            "repo": "AgentFactory",
+            "stars": 61
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Auto-GPT for Online Decision Making: Benchmarks and Additional Opinions (Yang et al., arXiv 2023) - Only peer-reviewed-adjacent empirical study of the widely-influential (but paper-less) AutoGPT autonomous-agent design pattern. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Jupyter Notebook",
+            "last_commit": "2023-06-23T20:01:25Z",
+            "owner": "younghuman",
+            "repo": "LLMAgent",
+            "stars": 32
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Harness-MU: A Safe, Governed, and Effective Harness for Multi-User LLM Agents (Fan et al., arXiv 2026) - Proposes Harness-MU, a model-agnostic, zero-tuning harness that enforces multi-principal access control for LLM agents through deterministic execution hooks rather than model-internal safeguards. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-06-25T05:11:00Z",
+            "owner": "YuanJrShiuan",
+            "repo": "Harness-MulUser",
+            "stars": 4
+          }
+        }
+      ],
+      "title": "🏗️ Agent Architectures & Frameworks (44)"
+    },
+    {
+      "description": "",
+      "items": [],
+      "title": "🧱 Part I: Core Components"
+    },
+    {
+      "description": "Corresponds to §4 (Planning and Reasoning).",
+      "items": [
+        {
+          "node_type": "item",
+          "title": "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning (Guo et al., Nature 2025) - Landmark open reasoning-model release demonstrating RL-induced emergent planning/reflection behaviors now underpinning next-generation reasoning agents. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2025-06-27T08:35:54Z",
+            "owner": "deepseek-ai",
+            "repo": "DeepSeek-R1",
+            "stars": 91974
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Reasoning as Gradient: Scaling MLE Agents Beyond Tree Search (Zhang et al., arXiv 2026) - Replaces tree search in an MLE agent with a gradient-style optimization framework, mapping reasoning to gradients and success memory to momentum. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-08-04T11:50:56Z",
+            "owner": "microsoft",
+            "repo": "RD-Agent",
+            "stars": 14216
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Search-R1: Training LLMs to Reason and Leverage Search Engines with Reinforcement Learning (Jin et al., arXiv 2025) - Canonical agentic-RL result: the model learns to interleave search-engine calls with its own reasoning from outcome rewards alone. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2025-11-13T21:56:33Z",
+            "owner": "PeterGriffinJin",
+            "repo": "Search-R1",
+            "stars": 5289
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Graph of Thoughts: Solving Elaborate Problems with Large Language Models (Besta et al., AAAI 2024) - Extends structured-reasoning/search frameworks used by agents beyond trees, improving quality and cost on complex multi-step tasks. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-03-24T17:26:16Z",
+            "owner": "spcl",
+            "repo": "graph-of-thoughts",
+            "stars": 2831
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Reasoning with Language Model is Planning with World Model (Hao et al., EMNLP 2023) - Connects classical planning-as-search (MCTS, world models) with LLM reasoning, directly relevant to agent planning under uncertainty. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2025-06-10T02:19:40Z",
+            "owner": "maitrix-org",
+            "repo": "llm-reasoners",
+            "stars": 2341
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Let's Verify Step by Step (Lightman et al., ICLR 2024) - Establishes process reward models/step-level verification, now a standard component for guiding search and self-critique in reasoning agents. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": true,
+            "language": "Python",
+            "last_commit": "2023-06-01T17:41:14Z",
+            "owner": "openai",
+            "repo": "prm800k",
+            "stars": 2151
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "CRITIC: Large Language Models Can Self-Correct with Tool-Interactive Critiquing (Gou et al., ICLR 2024) - Bridges self-critique with tool-augmented verification, a key mechanism in modern agent frameworks that ground reflection in external feedback. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2024-07-25T11:27:09Z",
+            "owner": "microsoft",
+            "repo": "ProphetNet",
+            "stars": 745
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Plan-and-Solve Prompting: Improving Zero-Shot Chain-of-Thought Reasoning by Large Language Models (Wang et al., ACL 2023) - Widely-used lightweight plan-then-execute template that many LLM agent planning modules adopt directly. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2023-05-23T14:49:21Z",
+            "owner": "AGI-Edgerunners",
+            "repo": "Plan-and-Solve-Prompting",
+            "stars": 735
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Harness Updating Is Not Harness Benefit: Disentangling Evolution Capabilities in Self-Evolving LLM Agents (Lin et al., arXiv 2026) - Separates 'harness-updating' from 'harness-benefit' in self-evolving agents, finding a non-monotonic benefit curve across model tiers. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-06-29T21:28:26Z",
+            "owner": "A-EVO-Lab",
+            "repo": "a-evolve",
+            "stars": 724
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Buffer of Thoughts: Thought-Augmented Reasoning with Large Language Models (Yang et al., NeurIPS 2024) - Represents reusable, memory-augmented reasoning-structure retrieval, connecting reasoning strategies with agent long-term memory design. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2025-06-28T11:56:05Z",
+            "owner": "YangLing0818",
+            "repo": "buffer-of-thought-llm",
+            "stars": 677
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Towards Reasoning in Large Language Models: A Survey (Huang et al., ACL 2023) - One of the earliest and most-cited surveys specifically on LLM reasoning, a natural anchor citation for any LLM-agent survey's reasoning section. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2023-11-13T08:44:02Z",
+            "owner": "jeffhj",
+            "repo": "LM-reasoning",
+            "stars": 571
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Large Language Models are Zero-Shot Reasoners (Kojima et al., NeurIPS 2022) - Established that reasoning behavior is latent and promptable zero-shot, a key enabler for general-purpose agent prompting templates. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2023-10-09T20:03:44Z",
+            "owner": "kojima-takeshi188",
+            "repo": "zero_shot_cot",
+            "stars": 444
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "PRO-LONG: Programmatic Memory Enables Long-Horizon Reasoning (Fox et al., arXiv 2026) - Keeping the full structured interaction log and searching it with a coding agent adds 18 points on ARC-AGI-3 over a base coding agent, matching specialist harnesses at 4.2-5.8x fewer tokens. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-08-07T02:49:48Z",
+            "owner": "alexisfox7",
+            "repo": "PRO-LONG",
+            "stars": 310
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "STaR: Bootstrapping Reasoning With Reasoning (Zelikman et al., NeurIPS 2022) - Precursor to the RL-based reasoning-model training paradigm (e.g., DeepSeek-R1, o1) used to instill self-generated reasoning in agents. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2023-02-21T18:19:34Z",
+            "owner": "ezelikman",
+            "repo": "STaR",
+            "stars": 231
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "ADaPT: As-Needed Decomposition and Planning with Language Models (Prasad et al., ACL 2024) - Demonstrates adaptive, execution-conditioned planning that balances plan granularity against agent capability, an important refinement over static plan-and-execute agents. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2024-01-03T12:10:53Z",
+            "owner": "archiki",
+            "repo": "ADaPT",
+            "stars": 93
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "When Can LLMs Actually Correct Their Own Mistakes? A Critical Survey of Self-Correction of LLMs (Kamoi et al., ACL 2024) - The key critical survey specific to self-critique/self-correction, essential for a balanced, rigorous treatment of reflection methods in an agent survey. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2026-05-19T17:38:28Z",
+            "owner": "ryokamoi",
+            "repo": "llm-self-correction-papers",
+            "stars": 82
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Large Language Models for Planning: A Comprehensive and Systematic Survey (Cao et al., arXiv 2025) - A dedicated, up-to-date survey covering exactly the planning-strategies portion of this sub-topic, ideal for anchoring taxonomy claims. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2025-07-07T17:24:24Z",
+            "owner": "Quester-one",
+            "repo": "Awesome-LLM-Planning",
+            "stars": 59
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Demystifying Reinforcement Learning for Long-Horizon Tool-Using Agents: A Comprehensive Recipe (Wu et al., arXiv 2026) - Empirical recipe over reward shaping, model scale, data, and algorithm choices for agentic RL, reaching SOTA on TravelPlanner. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-05-12T10:51:40Z",
+            "owner": "WxxShirley",
+            "repo": "Agent-STAR",
+            "stars": 39
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Learning from Trials and Errors: Reflective Test-Time Planning for Embodied LLMs (Hong et al., arXiv 2026) - Reflective test-time planning for embodied agents that learns from its own trials and errors within a single episode. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Jupyter Notebook",
+            "last_commit": "2026-05-13T06:10:22Z",
+            "owner": "Reflective-Test-Time-Planning",
+            "repo": "Reflective-Test-Time-Planning",
+            "stars": 33
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "LiTS: A Modular Framework for LLM Tree Search (Li et al., arXiv 2026) - LiTS is a Python framework that decomposes LLM tree search into reusable Policy, Transition, and RewardModel components supporting algorithms like MCTS and BFS, evaluated across MATH500, Crosswords, and MapEval. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-06-12T08:19:23Z",
+            "owner": "xinzhel",
+            "repo": "lits-llm",
+            "stars": 3
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Agentic Chain-of-Thought Steering for Efficient and Controllable LLM Reasoning (Xia et al., arXiv 2026) - Steers agentic chain-of-thought at inference for controllable reasoning length, trading compute against accuracy without retraining. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-06-03T05:34:20Z",
+            "owner": "Andree-9",
+            "repo": "ACTS",
+            "stars": 2
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "TREK: A Travel Reasoning and Evaluation Kit for LLM Agents in Complex Trip Planning (Qi et al., arXiv 2026) - Travel-planning benchmark graded by a deterministic rule-based evaluator instead of an LLM judge; the strongest of 15 agents returns a fully feasible itinerary on only 46.2% of solvable tasks. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-08-07T09:53:14Z",
+            "owner": "TonyQJH",
+            "repo": "TREK-A-Travel-Reasoning-and-Evaluation-Kit-for-LLM-Agents-in-Complex-Trip-Planning",
+            "stars": 1
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "SIRI: Self-Internalizing Reinforcement Learning with Intrinsic Skills for LLM Agent Training (He et al., arXiv 2026) - Reinforcement learning that internalizes discovered skills into the policy rather than leaving them in an external library. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2026-06-01T12:34:15Z",
+            "owner": "kirito618",
+            "repo": "SIRI",
+            "stars": 0
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "SearchMaster: Grounded and Regulated Self-Play for Search Agents (Tan et al., arXiv 2026) - Self-play for search agents that names the three ways self-generated data misleads: evidence chains to stop pseudo multi-hop questions, difficulty scored by search depth rather than success rate, and a penalty on opening documents the agent never uses. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2026-08-07T06:40:27Z",
+            "owner": "WentaoTan",
+            "repo": "SearchMaster",
+            "stars": 0
+          }
+        }
+      ],
+      "title": "🧠 Planning & Reasoning (44)"
+    },
+    {
+      "description": "Corresponds to §5 (Memory).",
+      "items": [
+        {
+          "node_type": "item",
+          "title": "Mem0: Building Production-Ready AI Agents with Scalable Long-Term Memory (Chhikara et al., arXiv 2025) - A leading production-oriented, widely-deployed long-term memory system for LLM agents, frequently used as a state-of-the-art comparison point. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-08-13T02:35:11Z",
+            "owner": "mem0ai",
+            "repo": "mem0",
+            "stars": 63151
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Zep: A Temporal Knowledge Graph Architecture for Agent Memory (Rasmussen et al., arXiv 2025) - A bi-temporal knowledge-graph memory engine (Graphiti) that dynamically fuses chat and business data, surpassing MemGPT on DMR and LongMemEval; a standard production-memory reference. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-08-12T20:16:17Z",
+            "owner": "getzep",
+            "repo": "graphiti",
+            "stars": 29869
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "MemGPT: Towards LLMs as Operating Systems (Packer et al., COLM 2024) - One of the most widely cited and productized (Letta) architectures for tiered, self-managed long-term memory in LLM agents. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-08-01T18:24:30Z",
+            "owner": "letta-ai",
+            "repo": "letta",
+            "stars": 24220
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "MemOS: A Memory OS for AI System (Li et al., arXiv 2025) - Promotes memory to a first-class resource (MemCube), unifying parametric, activation, and plaintext memory under one scheduling-and-governance operating system. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2026-08-13T03:36:02Z",
+            "owner": "MemTensor",
+            "repo": "MemOS",
+            "stars": 10699
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "HippoRAG: Neurobiologically Inspired Long-Term Memory for Large Language Models (Gutiérrez et al., NeurIPS 2024) - A highly influential neuro-inspired long-term memory/RAG framework bridging knowledge-graph retrieval and agent memory, widely adopted as a strong baseline. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-07-29T00:02:46Z",
+            "owner": "OSU-NLP-Group",
+            "repo": "HippoRAG",
+            "stars": 3940
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "SimpleMem: Efficient Lifelong Memory for LLM Agents (Liu et al., arXiv 2026) - Semantic-compression lifelong memory (structured compression, online synthesis, intent-aware retrieval) cutting inference tokens up to 30x. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-07-24T07:40:38Z",
+            "owner": "aiming-lab",
+            "repo": "SimpleMem",
+            "stars": 3688
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "MIRIX: Multi-Agent Memory System for LLM-Based Agents (Wang et al., arXiv 2025) - Illustrates the current frontier trend of multi-agent, multi-type (multimodal) memory architectures for LLM-based agents. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-08-11T07:15:22Z",
+            "owner": "Mirix-AI",
+            "repo": "MIRIX",
+            "stars": 3481
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Memory OS of AI Agent (Kang et al., EMNLP 2025) - Applies operating-system memory management (STM/MTM/LPM tiers with heat-based promotion and segmented paging) to agent memory, with strong LoCoMo gains. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-07-07T12:32:18Z",
+            "owner": "BAI-LAB",
+            "repo": "MemoryOS",
+            "stars": 1554
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Agentic Context Engineering: Evolving Contexts for Self-Improving Language Models (Zhang et al., ICLR 2026) - Evolves the context itself as a playbook via generate–reflect–curate delta operations, countering brevity bias and context collapse for self-improving agents. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-05-19T19:11:05Z",
+            "owner": "ace-agent",
+            "repo": "ace",
+            "stars": 1259
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Evaluating Very Long-Term Conversational Memory of LLM Agents (Maharana et al., ACL 2024) - The standard benchmark used to evaluate and compare long-term conversational memory systems for LLM agents (used by Mem0, MIRIX, A-MEM, etc.). [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2024-08-13T03:21:32Z",
+            "owner": "snap-research",
+            "repo": "locomo",
+            "stars": 1094
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory (Wu et al., ICLR 2025) - Decomposes long-term interactive memory into five separately testable abilities. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-05-11T22:49:24Z",
+            "owner": "xiaowu0162",
+            "repo": "LongMemEval",
+            "stars": 998
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "A-MEM: Agentic Memory for LLM Agents (Xu et al., arXiv 2025) - Representative of the newest generation of dynamically self-organizing (graph/note-linking) long-term memory systems for LLM agents. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-03-05T11:44:03Z",
+            "owner": "WujiangXu",
+            "repo": "A-mem",
+            "stars": 941
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Augmenting Language Models with Long-Term Memory (Wang et al., NeurIPS 2023) - Key architectural approach to giving the underlying language model itself (not just an agent scaffold) a trainable long-term memory retrieval mechanism. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2024-03-30T22:24:38Z",
+            "owner": "Victorwz",
+            "repo": "LongMem",
+            "stars": 827
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "MemoryBank: Enhancing Large Language Models with Long-Term Memory (Zhong et al., AAAI 2024) - One of the first systems to bring a psychologically grounded (human-memory-inspired) forgetting/consolidation mechanism into LLM agent memory. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2023-05-24T03:19:27Z",
+            "owner": "zhongwanjun",
+            "repo": "MemoryBank-SiliconFriend",
+            "stars": 444
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "PlugMem: A Task-Agnostic Plugin Memory Module for LLM Agents (Yang et al., arXiv 2026) - Cognitive-science-inspired knowledge-graph memory pluggable across tasks without redesign. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-07-09T05:51:21Z",
+            "owner": "TIMAN-group",
+            "repo": "PlugMem",
+            "stars": 286
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "G-Memory: Tracing Hierarchical Memory for Multi-Agent Systems (Zhang et al., NeurIPS 2025) - Organization-theory-inspired three-tier graph (insight/query/interaction) that stores collaboration trajectories, a memory design tailored to multi-agent systems. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "SAS",
+            "last_commit": "2026-04-09T05:44:55Z",
+            "owner": "bingreeky",
+            "repo": "GMemory",
+            "stars": 266
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "ExpeL: LLM Agents Are Experiential Learners (Zhao et al., AAAI 2024) - Influential paradigm for extracting reusable, transferable 'experience' knowledge from an agent's own memory rather than raw episodic replay. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2024-12-20T05:28:00Z",
+            "owner": "LeapLabTHU",
+            "repo": "ExpeL",
+            "stars": 234
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "What Deserves Memory: Adaptive Memory Distillation for LLM Agents (Ma et al., ACL 2026) - Self-organizing episodic memory (Nemori) that segments dialogue by event boundaries and distills semantics via a predict-then-calibrate loop, cutting build cost while improving temporal reasoning. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-04-16T09:47:33Z",
+            "owner": "nemori-ai",
+            "repo": "nemori",
+            "stars": 209
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "AutoMem: Automated Learning of Memory as a Cognitive Skill (Wu et al., arXiv 2026) - Treats memory management itself as a skill the agent learns, instead of a fixed retrieval policy written by the harness. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-07-03T16:40:53Z",
+            "owner": "autoLearnMem",
+            "repo": "AutoMem",
+            "stars": 135
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Synapse: Trajectory-as-Exemplar Prompting with Memory for Computer Control (Zheng et al., ICLR 2024) - Demonstrates retrieval-augmented episodic-trajectory memory for grounding agent decision-making in complex GUI/computer-control tasks. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "HTML",
+            "last_commit": "2026-01-07T13:46:22Z",
+            "owner": "ltzheng",
+            "repo": "Synapse",
+            "stars": 70
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "TokenPilot: Cache-Efficient Context Management for LLM Agents (Xu et al., arXiv 2026) - Manages context with the prompt cache in mind, preserving cache continuity under eviction to cut cost. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2026-08-11T12:53:10Z",
+            "owner": "zjunlp",
+            "repo": "LightMem2",
+            "stars": 56
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Larimar: Large Language Models with Episodic Memory Control (Das et al., ICML 2024) - Representative of the architecture-level (rather than prompt-level) approach to giving LLMs an editable, fast-updating episodic memory. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2025-09-18T01:26:54Z",
+            "owner": "IBM",
+            "repo": "larimar",
+            "stars": 34
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "E-mem: Multi-agent based Episodic Context Reconstruction for LLM Agent Memory (Wang et al., arXiv 2026) - E-mem is a hierarchical multi-agent memory framework where assistant agents retain uncompressed memory segments and a master agent coordinates planning to reconstruct episodic context, evaluated on the LoCoMo benchmark. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-05-03T01:18:02Z",
+            "owner": "dog-last",
+            "repo": "E-mem",
+            "stars": 28
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "MemSyco-Bench: Benchmarking Sycophancy in Agent Memory (Xiang et al., arXiv 2026) - Benchmarks sycophancy in agent memory: whether stored beliefs bend to user pressure across sessions. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-07-30T11:46:16Z",
+            "owner": "XMUDeepLIT",
+            "repo": "MemSyco-Bench",
+            "stars": 17
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "MINTEval: Evaluating Memory under Multi-Target Interference in Long-Horizon Agent Systems (Lee et al., arXiv 2026) - 15.6K-QA benchmark (up to 1.8M-token contexts) showing memory agents struggle under interfering, frequently-updated facts. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-05-20T03:07:12Z",
+            "owner": "amy-hyunji",
+            "repo": "MINTEval",
+            "stars": 4
+          }
+        }
+      ],
+      "title": "💾 Memory (48)"
+    },
+    {
+      "description": "Corresponds to §6 (Tool Use and Action Execution).",
+      "items": [
+        {
+          "node_type": "item",
+          "title": "The Berkeley Function Calling Leaderboard (BFCL): From Tool Use to Agentic Evaluation of Large Language Models (Patil et al., ICML 2025) - The de facto standard leaderboard/benchmark for comparing LLM function-calling and tool-use performance, referenced by nearly all subsequent function-calling papers. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-04-13T03:19:45Z",
+            "owner": "ShishirPatil",
+            "repo": "gorilla",
+            "stars": 12992
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "ToolLLM: Facilitating Large Language Models to Master 16000+ Real-world APIs (Qin et al., ICLR 2024) - One of the largest and most cited tool-use datasets/frameworks, establishing ToolBench as a standard training/evaluation resource for open-source tool-use LLMs. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2025-05-21T15:46:59Z",
+            "owner": "OpenBMB",
+            "repo": "ToolBench",
+            "stars": 5728
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "API-Bank: A Comprehensive Benchmark for Tool-Augmented LLMs (Li et al., EMNLP 2023) - One of the earliest and most cited dedicated benchmarks for evaluating and training tool-augmented dialogue LLMs. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-06-10T11:18:20Z",
+            "owner": "AlibabaResearch",
+            "repo": "DAMO-ConvAI",
+            "stars": 1575
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "RestGPT: Connecting Large Language Models with Real-World RESTful APIs (Song et al., arXiv 2023) - Demonstrates tool-use extended to complex, stateful real-world REST APIs beyond toy tool sets, with a benchmark still used for API-grounded agent evaluation. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2024-06-07T13:22:15Z",
+            "owner": "Yifan-Song793",
+            "repo": "RestGPT",
+            "stars": 1403
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Chameleon: Plug-and-Play Compositional Reasoning with Large Language Models (Lu et al., NeurIPS 2023) - Prominent example of natural-language-planned tool composition/orchestration across heterogeneous tool types, widely cited in tool-use and compositional-reasoning literature. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Jupyter Notebook",
+            "last_commit": "2023-12-23T03:36:42Z",
+            "owner": "lupantech",
+            "repo": "chameleon-llm",
+            "stars": 1139
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Large Language Models as Tool Makers (Cai et al., arXiv 2023) - Foundational for the tool-creation (as opposed to tool-use) direction, showing LLMs can author their own reusable tools rather than only calling pre-existing ones. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Jupyter Notebook",
+            "last_commit": "2023-05-29T09:23:54Z",
+            "owner": "ctlllll",
+            "repo": "LLM-ToolMaker",
+            "stars": 1062
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "ToolAlpaca: Generalized Tool Learning for Language Models with 3000 Simulated Cases (Tang et al., arXiv 2023) - Key evidence that generalized tool-use capability is achievable in small open models via automatically synthesized tool-use corpora, influential for later synthetic-data tool-training pipelines. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2024-10-26T02:05:09Z",
+            "owner": "tangqiaoyu",
+            "repo": "ToolAlpaca",
+            "stars": 880
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "GPT4Tools: Teaching Large Language Model to Use Tools via Self-instruction (Yang et al., NeurIPS 2023) - Widely used reference for open-source instruction-tuning approaches to multimodal tool use, complementing proprietary-model tool-use papers. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2023-12-19T01:55:15Z",
+            "owner": "AILab-CVC",
+            "repo": "GPT4Tools",
+            "stars": 771
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "xLAM: A Family of Large Action Models to Empower AI Agent Systems (Zhang et al., arXiv 2024) - Prominent industrial (Salesforce) effort establishing 'large action models' as a distinct model class optimized for agentic tool use, widely benchmarked against. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-06-02T18:53:42Z",
+            "owner": "SalesforceAIResearch",
+            "repo": "xLAM",
+            "stars": 637
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "ToolkenGPT: Augmenting Frozen Language Models with Massive Tools via Tool Embeddings (Hao et al., NeurIPS 2023) - An influential alternative architecture for scalable tool selection that avoids the context-length bottleneck of prompt-based tool listing. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2024-04-18T08:21:12Z",
+            "owner": "Ber666",
+            "repo": "ToolkenGPT",
+            "stars": 271
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Small LLMs Are Weak Tool Learners: A Multi-LLM Agent (Shen et al., EMNLP 2024) - Influential for the multi-agent/role-decomposition approach to tool learning, especially relevant to efficiently deploying tool-use in smaller open models. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2024-04-23T07:43:32Z",
+            "owner": "X-PLUG",
+            "repo": "Multi-LLM-Agent",
+            "stars": 243
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "StableToolBench: Towards Stable Large-Scale Benchmarking on Tool Learning of Large Language Models (Guo et al., ACL 2024) - Widely used evaluation infrastructure paper that fixed reproducibility problems plaguing large-scale real-API tool-learning benchmarks. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2025-04-15T02:11:08Z",
+            "owner": "THUNLP-MT",
+            "repo": "StableToolBench",
+            "stars": 239
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "MCP-Atlas: A Large-Scale Benchmark for Tool-Use Competency with Real MCP Servers (Bandi et al., arXiv 2026) - Large-scale tool-use benchmark built on real Model Context Protocol servers rather than synthetic tool stubs. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-08-12T18:52:54Z",
+            "owner": "scaleapi",
+            "repo": "mcp-atlas",
+            "stars": 145
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "HANDBOOK.md: A Benchmark for Long-Context Agentic Instruction Following (Panavas et al., arXiv 2026) - Hand an agent a 20 to 124 page policy document plus MCP tools and it stops obeying: the best of thirty configurations passes 36.2% of trials under strict grading. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-06-29T17:09:04Z",
+            "owner": "surge-ai",
+            "repo": "handbook",
+            "stars": 45
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "PlanBench-XL: Evaluating Long-Horizon Planning of LLM Tool-Use Agents in Large-Scale Tool Ecosystems (Liu et al., arXiv 2026) - Long-horizon planning benchmark for tool-use agents in large tool ecosystems, where retrieval and selection dominate. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-07-16T06:07:53Z",
+            "owner": "JiayuJeff",
+            "repo": "PlanBench-XL",
+            "stars": 38
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "UniToolCall: Unifying Tool-Use Representation, Data, and Evaluation for LLM Agents (Liang et al., arXiv 2026) - Unifies tool-calling representation, a 22K+ tool / 390K+ instance corpus, and seven standardized benchmarks into one framework. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-07-12T14:44:05Z",
+            "owner": "EIT-NLP",
+            "repo": "UniToolCall",
+            "stars": 22
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "LLM Agents Already Know When to Call Tools -- Even Without Reasoning (Sun et al., arXiv 2026) - Finds agents already encode when to call a tool without an explicit reasoning trace, questioning the need for reason-before-call. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-05-13T04:23:23Z",
+            "owner": "Trustworthy-ML-Lab",
+            "repo": "when2tool",
+            "stars": 11
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Why Multi-Step Tool-Use Reinforcement Learning Collapses and How Supervisory Signals Fix It (Hao et al., arXiv 2026) - Identifies why multi-turn tool-use RL collapses and which supervisory signals prevent it. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-07-03T08:04:40Z",
+            "owner": "hypasd-art",
+            "repo": "Tool-RL-Box",
+            "stars": 6
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "ToolFailBench: Diagnosing Tool-Use Failures in LLM Agents (Soni et al., arXiv 2026) - Diagnostic benchmark separating the ways tool use fails, rather than scoring only end-task success. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-07-12T05:28:27Z",
+            "owner": "SoHarshh",
+            "repo": "ToolFailBench",
+            "stars": 3
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "PACT: Privileged Trace Co-Training for Multi-Turn Tool-Use Agents (Du et al., arXiv 2026) - Co-trains multi-turn tool-use agents on privileged traces, transferring information available at training but not at inference. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2026-06-17T20:18:59Z",
+            "owner": "ZhenbangDu",
+            "repo": "PACT",
+            "stars": 3
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "When Does Restricting a Coding Agent to execute_code Help? A Regime × Agent-Design Ablation (Yang et al., arXiv 2026) - Ablation asking when narrowing a coding agent to a single execute_code action helps, and in which regimes it hurts. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-07-11T23:49:42Z",
+            "owner": "hyang0129",
+            "repo": "onlycodes",
+            "stars": 0
+          }
+        }
+      ],
+      "title": "🔧 Tool Use (41)"
+    },
+    {
+      "description": "Corresponds to §7 (Multi-Agent Systems).",
+      "items": [
+        {
+          "node_type": "item",
+          "title": "AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation (Wu et al., arXiv 2023) - Widely adopted industrial multi-agent orchestration framework (Microsoft). [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-04-15T11:59:09Z",
+            "owner": "microsoft",
+            "repo": "autogen",
+            "stars": 60389
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "ChatDev: Communicative Agents for Software Development (Qian et al., ACL 2024) - Widely cited demonstration of end-to-end multi-agent collaboration for a complex real-world workflow. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-07-24T08:01:27Z",
+            "owner": "OpenBMB",
+            "repo": "ChatDev",
+            "stars": 33986
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "CAMEL: Communicative Agents for \"Mind\" Exploration of Large Language Model Society (Li et al., NeurIPS 2023) - One of the earliest and most cited frameworks establishing autonomous agent-to-agent cooperation via role-play. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-08-07T09:51:49Z",
+            "owner": "camel-ai",
+            "repo": "camel",
+            "stars": 17578
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "AgentVerse: Facilitating Multi-Agent Collaboration and Exploring Emergent Behaviors in Agents (Chen et al., ICLR 2024) - General-purpose, dynamically-composed multi-agent collaboration framework and study of emergent social dynamics. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "JavaScript",
+            "last_commit": "2024-09-09T05:47:44Z",
+            "owner": "OpenBMB",
+            "repo": "AgentVerse",
+            "stars": 5102
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Mixture-of-Agents Enhances Large Language Model Capabilities (Wang et al., ICLR 2025) - Influential architecture showing structured multi-agent aggregation can outperform any single strong proprietary model. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2025-01-07T03:21:19Z",
+            "owner": "togethercomputer",
+            "repo": "MoA",
+            "stars": 2963
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Language Agents as Optimizable Graphs (Zhuge et al., ICML 2024) - GPTSwarm: formalizes multi-agent systems as computational graphs whose prompts and edges are jointly learned. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-02-05T10:39:09Z",
+            "owner": "metauto-ai",
+            "repo": "GPTSwarm",
+            "stars": 1034
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Encouraging Divergent Thinking in Large Language Models through Multi-Agent Debate (Liang et al., EMNLP 2024) - Diagnoses a core failure mode motivating why multi-agent debate helps beyond self-consistency. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2025-12-16T06:47:28Z",
+            "owner": "Skytliang",
+            "repo": "Multi-Agents-Debate",
+            "stars": 604
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Improving Factuality and Reasoning in Language Models through Multiagent Debate (Du et al., ICML 2024) - Seminal multi-agent debate paper popularizing 'society of minds'-style debate as a test-time technique. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2025-04-24T21:49:03Z",
+            "owner": "composable-models",
+            "repo": "llm_multiagent_debate",
+            "stars": 545
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Unleashing the Emergent Cognitive Synergy in Large Language Models: A Task-Solving Agent through Multi-Persona Self-Collaboration (Wang et al., ACL 2024) - Boundary case showing multi-agent-style collaboration can be simulated within a single model via personas. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2024-05-08T21:02:10Z",
+            "owner": "MikeWangWZHL",
+            "repo": "Solo-Performance-Prompting",
+            "stars": 352
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "ChatEval: Towards Better LLM-based Evaluators through Multi-Agent Debate (Chan et al., ICLR 2024) - Shows multi-agent debate improves reliability of LLM-as-judge evaluation. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2024-10-19T08:18:57Z",
+            "owner": "thunlp",
+            "repo": "ChatEval",
+            "stars": 340
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Building Cooperative Embodied Agents Modularly with Large Language Models (Zhang et al., ICLR 2024) - Extends multi-agent collaboration and communication to embodied/physically-grounded settings. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2025-03-30T15:18:28Z",
+            "owner": "UMass-Embodied-AGI",
+            "repo": "CoELA",
+            "stars": 306
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Dynamic LLM-Agent Network: An LLM-Agent Collaboration Framework with Agent Team Optimization (v2 retitled: A Dynamic LLM-Powered Agent Network for Task-Oriented Agent Collaboration) (Liu et al., arXiv 2023) - Introduces dynamic agent-team composition/topology optimization for multi-agent collaboration. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2024-05-16T07:46:26Z",
+            "owner": "SALT-NLP",
+            "repo": "DyLAN",
+            "stars": 211
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "ReConcile: Round-Table Conference Improves Reasoning via Consensus among Diverse LLMs (Chen et al., ACL 2024) - Combines heterogeneous LLM backbones with confidence-weighted persuasion/voting in agent debate/consensus. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2023-10-03T15:09:54Z",
+            "owner": "dinobby",
+            "repo": "ReConcile",
+            "stars": 204
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "More Agents Is All You Need (Li et al., TMLR 2024) - Crucial baseline showing much of multi-agent benefit can come from ensemble scaling rather than communication. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2024-10-08T07:27:14Z",
+            "owner": "MoreAgentsIsAllYouNeed",
+            "repo": "AgentForest",
+            "stars": 150
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Debating with More Persuasive LLMs Leads to More Truthful Answers (Khan et al., ICML 2024) - Connects multi-agent debate to AI-safety scalable oversight. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2024-03-22T07:14:34Z",
+            "owner": "ucl-dark",
+            "repo": "llm_debate",
+            "stars": 131
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Should we be going MAD? A Look at Multi-Agent Debate Strategies for LLMs (Smit et al., ICML 2024) - Important critical/empirical counterpoint on when multi-agent debate actually helps. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Jupyter Notebook",
+            "last_commit": "2026-03-26T05:37:14Z",
+            "owner": "instadeepai",
+            "repo": "DebateLLM",
+            "stars": 58
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "LLM-Deliberation: Evaluating LLMs with Interactive Multi-Agent Negotiation Games (v2 retitled: Cooperation, Competition, and Maliciousness: LLM-Stakeholders Interactive Negotiation) (Abdelnabi et al., arXiv 2023) - Extends multi-agent LLM research into strategic/competitive communication (negotiation). [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Jupyter Notebook",
+            "last_commit": "2024-11-11T16:26:56Z",
+            "owner": "S-Abdelnabi",
+            "repo": "LLM-Deliberation",
+            "stars": 54
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Graph-of-Agents: A Graph-based Framework for Multi-Agent LLM Collaboration (Yun et al., arXiv 2026) - Graph-based agent selection with directed/reverse message passing that outperforms Mixture-of-Agents using fewer agents. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-04-21T07:58:57Z",
+            "owner": "UNITES-Lab",
+            "repo": "GoA",
+            "stars": 44
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Latent Agents: A Post-Training Procedure for Internalized Multi-Agent Debate (Yi et al., arXiv 2026) - Distills multi-agent debate into a single model via two-stage fine-tuning, cutting tokens up to 93% while preserving steerable perspectives. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-05-28T06:00:45Z",
+            "owner": "johnsk95",
+            "repo": "latent_agents",
+            "stars": 28
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Exchange-of-Thought: Enhancing Large Language Model Capabilities through Cross-Model Communication (Yin et al., EMNLP 2023) - Provides a taxonomy of inter-agent communication paradigms, useful for surveying communication mechanisms. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2024-03-21T14:58:15Z",
+            "owner": "yinzhangyue",
+            "repo": "EoT",
+            "stars": 21
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Multi-Agent LLMs Fail to Explore Each Other (Choi et al., arXiv 2026) - Frames peer exploration as a partially observable stochastic game and finds current agents myopic and polarized when probing each other; the fix, MACE, uses structured peer selection, and the paper proves the value of exploration rises with agent diversity. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2026-07-11T05:48:09Z",
+            "owner": "deeplearning-wisc",
+            "repo": "mace",
+            "stars": 9
+          }
+        }
+      ],
+      "title": "🤝 Multi-Agent Systems (45)"
+    },
+    {
+      "description": "",
+      "items": [],
+      "title": "🌍 Part II: Agents in Context"
+    },
+    {
+      "description": "Corresponds to §8 (Agents in Interactive Environments).",
+      "items": [
+        {
+          "node_type": "item",
+          "title": "CLI-Anything: Towards Agent-Native Computer Use (Yang et al., arXiv 2026) - Argues computer use should be agent-native through the CLI instead of pixel-level screen imitation. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-08-12T13:51:38Z",
+            "owner": "HKUDS",
+            "repo": "CLI-Anything",
+            "stars": 46943
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Do As I Can, Not As I Say: Grounding Language in Robotic Affordances (al., CoRL 2022) - Foundational demonstration of LLM-as-planner grounded by real-world affordances for embodied robotic agents. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Jupyter Notebook",
+            "last_commit": "2026-08-12T12:20:59Z",
+            "owner": "google-research",
+            "repo": "google-research",
+            "stars": 38526
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Tongyi DeepResearch Technical Report (Tongyi DeepResearch Team, arXiv 2025) - Open end-to-end deep-research agent model for long-horizon web research and synthesis. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-02-27T13:12:11Z",
+            "owner": "Alibaba-NLP",
+            "repo": "DeepResearch",
+            "stars": 19818
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "π0: A Vision-Language-Action Flow Model for General Robot Control (Black et al., arXiv 2024) - Flow-matching action expert on a pretrained VLM, controlling many robot embodiments. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-06-16T00:14:01Z",
+            "owner": "Physical-Intelligence",
+            "repo": "openpi",
+            "stars": 13272
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "UI-TARS: Pioneering Automated GUI Interaction with Native Agents (al., arXiv 2025) - State-of-the-art open 'native' GUI/computer-use agent model showing the field's shift toward end-to-end trained GUI action models. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-01-27T04:57:26Z",
+            "owner": "bytedance",
+            "repo": "UI-TARS",
+            "stars": 11330
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Mobile-Agent: Autonomous Multi-Modal Mobile Device Agent with Visual Perception (Wang et al., arXiv 2024) - Representative vision-centric mobile GUI agent design demonstrating cross-app, metadata-free operation. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-07-07T09:22:18Z",
+            "owner": "X-PLUG",
+            "repo": "MobileAgent",
+            "stars": 9075
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Mobile-Agent-v3.5: Multi-platform Fundamental GUI Agents (Xu et al., arXiv 2026) - GUI-Owl-1.5 native multi-platform (mobile/desktop/browser) agent family with a data flywheel and MRPO RL, SOTA on 20+ GUI benchmarks. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-07-07T09:22:18Z",
+            "owner": "X-PLUG",
+            "repo": "MobileAgent",
+            "stars": 9075
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "OpenVLA: An Open-Source Vision-Language-Action Model (al., CoRL 2024) - Open-source counterpart to closed VLA models, democratizing research on LLM-driven robotic control. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2025-03-23T23:41:01Z",
+            "owner": "openvla",
+            "repo": "openvla",
+            "stars": 6821
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments (Xie et al., NeurIPS 2024) - Standard benchmark for evaluating 'computer-use' agents, used to evaluate essentially every major computer-use agent since 2024. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-08-12T16:12:29Z",
+            "owner": "xlang-ai",
+            "repo": "OSWorld",
+            "stars": 3078
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "RT-1: Robotics Transformer for Real-World Control at Scale (al., RSS 2023) - Foundational large-scale robot-transformer model establishing the recipe later extended by RT-2 and OpenVLA. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": true,
+            "language": "Python",
+            "last_commit": "2024-01-31T15:45:35Z",
+            "owner": "google-research",
+            "repo": "robotics_transformer",
+            "stars": 1744
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "CogAgent: A Visual Language Model for GUI Agents (Hong et al., arXiv 2023) - One of the first large VLMs purpose-built for screenshot-only GUI grounding, establishing the high-resolution visual GUI agent architecture line. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2025-04-04T13:29:55Z",
+            "owner": "zai-org",
+            "repo": "CogAgent",
+            "stars": 1192
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "WebVoyager: Building an End-to-End Web Agent with Large Multimodal Models (He et al., ACL 2024) - Key demonstration and benchmark for real-world, multimodal browser agents widely used to evaluate subsequent web-agent systems. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2024-03-04T03:36:39Z",
+            "owner": "MinorJerry",
+            "repo": "WebVoyager",
+            "stars": 1117
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Mind2Web: Towards a Generalist Agent for the Web (Deng et al., NeurIPS 2023) - First benchmark and LLM-based agent explicitly designed for generalist web navigation on real websites; standard reference cited by subsequent web/GUI agent papers. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Jupyter Notebook",
+            "last_commit": "2025-11-05T00:38:41Z",
+            "owner": "OSU-NLP-Group",
+            "repo": "Mind2Web",
+            "stars": 1019
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "GPT-4V(ision) is a Generalist Web Agent, if Grounded (Zheng et al., ICML 2024) - First systematic demonstration that multimodal LLMs can act as generalist visual web agents, catalyzing the shift to vision-grounded web/GUI agents. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2025-02-03T02:09:18Z",
+            "owner": "OSU-NLP-Group",
+            "repo": "SeeAct",
+            "stars": 850
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "AndroidWorld: A Dynamic Benchmarking Environment for Autonomous Agents (al., ICLR 2025) - Dominant reproducible benchmark for mobile GUI agents enabling dynamic task variation. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-07-16T20:18:37Z",
+            "owner": "google-research",
+            "repo": "android_world",
+            "stars": 847
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "ALFWorld: Aligning Text and Embodied Environments for Interactive Learning (Shridhar et al., ICLR 2021) - Widely used benchmark for evaluating LLM-based embodied/household agents (ReAct, Reflexion), bridging text reasoning and embodied execution. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-02-08T15:40:09Z",
+            "owner": "alfworld",
+            "repo": "alfworld",
+            "stars": 827
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Long-Horizon-Terminal-Bench: Testing the Limits of Agents on Long-Horizon Terminal Tasks with Dense Reward-Based Grading (Li et al., arXiv 2026) - Terminal benchmark built for long-horizon tasks, where agents fail from state tracking rather than single-step incompetence. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-08-11T02:40:43Z",
+            "owner": "zli12321",
+            "repo": "LHTB",
+            "stars": 582
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "WebShop: Towards Scalable Real-World Web Interaction with Grounded Language Agents (Yao et al., NeurIPS 2022) - Foundational, widely-used benchmark for grounded language web agents, predating and motivating later LLM-based web-navigation research. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2024-09-06T04:00:38Z",
+            "owner": "princeton-nlp",
+            "repo": "WebShop",
+            "stars": 580
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "SeeClick: Harnessing GUI Grounding for Advanced Visual GUI Agents (Cheng et al., ACL 2024) - Established GUI grounding as a core sub-problem for visual GUI agents and introduced ScreenSpot, a standard grounding benchmark. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "HTML",
+            "last_commit": "2025-07-13T06:44:39Z",
+            "owner": "njucckevin",
+            "repo": "SeeClick",
+            "stars": 495
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "EvoPolicyGym: Evaluating Autonomous Policy Evolution in Interactive Environments (Zhilin Wang et al., arXiv 2026) - Introduces Autonomous Policy Evolution as an evaluation setting and the EvoPolicyGym benchmark, in which agent-models iteratively modify executable policy code across 16 compact interactive reinforcement learning environments. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-08-12T05:20:25Z",
+            "owner": "Linzwcs",
+            "repo": "EvoPolicyGym",
+            "stars": 321
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Large Language Model-Brained GUI Agents: A Survey (Zhang et al., arXiv 2024) - Complementary GUI-agent-specific survey valuable for comprehensive coverage of the LLM-driven GUI agent literature. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "CSS",
+            "last_commit": "2025-06-23T03:29:15Z",
+            "owner": "vyokky",
+            "repo": "LLM-Brained-GUI-Agents-Survey",
+            "stars": 231
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "CUA-Suite: Massive Human-annotated Video Demonstrations for Computer-Use Agents (Jian et al., arXiv 2026) - Releases VideoCUA, the UI-Vision benchmark, and GroundCUA (56K screenshots, 3.6M UI annotations) for computer-use agents. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-03-24T23:22:49Z",
+            "owner": "ServiceNow",
+            "repo": "GroundCUA",
+            "stars": 134
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "PhoneBuddy: Training Open Models for Agentic Phone Use (Tang et al., arXiv 2026) - Trains open models for agentic phone use, a setting dominated by closed systems. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-06-26T08:53:36Z",
+            "owner": "PhoneBuddyAI",
+            "repo": "phonebuddy",
+            "stars": 55
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "TerminalWorld: Benchmarking Agents on Real-World Terminal Tasks (Chu et al., arXiv 2026) - Benchmarks agents on real-world terminal tasks, where long-horizon state tracking dominates single-step skill. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-05-31T15:26:52Z",
+            "owner": "EuniAI",
+            "repo": "TerminalWorld",
+            "stars": 42
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Web Agents with World Models: Learning and Leveraging Environment Dynamics in Web Navigation (Chae et al., ICLR 2025) - Confirms current LLMs carry no world model, then trains one to describe in free-form text what each action would change, so the agent can simulate an outcome before committing to something irreversible like a non-refundable booking; improves policy selection on WebArena and Mind2Web more cheaply than tree search. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2025-03-02T08:51:25Z",
+            "owner": "kyle8581",
+            "repo": "WMA-Agents",
+            "stars": 32
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "WebRetriever: A Large-Scale Comprehensive Benchmark for Efficient Web Agent Evaluation (Dong et al., arXiv 2026) - Large-scale web-agent benchmark designed for efficient evaluation rather than a handful of hand-built sites. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-07-25T06:31:19Z",
+            "owner": "Mininglamp-AI",
+            "repo": "WebRetriever",
+            "stars": 21
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Demonstration-Free Robotic Control via LLM Agents (Tsui et al., arXiv 2026) - Introduces FAEA (Frontier Agent as Embodied Agent), applying an unmodified general-purpose LLM agent framework to robotic manipulation without demonstrations or fine-tuning. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-01-29T03:37:59Z",
+            "owner": "robiemusketeer",
+            "repo": "faea-sim",
+            "stars": 19
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "WebNavigator: Global Web Navigation via Interaction Graph Retrieval (Zhang et al., arXiv 2026) - Web navigation through retrieval over an interaction graph, giving the agent global structure instead of local page views. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-04-07T11:46:11Z",
+            "owner": "fate-ubw",
+            "repo": "webNavigator",
+            "stars": 15
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "WebXSkill: Skill Learning for Autonomous Web Agents (Wang et al., arXiv 2026) - WebXSkill is a skill-learning framework for web agents that combines parameterized action programs with natural language guidance, extracting reusable action patterns from synthetic trajectories and organizing them in a URL-based. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2026-04-13T20:15:35Z",
+            "owner": "aiming-lab",
+            "repo": "WebXSkill",
+            "stars": 10
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "ISE: An Execution-Grounded Recipe for Multi-Turn OS-Agent Trajectories (Luo et al., arXiv 2026) - Proposes ISE, a three-stage Intent-Simulate-Execute pipeline that synthesizes multi-turn OS-agent training trajectories by pairing a role-locked user simulator with real tool execution in isolated OS workspaces. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2026-06-12T02:37:05Z",
+            "owner": "Valiere01",
+            "repo": "ISE-Trace",
+            "stars": 7
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Beyond Sequential Interaction: Benchmarking Parallel Execution and Coordination for GUI Agents (Yu et al., arXiv 2026) - First benchmark for parallel GUI agents: splitting long-horizon desktop tasks across concurrent workers on separate machines beats the best serial baseline by 12.9 points at roughly half the steps and tokens. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2026-07-17T13:04:05Z",
+            "owner": "pkgunboat",
+            "repo": "ParaGUIBench",
+            "stars": 5
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Generalization in Online Reinforcement Learning for Mobile Agents (Gu et al., arXiv 2026) - Introduces AndroidWorld-Generalization, a benchmark and GRPO-based online RL training system for GUI mobile agents, reporting zero-shot generalization gains of 26.1% on unseen instances that diminish to 15.7% on unseen templates. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2026-03-15T18:07:52Z",
+            "owner": "zihuanjiang",
+            "repo": "AndroidWorld-Generalization",
+            "stars": 3
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "A History-Aware Visually Grounded Critic for Computer Use Agents (Lee et al., arXiv 2026) - Proposes HiViG, a multimodal critic trained on GUI trajectories that compresses a computer-use agent's interaction history into multi-step goals and verifies proposed actions against the current screenshot. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-06-18T05:18:41Z",
+            "owner": "G-JWLee",
+            "repo": "HiViG",
+            "stars": 2
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "ABot-AgentOS: A General Robotic Agent OS with Lifelong Multi-modal Memory (Tian et al., arXiv 2026) - Proposes an agent operating system for embodied robots that unifies planning, skill execution, and a Universal Multi-modal Graph Memory integrating visual, spatial, and temporal information. [code",
+          "description": "]",
+          "children": []
+        }
+      ],
+      "title": "🌐 Interactive Environments (52)"
+    },
+    {
+      "description": "Corresponds to §10 (Applications).",
+      "items": [
+        {
+          "node_type": "item",
+          "title": "TradingAgents: Multi-Agents LLM Financial Trading Framework (Xiao et al., arXiv 2024) - A recent, popular multi-role multi-agent finance system widely used as a reference architecture. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-07-18T15:55:05Z",
+            "owner": "TauricResearch",
+            "repo": "TradingAgents",
+            "stars": 97895
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "OpenHands: An Open Platform for AI Software Developers as Generalist Agents (al., ICLR 2025) - The leading open community platform underlying much subsequent applied coding-agent research. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2026-08-13T03:24:05Z",
+            "owner": "OpenHands",
+            "repo": "OpenHands",
+            "stars": 83853
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "FinGPT: Open-Source Financial Large Language Models (Yang et al., IJCAI 2023) - One of the most cited open-source financial LLM/agent efforts, providing base-model infrastructure underlying many downstream financial agent systems. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Jupyter Notebook",
+            "last_commit": "2026-08-02T03:23:48Z",
+            "owner": "AI4Finance-Foundation",
+            "repo": "FinGPT",
+            "stars": 21084
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery (Lu et al., arXiv 2024) - A landmark, widely publicized attempt at fully automating the scientific-paper lifecycle. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Jupyter Notebook",
+            "last_commit": "2025-12-19T07:46:21Z",
+            "owner": "SakanaAI",
+            "repo": "AI-Scientist",
+            "stars": 14386
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "The AI Scientist-v2: Workshop-Level Automated Scientific Discovery via Agentic Tree Search (Yamada et al., arXiv 2025) - Marks a concrete, verifiable milestone for autonomous scientific discovery agents. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2025-12-19T07:46:32Z",
+            "owner": "SakanaAI",
+            "repo": "AI-Scientist-v2",
+            "stars": 7000
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "AutoCodeRover: Autonomous Program Improvement (Zhang et al., arXiv 2024) - One of the first cost-efficient autonomous program-repair agents grounded in structured code search. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2025-04-24T07:58:24Z",
+            "owner": "AutoCodeRoverSG",
+            "repo": "auto-code-rover",
+            "stars": 3099
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Agentless: Demystifying LLM-based Software Engineering Agents (Xia et al., arXiv 2024) - Influential counter-narrative showing simpler non-agentic pipelines can rival complex agents. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2024-12-22T19:29:31Z",
+            "owner": "OpenAutoCoder",
+            "repo": "Agentless",
+            "stars": 2094
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "AutoSci: A Memory-Centric Agentic System for the Full Scientific Research Lifecycle (Qian et al., arXiv 2026) - Memory-centric agentic system automating the full scientific research loop. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-08-12T07:18:32Z",
+            "owner": "skyllwt",
+            "repo": "AutoSci",
+            "stars": 1628
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "SWE-Lancer: Can Frontier LLMs Earn $1 Million from Real-World Freelance Software Engineering? (Miserendino et al., arXiv 2025) - Prices coding-agent competence in real freelance dollars; frontier models leave most of the posted value unearned. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": true,
+            "language": null,
+            "last_commit": "2025-07-18T02:02:20Z",
+            "owner": "openai",
+            "repo": "SWELancer-Benchmark",
+            "stars": 1430
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "ChemCrow: Augmenting large-language models with chemistry tools (Bran et al., Nature 2023) - A foundational tool-augmented LLM agent paper for chemistry. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2024-12-19T17:47:04Z",
+            "owner": "ur-whitelab",
+            "repo": "chemcrow-public",
+            "stars": 943
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "FinMem: A Performance-Enhanced LLM Trading Agent with Layered Memory and Character Design (Yu et al., AAAI 2023) - An early, widely referenced LLM trading agent introducing human-cognition-inspired layered memory design. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2024-08-18T01:58:13Z",
+            "owner": "pipiku915",
+            "repo": "FinMem-LLM-StockTrading",
+            "stars": 938
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Large Language Model-Based Agents for Software Engineering: A Survey (Liu et al., arXiv 2024) - A dedicated sub-topic survey giving the taxonomy needed to situate coding/SWE agent work. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2025-03-16T10:43:02Z",
+            "owner": "FudanSELab",
+            "repo": "Agent4SE-Paper-List",
+            "stars": 554
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "SWE-Pruner: Self-Adaptive Context Pruning for Coding Agents (Wang et al., arXiv 2026) - Self-adaptive context pruning that keeps coding agents effective under long repository contexts. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-06-30T18:45:59Z",
+            "owner": "Ayanami1314",
+            "repo": "swe-pruner",
+            "stars": 307
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "MDAgents: An Adaptive Collaboration of LLMs for Medical Decision-Making (al., NeurIPS 2024) - A widely cited example of adaptive multi-agent orchestration tailored to medical reasoning complexity. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2024-11-10T19:26:09Z",
+            "owner": "mitmedialab",
+            "repo": "MDAgents",
+            "stars": 290
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Autonomous chemical research with large language models (Boiko et al., Nature 2023) - One of the earliest and most-cited demonstrations of an LLM agent performing autonomous physical-world scientific experimentation. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2025-08-11T18:19:13Z",
+            "owner": "gomesgroup",
+            "repo": "coscientist",
+            "stars": 208
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "ScienceAgentBench: Toward Rigorous Assessment of Language Agents for Data-Driven Scientific Discovery (al., ICLR 2025) - A rigorous, expert-validated benchmark quantifying the gap between current LLM agents and end-to-end scientific-discovery automation. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-07-18T05:25:41Z",
+            "owner": "OSU-NLP-Group",
+            "repo": "ScienceAgentBench",
+            "stars": 154
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "LiteResearcher: A Scalable Agentic RL Training Framework for Deep Research Agent (Li et al., arXiv 2026) - Scalable agentic-RL training framework for deep-research agents. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-08-07T05:08:00Z",
+            "owner": "simplexai-labs",
+            "repo": "LiteResearcher",
+            "stars": 120
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "LawThinker: A Deep Research Legal Agent in Dynamic Environments (Yang et al., arXiv 2026) - Deep-research legal agent operating in dynamic legal environments. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-05-07T10:01:06Z",
+            "owner": "RUC-NLPIR",
+            "repo": "LawThinker-agent",
+            "stars": 63
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "MiroEval: Benchmarking Multimodal Deep Research Agents in Process and Outcome (Ye et al., arXiv 2026) - MiroEval is a benchmark of 100 tasks (70 text-only, 30 multimodal) that evaluates deep research agents along synthesis quality, factuality, and research-process dimensions. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-07-06T14:50:47Z",
+            "owner": "MiroMindAI",
+            "repo": "MiroEval",
+            "stars": 46
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Agon: An Autonomous Large-Scale Omnidisciplinary Research System Built on Prompt Economy (Sun et al., arXiv 2026) - A research orchestrator that validates what can be checked inside the workflow and leaves the rest to human scientists; 444 loop iterations across disciplines with no human-written experimental code, and a failure taxonomy separating what the loop can fix from what it cannot. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-08-02T08:15:58Z",
+            "owner": "AutoResearch-Factory",
+            "repo": "Agon",
+            "stars": 39
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "HealthAgentBench: A Unified Benchmark Suite of Realistic Agentic Healthcare Environments for Challenging Frontier AI Agents (Liu et al., arXiv 2026) - Benchmark suite of realistic agentic healthcare environments rather than static clinical question answering. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-08-12T03:22:24Z",
+            "owner": "microsoft",
+            "repo": "HealthAgentBench",
+            "stars": 37
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "PatientAgentBench: A Benchmark Framework for Evaluating Patient-Facing Health AI Agents (Vatanparvar et al., arXiv 2026) - Benchmarks patient-facing health agents over 1,200 tool-using conversations; triage separates models most sharply (32% to 88% pass rates), and even the strongest scores only 4.25 of 5 overall. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-07-29T04:49:15Z",
+            "owner": "amazon-science",
+            "repo": "PatientAgentBench",
+            "stars": 20
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Hybrid-Gym: Training Coding Agents to Generalize Across Tasks (Xie et al., arXiv 2026) - Trains coding agents on synthetic auxiliary tasks such as function localization and dependency search, which transfer to real work: +25.4% on SWE-Bench Verified, +7.9% on SWT-Bench Verified, +5.1% on Commit-0 Lite. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-05-01T15:31:27Z",
+            "owner": "Hybrid-Gym",
+            "repo": "Hybrid-Gym",
+            "stars": 10
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Can Deep Research Agents Retrieve and Organize? Evaluating the Synthesis Gap with Expert Taxonomies (Zhang et al., arXiv 2026) - Evaluates the synthesis gap in deep-research agents: whether they can organize retrieved evidence, not just retrieve it, against expert references. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-08-07T02:02:09Z",
+            "owner": "KongLongGeFDU",
+            "repo": "TaxoBench",
+            "stars": 8
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Deep Research in Physical Sciences: A Multi-Agent Framework and Comprehensive Benchmark (Jiang et al., arXiv 2026) - Multi-agent deep-research framework and benchmark for the physical sciences. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-07-24T09:30:16Z",
+            "owner": "yigengjiang",
+            "repo": "physci-deepresearch",
+            "stars": 6
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "EvoDS: Self-Evolving Autonomous Data Science Agent with Skill Learning and Context Management (Yang et al., arXiv 2026) - Self-evolving data science agent combining skill learning with context management. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-06-03T16:31:39Z",
+            "owner": "usail-hkust",
+            "repo": "EvoDS",
+            "stars": 6
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "AutoNumerics: An Autonomous, PDE-Agnostic Multi-Agent Pipeline for Scientific Computing (Du et al., arXiv 2026) - Builds and residual-verifies classical numerical PDE solvers straight from natural-language problem statements, keeping the solver transparent rather than neural. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-07-30T00:05:47Z",
+            "owner": "Daviddjddu",
+            "repo": "Autonumerics",
+            "stars": 3
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "ClinicalAgents: Multi-Agent Orchestration for Clinical Decision Making with Dual-Memory (Ge et al., arXiv 2026) - Multi-agent orchestration for clinical decision making with a dual-memory design. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-08-10T04:33:35Z",
+            "owner": "ZhuohanGe",
+            "repo": "ClinicalAgents-Code",
+            "stars": 0
+          }
+        }
+      ],
+      "title": "🚀 Applications (49)"
+    },
+    {
+      "description": "",
+      "items": [],
+      "title": "⚖️ Part III: Cross-Cutting Concerns"
+    },
+    {
+      "description": "Corresponds to §9 (Evaluation and Benchmarks).",
+      "items": [
+        {
+          "node_type": "item",
+          "title": "SWE-bench: Can Language Models Resolve Real-World GitHub Issues? (Jimenez et al., ICLR 2024) - De facto standard benchmark for coding/software-engineering agents; spawned the SWE-bench Verified/Lite/Live/Multimodal family. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-08-13T00:11:44Z",
+            "owner": "SWE-bench",
+            "repo": "SWE-bench",
+            "stars": 5626
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Terminal-Bench: Benchmarking Agents on Hard, Realistic Tasks in Command Line Interfaces (Merrill et al., arXiv 2026) - Hard, realistic command-line tasks; a de facto standard for terminal agents. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-07-11T05:19:08Z",
+            "owner": "harbor-framework",
+            "repo": "terminal-bench-1",
+            "stars": 2534
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "τ²-Bench: Evaluating Conversational Agents in a Dual-Control Environment (Barres et al., arXiv 2025) - Extends τ-bench to settings where user and agent both act on the environment. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-08-12T17:45:12Z",
+            "owner": "sierra-research",
+            "repo": "tau2-bench",
+            "stars": 1787
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "τ-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains (Yao et al., arXiv 2024) - Pioneered evaluation of agent-user interaction and policy compliance; standard reference for enterprise/customer-service agent evaluation. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-03-18T17:36:06Z",
+            "owner": "sierra-research",
+            "repo": "tau-bench",
+            "stars": 1377
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Agent-as-a-Judge: Evaluate Agents with Agents (Zhuge et al., arXiv 2024) - Systematizes agentic evaluation of agents; the reference point for judge-circularity concerns. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "HTML",
+            "last_commit": "2026-03-28T08:23:53Z",
+            "owner": "metauto-ai",
+            "repo": "agent-as-a-judge",
+            "stars": 809
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "ClawBench: Can AI Agents Complete Everyday Online Tasks? (Zhang et al., arXiv 2026) - Puts browser agents on 153 everyday tasks across 144 live production sites, intercepting the final request so nothing is actually bought or booked; the strongest model tested clears a third of them. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-08-08T01:43:46Z",
+            "owner": "TIGER-AI-Lab",
+            "repo": "ClawBench",
+            "stars": 560
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "TravelPlanner: A Benchmark for Real-World Planning with Language Agents (Xie et al., ICML 2024) - Widely-cited stress test for complex constrained multi-tool planning, illustrating agents' distance from reliable long-horizon planning. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-05-24T03:31:43Z",
+            "owner": "OSU-NLP-Group",
+            "repo": "TravelPlanner",
+            "stars": 538
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "AgentBoard: An Analytical Evaluation Board of Multi-turn LLM Agents (Ma et al., NeurIPS 2024) - Widely-used unified evaluation toolkit addressing the coarse pass/fail scoring gap, directly relevant to evaluation-methodology framing. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "SAS",
+            "last_commit": "2024-05-20T13:44:42Z",
+            "owner": "hkust-nlp",
+            "repo": "AgentBoard",
+            "stars": 435
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "MLAgentBench: Evaluating Language Agents on Machine Learning Experimentation (Huang et al., arXiv 2023) - Seminal benchmark for the 'AI research agent'/'ML engineering agent' evaluation subfield, precursor to MLE-bench, RE-Bench, etc. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2024-06-19T13:53:23Z",
+            "owner": "snap-stanford",
+            "repo": "MLAgentBench",
+            "stars": 348
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "GTA: A Benchmark for General Tool Agents (Wang et al., NeurIPS 2024) - Addresses realism gaps (implicit intent, authentic multimodal context) left by earlier synthetic tool-use benchmarks. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-04-20T06:28:54Z",
+            "owner": "open-compass",
+            "repo": "GTA",
+            "stars": 149
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "SmartPlay: A Benchmark for LLMs as Intelligent Agents (Wu et al., ICLR 2024) - Capability-decomposed evaluation methodology that influenced later fine-grained agent capability benchmarks. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": true,
+            "language": "Python",
+            "last_commit": "2024-04-11T03:40:29Z",
+            "owner": "microsoft",
+            "repo": "SmartPlay",
+            "stars": 146
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Can AI Agents Answer Your Data Questions? A Benchmark for Data Agents (DataAgentBench) (Ma et al., arXiv 2026) - Benchmark across heterogeneous database systems; frontier models reach only 38% accuracy on complex data questions. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-08-10T17:05:27Z",
+            "owner": "ucbepic",
+            "repo": "DataAgentBench",
+            "stars": 136
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "AgencyBench: Benchmarking the Frontiers of Autonomous Agents in 1M-Token Real-World Contexts (Li et al., arXiv 2026) - 32 real-world long-horizon scenarios testing autonomous agents under up to 1M-token contexts. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-01-23T04:36:10Z",
+            "owner": "GAIR-NLP",
+            "repo": "AgencyBench",
+            "stars": 93
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "CUBE: A Standard for Unifying Agent Benchmarks (Lacoste et al., arXiv 2026) - Proposes a standard for unifying heterogeneous agent benchmarks under one interface. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-07-17T18:08:43Z",
+            "owner": "The-AI-Alliance",
+            "repo": "cube-standard",
+            "stars": 53
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Agent-Diff: Benchmarking LLM Agents on Enterprise API Tasks via Code Execution with State-Diff-Based Evaluation (Pysklo et al., arXiv 2026) - Benchmarks agents on enterprise API tasks via sandboxed code execution with state-diff (not trace-matching) success criteria. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-07-02T03:24:07Z",
+            "owner": "agent-diff-bench",
+            "repo": "agent-diff",
+            "stars": 41
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "UniClawBench: A Universal Benchmark for Proactive Agents on Real-World Tasks (Chen et al., arXiv 2026) - Introduces UniClawBench, a capability-driven bilingual benchmark of 400 tasks executed in live Docker environments with step-wise checkpoints, evaluating proactive LLM agents across skill usage, exploration. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-07-28T08:29:51Z",
+            "owner": "HKU-MMLab",
+            "repo": "UniClawBench",
+            "stars": 38
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Benchmark Test-Time Scaling of General LLM Agents (Li et al., arXiv 2026) - Introduces General AgentBench, a unified benchmark for evaluating general-purpose LLM agents across search, coding, reasoning, and tool-use, and finds that sequential and parallel test-time scaling fail to improve performance due. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-04-14T15:36:50Z",
+            "owner": "cxcscmu",
+            "repo": "General-AgentBench",
+            "stars": 21
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Measuring Harness-Induced Belief Divergence in Multi-Step LLM Agents (Yi et al., arXiv 2026) - Measures how much the harness alone shifts an agent's beliefs across steps, isolating a confound in agent evaluation. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-07-28T06:16:11Z",
+            "owner": "Hik289",
+            "repo": "Harness-induce-bias",
+            "stars": 20
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Rethinking the Evaluation of Harness Evolution for Agents (Wang et al., arXiv 2026) - Rethinks how harness evolution should be evaluated, given that the harness moves the number as much as the model. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-08-03T23:35:55Z",
+            "owner": "rethinking-harness-evolution",
+            "repo": "code",
+            "stars": 20
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "When Tools Fail: Benchmarking Dynamic Replanning and Anomaly Recovery in LLM Agents (ToolMaze) (Zhu et al., arXiv 2026) - DAG-based benchmark with a perturbation taxonomy testing agent replanning and recovery when tool calls fail. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-06-05T03:33:24Z",
+            "owner": "Zhudongsheng75",
+            "repo": "ToolMaze",
+            "stars": 8
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Act As a Real Researcher: A Suite of Benchmarks Evaluating Frontier LLMs and Agentic Harnesses in Research Lifecycle (Wang et al., arXiv 2026) - Introduces AARRI-Bench, a containerized benchmark suite evaluating whether frontier LLMs and agentic harnesses can perform entry-level research-intern tasks across the research lifecycle. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-06-11T07:15:32Z",
+            "owner": "AARR-bench",
+            "repo": "AARRI-bench",
+            "stars": 8
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "ReplicatorBench: Benchmarking LLM Agents for Replicability in Social and Behavioral Sciences (Nguyen et al., arXiv 2026) - Introduces ReplicatorBench, a benchmark of human-verified replicable and non-replicable claims for evaluating LLM agents on replicating social and behavioral science research across data retrieval, experiment design/execution. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Shell",
+            "last_commit": "2026-06-24T14:48:56Z",
+            "owner": "CenterForOpenScience",
+            "repo": "llm-benchmarking",
+            "stars": 7
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "AgentGym2: Benchmarking Large Language Model Agents in De-Idealized Real-World Environments (Xi et al., arXiv 2026) - Benchmarks agents in de-idealized environments, closing the gap between clean benchmark worlds and real ones. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-07-15T12:06:14Z",
+            "owner": "hotdog-zz",
+            "repo": "Agentgym2",
+            "stars": 4
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "PerspectiveGap: A Benchmark for Multi-Agent Orchestration Prompting (Sun et al., arXiv 2026) - Isolates orchestration prompt writing as its own capability: 110 scenarios over 10 topologies on which 33 models average a 17.2% pass rate. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-07-27T05:24:08Z",
+            "owner": "WhymustIhaveaname",
+            "repo": "PerspectiveGap",
+            "stars": 3
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "How Many Tasks Are Enough for Agent Benchmark Decisions? A Replay Analysis of Public LLM Agent Benchmarks (Huang et al., arXiv 2026) - Replay analysis asking how many tasks a benchmark actually needs before its ranking is trustworthy. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-07-14T03:30:21Z",
+            "owner": "WilliamWJHuang",
+            "repo": "How-Many-Tasks-Are-Enough-for-Agent-Benchmark-Decisions",
+            "stars": 0
+          }
+        }
+      ],
+      "title": "📊 Evaluation & Benchmarks (43)"
+    },
+    {
+      "description": "Corresponds to §11 (Safety, Security, and Trustworthiness).",
+      "items": [
+        {
+          "node_type": "item",
+          "title": "Not what you've signed up for: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection (Greshake et al., arXiv 2023) - The founding paper of the indirect prompt injection threat model that underlies almost all later LLM-agent security research. ⭐ [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Jupyter Notebook",
+            "last_commit": "2025-07-17T14:03:25Z",
+            "owner": "greshake",
+            "repo": "llm-security",
+            "stars": 2125
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents (Debenedetti et al., NeurIPS 2024) - The most widely used standardized testbed for measuring agent robustness to prompt-injection attacks and defenses. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-06-02T10:01:31Z",
+            "owner": "ethz-spylab",
+            "repo": "agentdojo",
+            "stars": 742
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "AgentDoG: A Diagnostic Guardrail Framework for AI Agent Safety and Security (Liu et al., arXiv 2026) - Unified taxonomy of agentic risks powering a diagnostic guardrail that flags root causes of unsafe trajectories instead of binary labels. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-06-08T08:14:09Z",
+            "owner": "AI45Lab",
+            "repo": "AgentDoG",
+            "stars": 683
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "AgentHarm: A Benchmark for Measuring Harmfulness of LLM Agents (Andriushchenko et al., ICLR 2025) - Key benchmark distinguishing agent misuse risk from chatbot jailbreak risk, showing agentic capability compounds harm potential. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-08-13T02:07:15Z",
+            "owner": "UKGovernmentBEIS",
+            "repo": "inspect_evals",
+            "stars": 625
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Discovering Language Model Behaviors with Model-Written Evaluations (Perez et al., arXiv 2022) - Early, seminal empirical evidence connecting RLHF training scale to emergent self-preservation and power-seeking-adjacent expressed preferences, a precursor concern for autonomous agent alignment. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2024-07-02T07:36:39Z",
+            "owner": "anthropics",
+            "repo": "evals",
+            "stars": 419
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Emergent Misalignment: Narrow Finetuning can Produce Broadly Misaligned LLMs (Betley et al., arXiv 2025) - Recent, highly influential finding that narrow, seemingly innocuous fine-tuning of agentic capabilities can produce broad, unpredictable safety failures. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-01-12T12:28:51Z",
+            "owner": "emergent-misalignment",
+            "repo": "emergent-misalignment",
+            "stars": 323
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Agent Security Bench (ASB): Formalizing and Benchmarking Attacks and Defenses in LLM-based Agents (Zhang et al., arXiv 2024) - Largest unified taxonomy/benchmark integrating diverse attack and defense classes for LLM agents into one evaluation framework. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-04-16T20:53:34Z",
+            "owner": "agiresearch",
+            "repo": "ASB",
+            "stars": 281
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "AgentPoison: Red-teaming LLM Agents via Poisoning Memory or Knowledge Bases (Chen et al., NeurIPS 2024) - Establishes memory/knowledge-base poisoning as a distinct, training-free attack surface unique to memory-augmented LLM agents. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-06-17T00:27:53Z",
+            "owner": "AI-secure",
+            "repo": "AgentPoison",
+            "stars": 234
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Identifying the Risks of LM Agents with an LM-Emulated Sandbox (Ruan et al., ICLR 2024) - Foundational scalable methodology for red-teaming/risk discovery in tool-using agents without needing real-world tool access. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2024-03-22T00:36:52Z",
+            "owner": "ryoungj",
+            "repo": "ToolEmu",
+            "stars": 218
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "InjecAgent: Benchmarking Indirect Prompt Injections in Tool-Integrated Large Language Model Agents (Zhan et al., ACL 2024) - Standard reference benchmark for quantifying tool-integrated agents' susceptibility to indirect prompt injection. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2024-07-02T05:39:24Z",
+            "owner": "uiuc-kang-lab",
+            "repo": "InjecAgent",
+            "stars": 157
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Sleeper Agents: Training Deceptive LLMs that Persist Through Safety Training (Hubinger et al., arXiv 2024) - Landmark demonstration that current safety-training pipelines can fail to remove hidden deceptive/misaligned behavior, directly informing agent trustworthiness concerns. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": true,
+            "language": null,
+            "last_commit": "2024-03-09T04:14:31Z",
+            "owner": "anthropics",
+            "repo": "sleeper-agents-paper",
+            "stars": 150
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "AI Alignment: A Comprehensive Survey (Ji et al., arXiv 2023) - One of the most comprehensive general alignment surveys, providing the conceptual scaffolding (RICE, forward/backward alignment) that agent-specific safety work builds on. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2023-11-02T15:36:18Z",
+            "owner": "PKU-Alignment",
+            "repo": "AlignmentSurvey",
+            "stars": 139
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Towards Understanding Sycophancy in Language Models (Sharma et al., arXiv 2023) - Key empirical study of sycophancy as a robustness/alignment failure mode with direct implications for agents that must give honest assessments during autonomous decision-making. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Jupyter Notebook",
+            "last_commit": "2023-10-25T16:49:49Z",
+            "owner": "meg-tong",
+            "repo": "sycophancy-eval",
+            "stars": 130
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "R-Judge: Benchmarking Safety Risk Awareness for LLM Agents (Yuan et al., EMNLP 2024) - Widely cited benchmark for evaluating LLMs' own risk-awareness/judgment capability as a safety-monitoring component for agents. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-01-11T01:45:49Z",
+            "owner": "Lordog",
+            "repo": "R-Judge",
+            "stars": 109
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "A Survey on Trustworthy LLM Agents: Threats and Countermeasures (Yu et al., arXiv 2025) - The most directly on-topic recent survey for this sub-area, providing a taxonomy spanning nearly all agent-specific safety/security threat classes. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2025-03-20T13:06:25Z",
+            "owner": "Ymm-cll",
+            "repo": "TrustAgent",
+            "stars": 100
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "WASP: Benchmarking Web Agent Security Against Prompt Injection Attacks (Evtimov et al., arXiv 2025) - Extends prompt-injection evaluation from single-step tool calls to realistic, multi-step autonomous web-browsing agents. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": true,
+            "language": "Python",
+            "last_commit": "2026-04-13T23:45:27Z",
+            "owner": "facebookresearch",
+            "repo": "wasp",
+            "stars": 98
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "SafeAgentBench: A Benchmark for Safe Task Planning of Embodied LLM Agents (Yin et al., arXiv 2024) - Extends agent-safety evaluation beyond digital/text domains to physical-world embodied hazards, showing safety failures generalize to robotics. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2025-02-25T15:07:23Z",
+            "owner": "shengyin1224",
+            "repo": "SafeAgentBench",
+            "stars": 76
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Evil Geniuses: Delving into the Safety of LLM-based Agents (Tian et al., arXiv 2023) - One of the earliest systematic studies showing multi-agent LLM collaboration amplifies rather than mitigates safety risk. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2024-02-04T07:24:13Z",
+            "owner": "T1aNS1R",
+            "repo": "Evil-Geniuses",
+            "stars": 71
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "TrustAgent: Towards Safe and Trustworthy LLM-based Agents (Hua et al., EMNLP 2024) - Influential early defense/mitigation framework proposing constitution-guided planning as a mechanism for agent safety. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2025-02-07T05:44:17Z",
+            "owner": "agiresearch",
+            "repo": "TrustAgent",
+            "stars": 59
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "BackdoorAgent: A Unified Framework for Backdoor Attacks on LLM-based Agents (Feng et al., arXiv 2026) - Presents a stage-aware framework and benchmark that instruments LLM-agent workflows (planning, memory, tool-use) to inject, track, and evaluate backdoor triggers across multi-step trajectories. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-03-16T02:45:09Z",
+            "owner": "Yunhao-Feng",
+            "repo": "BackdoorAgent",
+            "stars": 44
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "BadAgent: Inserting and Activating Backdoor Attacks in LLM Agents (Wang et al., ACL 2024) - Seminal demonstration that agent backdoors survive downstream safety fine-tuning, motivating agent supply-chain security concerns. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2025-02-27T03:41:15Z",
+            "owner": "DPamK",
+            "repo": "BadAgent",
+            "stars": 34
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "PISmith: Reinforcement Learning-based Red Teaming for Prompt Injection Defenses (Yin et al., arXiv 2026) - Reinforcement-learning red teaming that automatically stress-tests prompt-injection defenses. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-07-17T02:16:14Z",
+            "owner": "albert-y1n",
+            "repo": "PISmith",
+            "stars": 22
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Agent Against Agent: An Agentic System for Automatic Prompt Injection Red Teaming (Wang et al., arXiv 2026) - Builds a transferable prompt-injection strategy library instead of an RL attacker fitted to one target, then reuses it untrained on unseen models: 76.2% attack success against Gemini-2.5-Pro and 86.7% on AgentDojo from roughly ten queries per sample. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-08-02T02:14:03Z",
+            "owner": "Wang-Yanting",
+            "repo": "PIMiner",
+            "stars": 8
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "AgentAbstain: Do LLM Agents Know When Not to Act? (Liu et al., arXiv 2026) - Asks whether agents know when not to act, treating abstention as a first-class safety behaviour. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-07-16T17:31:36Z",
+            "owner": "AntiQuality",
+            "repo": "agentabstain",
+            "stars": 4
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Defense Against Indirect Prompt Injection via Tool Result Parsing (Yu et al., arXiv 2026) - Proposes a tool-result-parsing defense that extracts and sanitizes tool outputs to reduce the attack success rate of indirect prompt injection on LLM agents while preserving task utility, evaluated on the AgentDojo benchmark. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2026-05-26T03:14:37Z",
+            "owner": "qiang-yu",
+            "repo": "agentdojo",
+            "stars": 2
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "KidnapRAG: A Black-Box Attack for Hijacking Reasoning in Agentic Retrieval-Augmented Generation Systems (Choi et al., arXiv 2026) - Black-box poisoning of agentic RAG through three role-specific documents, Bait, Chain-Link and Mal-Ins, which attract the first retrieval, induce query reformulation, and supply attacker-controlled evidence, with no access to prompts, traces or parameters. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-06-29T14:28:40Z",
+            "owner": "chanwoochoi316",
+            "repo": "KidnapRAG",
+            "stars": 1
+          }
+        }
+      ],
+      "title": "🛡️ Safety & Alignment (53)"
+    },
+    {
+      "description": "Other useful reading lists in the same space:",
+      "items": [
+        {
+          "node_type": "item",
+          "title": "e2b-dev/awesome-ai-agents",
+          "description": "a large, media-rich directory of open- and closed-source agent products & frameworks (the build side).",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2026-07-09T17:41:48Z",
+            "owner": "e2b-dev",
+            "repo": "awesome-ai-agents",
+            "stars": 29392
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Hannibal046/Awesome-LLM",
+          "description": "the canonical hub of large language model papers, tools, and resources.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2025-07-31T02:38:24Z",
+            "owner": "Hannibal046",
+            "repo": "Awesome-LLM",
+            "stars": 27256
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "WooooDyy/LLM-Agent-Paper-List",
+          "description": "survey-backed agent paper list from The Rise and Potential of LLM-Based Agents (Fudan NLP).",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2025-09-12T03:08:58Z",
+            "owner": "WooooDyy",
+            "repo": "LLM-Agent-Paper-List",
+            "stars": 8170
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "luo-junyu/Awesome-Agent-Papers",
+          "description": "taxonomy-driven survey companion on agent construction, collaboration, and evolution.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2025-11-07T09:27:28Z",
+            "owner": "luo-junyu",
+            "repo": "Awesome-Agent-Papers",
+            "stars": 2821
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "kyrolabs/awesome-agents",
+          "description": "curated agent frameworks and libraries, each with a live star badge.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2026-08-12T07:54:22Z",
+            "owner": "kyrolabs",
+            "repo": "awesome-agents",
+            "stars": 2731
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "ysymyth/awesome-language-agents",
+          "description": "language-agent reading list organized around the CoALA framework.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "TeX",
+            "last_commit": "2025-01-16T19:58:19Z",
+            "owner": "ysymyth",
+            "repo": "awesome-language-agents",
+            "stars": 1247
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "js-lee-AI/awesome-agent-loop-papers",
+          "description": "the sibling of this list, going one level down into the agent loop itself: control strategies, trained loops, skills, harnesses, and the evaluation and safety problems the loop creates.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2026-08-12T18:19:05Z",
+            "owner": "js-lee-AI",
+            "repo": "awesome-agent-loop-papers",
+            "stars": 1
+          }
+        }
+      ],
+      "title": "🔗 Related Awesome Lists"
+    },
+    {
+      "description": "The survey is posted on Preprints.org as LLM Agents: A Survey, DOI . That versioned record is the one to cite. The same 47-page paper is also in this repository at so you can read it without leaving GitHub.\nIf this list or the survey is useful to you, please cite:\nGitHub's Cite this repository button reads and returns the same record in APA or BibTeX.\nThe companion deep-dive, The Agent Loop: A Survey of Control Strategies, Skills, and Harnesses for LLM Agents, is a separate record: DOI . Cite whichever one you actually drew on.",
+      "items": [],
+      "title": "📄 Citation"
+    },
+    {
+      "description": "This list is community-maintained. Thanks to everyone who has suggested, verified, or annotated a paper:\nListed by hand rather than generated, so that credit follows the contribution rather than who happened to run git commit. See the contributor graph for commit-level history.\nWant your avatar here? See CONTRIBUTING.md: a single well-formatted PR is all it takes.",
+      "items": [],
+      "title": "👥 Contributors"
+    },
+    {
+      "description": "Released under the MIT License.",
+      "items": [],
+      "title": "📜 License"
+    },
+    {
+      "description": "",
+      "items": [
+        {
+          "node_type": "item",
+          "title": "2026-08-12: Four community additions merged: Ouroboros (@razzant",
+          "description": ", #8), CORAL (@BobbyZhouZijian, #9), and WebAgent plus the world-model-augmented web agent (@JEONGSEJIN, #6). Every arXiv ID checked against the API before merge, and one code link dropped that had been copied from the entry above it. 467 to 471.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-08-12T18:18:11Z",
+            "owner": "js-lee-AI",
+            "repo": "awesome-llm-agent-papers",
+            "stars": 64
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "2026-08-08: Nine glosses had been cut off mid-sentence by an earlier backfill, three of them leaving a parenthesis open. All nine rewritten from the papers' own abstracts, and Agon gained the link that @WhymustIhaveaname",
+          "description": "supplied in #5. A checker for this now lives in .",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-08-12T18:18:11Z",
+            "owner": "js-lee-AI",
+            "repo": "awesome-llm-agent-papers",
+            "stars": 64
+          }
+        }
+      ],
+      "title": "🗓️ Updates"
+    }
+  ],
+  "metadata": {
+    "last_updated": "2026-08-13T04:16:43.909Z",
+    "original_repository": "js-lee-AI/awesome-llm-agent-papers",
+    "original_repository_sha": "184f4bf8f83f19612090c2e3cd6578d6a3511fa0",
+    "enhanced_repository": "enhansome/enhansome-llm-agent-papers",
+    "enhanced_repository_description": null,
+    "title": "Awesome llm agent papers with stars"
+  }
+}
