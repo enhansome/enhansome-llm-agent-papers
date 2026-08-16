@@ -34,7 +34,7 @@
             "last_commit": "2025-07-29T13:44:13Z",
             "owner": "microsoft",
             "repo": "JARVIS",
-            "stars": 25162
+            "stars": 25164
           }
         },
         {
@@ -48,7 +48,7 @@
             "last_commit": "2024-08-05T21:38:56Z",
             "owner": "joonspk-research",
             "repo": "generative_agents",
-            "stars": 21932
+            "stars": 21937
           }
         },
         {
@@ -62,7 +62,7 @@
             "last_commit": "2025-09-12T03:08:58Z",
             "owner": "WooooDyy",
             "repo": "LLM-Agent-Paper-List",
-            "stars": 8171
+            "stars": 8172
           }
         },
         {
@@ -90,7 +90,7 @@
             "last_commit": "2024-02-06T02:34:32Z",
             "owner": "ysymyth",
             "repo": "ReAct",
-            "stars": 4107
+            "stars": 4108
           }
         },
         {
@@ -104,7 +104,7 @@
             "last_commit": "2025-01-14T07:54:02Z",
             "owner": "noahshinn",
             "repo": "reflexion",
-            "stars": 3228
+            "stars": 3229
           }
         },
         {
@@ -132,7 +132,7 @@
             "last_commit": "2025-11-07T09:27:28Z",
             "owner": "luo-junyu",
             "repo": "Awesome-Agent-Papers",
-            "stars": 2822
+            "stars": 2823
           }
         },
         {
@@ -258,7 +258,7 @@
             "last_commit": "2026-06-17T11:12:32Z",
             "owner": "ggjy",
             "repo": "Awesome-Agent-Engineering",
-            "stars": 60
+            "stars": 59
           }
         },
         {
@@ -306,7 +306,7 @@
             "last_commit": "2026-01-21T10:12:33Z",
             "owner": "FoundationAgents",
             "repo": "MetaGPT",
-            "stars": 69816
+            "stars": 69841
           }
         },
         {
@@ -320,7 +320,7 @@
             "last_commit": "2026-08-10T22:08:15Z",
             "owner": "SWE-agent",
             "repo": "SWE-agent",
-            "stars": 20057
+            "stars": 20062
           }
         },
         {
@@ -331,10 +331,10 @@
           "repo_info": {
             "archived": false,
             "language": "Python",
-            "last_commit": "2026-08-13T02:20:00Z",
+            "last_commit": "2026-08-15T03:30:48Z",
             "owner": "lsdefine",
             "repo": "GenericAgent",
-            "stars": 13776
+            "stars": 13781
           }
         },
         {
@@ -348,7 +348,7 @@
             "last_commit": "2026-04-13T03:19:45Z",
             "owner": "ShishirPatil",
             "repo": "gorilla",
-            "stars": 12994
+            "stars": 12996
           }
         },
         {
@@ -362,7 +362,7 @@
             "last_commit": "2026-01-21T05:33:12Z",
             "owner": "MoonshotAI",
             "repo": "Kimi-K2",
-            "stars": 11106
+            "stars": 11105
           }
         },
         {
@@ -376,7 +376,7 @@
             "last_commit": "2025-03-19T11:01:38Z",
             "owner": "TencentQQGYLab",
             "repo": "AppAgent",
-            "stars": 6840
+            "stars": 6843
           }
         },
         {
@@ -404,7 +404,7 @@
             "last_commit": "2026-02-08T17:01:05Z",
             "owner": "THUDM",
             "repo": "AgentBench",
-            "stars": 3668
+            "stars": 3669
           }
         },
         {
@@ -446,7 +446,7 @@
             "last_commit": "2025-11-26T21:16:00Z",
             "owner": "web-arena-x",
             "repo": "webarena",
-            "stars": 1578
+            "stars": 1579
           }
         },
         {
@@ -457,10 +457,10 @@
           "repo_info": {
             "archived": false,
             "language": "Python",
-            "last_commit": "2026-08-14T08:11:10Z",
+            "last_commit": "2026-08-16T01:16:00Z",
             "owner": "razzant",
             "repo": "ouroboros",
-            "stars": 1155
+            "stars": 1164
           }
         },
         {
@@ -485,7 +485,7 @@
           "repo_info": {
             "archived": false,
             "language": "Python",
-            "last_commit": "2026-08-13T15:54:12Z",
+            "last_commit": "2026-08-16T02:21:14Z",
             "owner": "NVIDIA-NeMo",
             "repo": "labs-molt",
             "stars": 910
@@ -499,10 +499,10 @@
           "repo_info": {
             "archived": false,
             "language": "Python",
-            "last_commit": "2026-08-12T04:40:48Z",
+            "last_commit": "2026-08-15T05:10:42Z",
             "owner": "Human-Agent-Society",
             "repo": "CORAL",
-            "stars": 889
+            "stars": 890
           }
         },
         {
@@ -516,7 +516,7 @@
             "last_commit": "2024-07-30T20:29:27Z",
             "owner": "lapisrocks",
             "repo": "LanguageAgentTreeSearch",
-            "stars": 849
+            "stars": 850
           }
         },
         {
@@ -544,7 +544,7 @@
             "last_commit": "2026-08-14T20:32:51Z",
             "owner": "llm-as-a-verifier",
             "repo": "llm-as-a-verifier",
-            "stars": 636
+            "stars": 638
           }
         },
         {
@@ -577,6 +577,20 @@
         },
         {
           "node_type": "item",
+          "title": "AgentArk: Distilling Multi-Agent Intelligence into a Single LLM Agent (Luo et al., arXiv 2026) - Distills multi-agent intelligence into a single LLM agent, retaining collaboration gains at lower cost. [code",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-05-09T18:45:07Z",
+            "owner": "AIFrontierLab",
+            "repo": "AgentArk",
+            "stars": 110
+          }
+        },
+        {
+          "node_type": "item",
           "title": "Orchestral AI: A Framework for Agent Orchestration (Roman et al., arXiv 2026) - Framework for composing and orchestrating specialized agents behind a single interface. [code",
           "description": "]",
           "children": [],
@@ -591,20 +605,6 @@
         },
         {
           "node_type": "item",
-          "title": "AgentArk: Distilling Multi-Agent Intelligence into a Single LLM Agent (Luo et al., arXiv 2026) - Distills multi-agent intelligence into a single LLM agent, retaining collaboration gains at lower cost. [code",
-          "description": "]",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "language": "Python",
-            "last_commit": "2026-05-09T18:45:07Z",
-            "owner": "AIFrontierLab",
-            "repo": "AgentArk",
-            "stars": 108
-          }
-        },
-        {
-          "node_type": "item",
           "title": "AgentFactory: A Self-Evolving Framework Through Executable Subagent Accumulation and Reuse (Zhang et al., arXiv 2026) - Accumulates capability by saving successful solutions as reusable executable subagent code rather than textual prompts, refined by execution feedback. [code",
           "description": "]",
           "children": [],
@@ -614,7 +614,7 @@
             "last_commit": "2026-07-10T23:19:50Z",
             "owner": "zzatpku",
             "repo": "AgentFactory",
-            "stars": 61
+            "stars": 62
           }
         },
         {
@@ -667,7 +667,7 @@
             "last_commit": "2025-06-27T08:35:54Z",
             "owner": "deepseek-ai",
             "repo": "DeepSeek-R1",
-            "stars": 92011
+            "stars": 92021
           }
         },
         {
@@ -681,7 +681,7 @@
             "last_commit": "2026-08-04T11:50:56Z",
             "owner": "microsoft",
             "repo": "RD-Agent",
-            "stars": 14227
+            "stars": 14235
           }
         },
         {
@@ -695,7 +695,7 @@
             "last_commit": "2025-11-13T21:56:33Z",
             "owner": "PeterGriffinJin",
             "repo": "Search-R1",
-            "stars": 5293
+            "stars": 5297
           }
         },
         {
@@ -832,10 +832,10 @@
           "repo_info": {
             "archived": false,
             "language": "Python",
-            "last_commit": "2026-08-15T00:58:27Z",
+            "last_commit": "2026-08-15T19:32:06Z",
             "owner": "alexisfox7",
             "repo": "PRO-LONG",
-            "stars": 378
+            "stars": 394
           }
         },
         {
@@ -863,7 +863,7 @@
             "last_commit": "2024-01-03T12:10:53Z",
             "owner": "archiki",
             "repo": "ADaPT",
-            "stars": 93
+            "stars": 94
           }
         },
         {
@@ -1006,10 +1006,10 @@
           "repo_info": {
             "archived": false,
             "language": "Python",
-            "last_commit": "2026-08-14T13:54:53Z",
+            "last_commit": "2026-08-15T10:43:29Z",
             "owner": "mem0ai",
             "repo": "mem0",
-            "stars": 63280
+            "stars": 63338
           }
         },
         {
@@ -1020,10 +1020,10 @@
           "repo_info": {
             "archived": false,
             "language": "Python",
-            "last_commit": "2026-08-13T21:59:47Z",
+            "last_commit": "2026-08-15T17:52:11Z",
             "owner": "getzep",
             "repo": "graphiti",
-            "stars": 29932
+            "stars": 29958
           }
         },
         {
@@ -1037,7 +1037,7 @@
             "last_commit": "2026-08-14T03:08:41Z",
             "owner": "letta-ai",
             "repo": "letta",
-            "stars": 24247
+            "stars": 24260
           }
         },
         {
@@ -1048,10 +1048,10 @@
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
-            "last_commit": "2026-08-14T13:40:56Z",
+            "last_commit": "2026-08-15T21:25:36Z",
             "owner": "MemTensor",
             "repo": "MemOS",
-            "stars": 10722
+            "stars": 10727
           }
         },
         {
@@ -1079,7 +1079,7 @@
             "last_commit": "2026-07-24T07:40:38Z",
             "owner": "aiming-lab",
             "repo": "SimpleMem",
-            "stars": 3709
+            "stars": 3708
           }
         },
         {
@@ -1090,10 +1090,10 @@
           "repo_info": {
             "archived": false,
             "language": "Python",
-            "last_commit": "2026-08-14T06:02:52Z",
+            "last_commit": "2026-08-15T18:20:32Z",
             "owner": "Mirix-AI",
             "repo": "MIRIX",
-            "stars": 3483
+            "stars": 3430
           }
         },
         {
@@ -1121,7 +1121,7 @@
             "last_commit": "2026-05-19T19:11:05Z",
             "owner": "ace-agent",
             "repo": "ace",
-            "stars": 1264
+            "stars": 1263
           }
         },
         {
@@ -1135,7 +1135,7 @@
             "last_commit": "2024-08-13T03:21:32Z",
             "owner": "snap-research",
             "repo": "locomo",
-            "stars": 1098
+            "stars": 1100
           }
         },
         {
@@ -1149,7 +1149,7 @@
             "last_commit": "2026-05-11T22:49:24Z",
             "owner": "xiaowu0162",
             "repo": "LongMemEval",
-            "stars": 1004
+            "stars": 1006
           }
         },
         {
@@ -1163,7 +1163,7 @@
             "last_commit": "2026-03-05T11:44:03Z",
             "owner": "WujiangXu",
             "repo": "A-mem",
-            "stars": 942
+            "stars": 943
           }
         },
         {
@@ -1205,7 +1205,7 @@
             "last_commit": "2026-07-09T05:51:21Z",
             "owner": "TIMAN-group",
             "repo": "PlugMem",
-            "stars": 287
+            "stars": 288
           }
         },
         {
@@ -1219,7 +1219,7 @@
             "last_commit": "2026-04-09T05:44:55Z",
             "owner": "bingreeky",
             "repo": "GMemory",
-            "stars": 266
+            "stars": 267
           }
         },
         {
@@ -1247,7 +1247,7 @@
             "last_commit": "2026-04-16T09:47:33Z",
             "owner": "nemori-ai",
             "repo": "nemori",
-            "stars": 209
+            "stars": 208
           }
         },
         {
@@ -1365,7 +1365,7 @@
             "last_commit": "2026-04-13T03:19:45Z",
             "owner": "ShishirPatil",
             "repo": "gorilla",
-            "stars": 12994
+            "stars": 12996
           }
         },
         {
@@ -1665,7 +1665,7 @@
             "last_commit": "2026-04-15T11:59:09Z",
             "owner": "microsoft",
             "repo": "autogen",
-            "stars": 60426
+            "stars": 60439
           }
         },
         {
@@ -1679,7 +1679,7 @@
             "last_commit": "2026-07-24T08:01:27Z",
             "owner": "OpenBMB",
             "repo": "ChatDev",
-            "stars": 33995
+            "stars": 34003
           }
         },
         {
@@ -1693,7 +1693,7 @@
             "last_commit": "2026-08-14T17:34:44Z",
             "owner": "camel-ai",
             "repo": "camel",
-            "stars": 17587
+            "stars": 17590
           }
         },
         {
@@ -1707,7 +1707,7 @@
             "last_commit": "2024-09-09T05:47:44Z",
             "owner": "OpenBMB",
             "repo": "AgentVerse",
-            "stars": 5105
+            "stars": 5108
           }
         },
         {
@@ -1819,7 +1819,7 @@
             "last_commit": "2024-05-16T07:46:26Z",
             "owner": "SALT-NLP",
             "repo": "DyLAN",
-            "stars": 211
+            "stars": 212
           }
         },
         {
@@ -1970,7 +1970,7 @@
             "last_commit": "2026-08-13T04:30:15Z",
             "owner": "HKUDS",
             "repo": "CLI-Anything",
-            "stars": 47115
+            "stars": 47410
           }
         },
         {
@@ -1984,7 +1984,7 @@
             "last_commit": "2026-08-14T22:49:14Z",
             "owner": "google-research",
             "repo": "google-research",
-            "stars": 38532
+            "stars": 38540
           }
         },
         {
@@ -1998,7 +1998,7 @@
             "last_commit": "2026-02-27T13:12:11Z",
             "owner": "Alibaba-NLP",
             "repo": "DeepResearch",
-            "stars": 19829
+            "stars": 19831
           }
         },
         {
@@ -2012,7 +2012,7 @@
             "last_commit": "2026-06-16T00:14:01Z",
             "owner": "Physical-Intelligence",
             "repo": "openpi",
-            "stars": 13308
+            "stars": 13314
           }
         },
         {
@@ -2026,7 +2026,7 @@
             "last_commit": "2026-01-27T04:57:26Z",
             "owner": "bytedance",
             "repo": "UI-TARS",
-            "stars": 11340
+            "stars": 11342
           }
         },
         {
@@ -2040,7 +2040,7 @@
             "last_commit": "2026-07-07T09:22:18Z",
             "owner": "X-PLUG",
             "repo": "MobileAgent",
-            "stars": 9082
+            "stars": 9085
           }
         },
         {
@@ -2054,7 +2054,7 @@
             "last_commit": "2026-07-07T09:22:18Z",
             "owner": "X-PLUG",
             "repo": "MobileAgent",
-            "stars": 9082
+            "stars": 9085
           }
         },
         {
@@ -2124,7 +2124,7 @@
             "last_commit": "2024-03-04T03:36:39Z",
             "owner": "MinorJerry",
             "repo": "WebVoyager",
-            "stars": 1117
+            "stars": 1118
           }
         },
         {
@@ -2166,7 +2166,7 @@
             "last_commit": "2026-07-16T20:18:37Z",
             "owner": "google-research",
             "repo": "android_world",
-            "stars": 847
+            "stars": 846
           }
         },
         {
@@ -2194,7 +2194,7 @@
             "last_commit": "2026-08-11T02:40:43Z",
             "owner": "zli12321",
             "repo": "LHTB",
-            "stars": 615
+            "stars": 616
           }
         },
         {
@@ -2208,7 +2208,7 @@
             "last_commit": "2024-09-06T04:00:38Z",
             "owner": "princeton-nlp",
             "repo": "WebShop",
-            "stars": 581
+            "stars": 583
           }
         },
         {
@@ -2236,7 +2236,7 @@
             "last_commit": "2026-08-12T05:20:25Z",
             "owner": "Linzwcs",
             "repo": "EvoPolicyGym",
-            "stars": 244
+            "stars": 248
           }
         },
         {
@@ -2386,8 +2386,8 @@
           "children": [],
           "repo_info": {
             "archived": false,
-            "language": null,
-            "last_commit": "2026-07-17T13:04:05Z",
+            "language": "Python",
+            "last_commit": "2026-08-15T11:40:59Z",
             "owner": "pkgunboat",
             "repo": "ParaGUIBench",
             "stars": 5
@@ -2444,7 +2444,7 @@
             "last_commit": "2026-07-18T15:55:05Z",
             "owner": "TauricResearch",
             "repo": "TradingAgents",
-            "stars": 98189
+            "stars": 98359
           }
         },
         {
@@ -2455,10 +2455,10 @@
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
-            "last_commit": "2026-08-15T01:19:09Z",
+            "last_commit": "2026-08-15T18:02:33Z",
             "owner": "OpenHands",
             "repo": "OpenHands",
-            "stars": 84072
+            "stars": 84146
           }
         },
         {
@@ -2472,7 +2472,7 @@
             "last_commit": "2026-08-02T03:23:48Z",
             "owner": "AI4Finance-Foundation",
             "repo": "FinGPT",
-            "stars": 21089
+            "stars": 21095
           }
         },
         {
@@ -2486,7 +2486,7 @@
             "last_commit": "2025-12-19T07:46:21Z",
             "owner": "SakanaAI",
             "repo": "AI-Scientist",
-            "stars": 14393
+            "stars": 14398
           }
         },
         {
@@ -2500,7 +2500,7 @@
             "last_commit": "2025-12-19T07:46:32Z",
             "owner": "SakanaAI",
             "repo": "AI-Scientist-v2",
-            "stars": 7005
+            "stars": 7007
           }
         },
         {
@@ -2570,7 +2570,7 @@
             "last_commit": "2024-12-19T17:47:04Z",
             "owner": "ur-whitelab",
             "repo": "chemcrow-public",
-            "stars": 946
+            "stars": 945
           }
         },
         {
@@ -2612,7 +2612,7 @@
             "last_commit": "2026-06-30T18:45:59Z",
             "owner": "Ayanami1314",
             "repo": "swe-pruner",
-            "stars": 308
+            "stars": 310
           }
         },
         {
@@ -2654,7 +2654,7 @@
             "last_commit": "2026-07-18T05:25:41Z",
             "owner": "OSU-NLP-Group",
             "repo": "ScienceAgentBench",
-            "stars": 154
+            "stars": 155
           }
         },
         {
@@ -2844,10 +2844,10 @@
           "repo_info": {
             "archived": false,
             "language": "Python",
-            "last_commit": "2026-08-15T00:42:31Z",
+            "last_commit": "2026-08-15T04:51:08Z",
             "owner": "SWE-bench",
             "repo": "SWE-bench",
-            "stars": 5637
+            "stars": 5642
           }
         },
         {
@@ -2861,7 +2861,7 @@
             "last_commit": "2026-07-11T05:19:08Z",
             "owner": "harbor-framework",
             "repo": "terminal-bench-1",
-            "stars": 2533
+            "stars": 2534
           }
         },
         {
@@ -2875,7 +2875,7 @@
             "last_commit": "2026-08-14T20:59:57Z",
             "owner": "sierra-research",
             "repo": "tau2-bench",
-            "stars": 1797
+            "stars": 1798
           }
         },
         {
@@ -2889,7 +2889,7 @@
             "last_commit": "2026-03-18T17:36:06Z",
             "owner": "sierra-research",
             "repo": "tau-bench",
-            "stars": 1381
+            "stars": 1382
           }
         },
         {
@@ -2914,10 +2914,10 @@
           "repo_info": {
             "archived": false,
             "language": "Python",
-            "last_commit": "2026-08-08T01:43:46Z",
+            "last_commit": "2026-08-15T14:18:31Z",
             "owner": "TIGER-AI-Lab",
             "repo": "ClawBench",
-            "stars": 563
+            "stars": 566
           }
         },
         {
@@ -3001,7 +3001,7 @@
             "last_commit": "2026-08-10T17:05:27Z",
             "owner": "ucbepic",
             "repo": "DataAgentBench",
-            "stars": 143
+            "stars": 144
           }
         },
         {
@@ -3029,7 +3029,7 @@
             "last_commit": "2026-07-17T18:08:43Z",
             "owner": "The-AI-Alliance",
             "repo": "cube-standard",
-            "stars": 53
+            "stars": 54
           }
         },
         {
@@ -3217,7 +3217,7 @@
             "last_commit": "2026-06-02T10:01:31Z",
             "owner": "ethz-spylab",
             "repo": "agentdojo",
-            "stars": 748
+            "stars": 749
           }
         },
         {
@@ -3231,7 +3231,7 @@
             "last_commit": "2026-06-08T08:14:09Z",
             "owner": "AI45Lab",
             "repo": "AgentDoG",
-            "stars": 683
+            "stars": 680
           }
         },
         {
@@ -3242,10 +3242,10 @@
           "repo_info": {
             "archived": false,
             "language": "Python",
-            "last_commit": "2026-08-14T14:38:08Z",
+            "last_commit": "2026-08-16T00:48:07Z",
             "owner": "UKGovernmentBEIS",
             "repo": "inspect_evals",
-            "stars": 625
+            "stars": 626
           }
         },
         {
@@ -3298,7 +3298,7 @@
           "repo_info": {
             "archived": false,
             "language": "Python",
-            "last_commit": "2026-06-17T00:27:53Z",
+            "last_commit": "2026-08-16T02:54:41Z",
             "owner": "AI-secure",
             "repo": "AgentPoison",
             "stars": 235
@@ -3469,7 +3469,7 @@
             "last_commit": "2026-03-16T02:45:09Z",
             "owner": "Yunhao-Feng",
             "repo": "BackdoorAgent",
-            "stars": 44
+            "stars": 45
           }
         },
         {
@@ -3497,7 +3497,7 @@
             "last_commit": "2026-07-17T02:16:14Z",
             "owner": "albert-y1n",
             "repo": "PISmith",
-            "stars": 24
+            "stars": 25
           }
         },
         {
@@ -3573,7 +3573,7 @@
             "last_commit": "2026-07-09T17:41:48Z",
             "owner": "e2b-dev",
             "repo": "awesome-ai-agents",
-            "stars": 29424
+            "stars": 29439
           }
         },
         {
@@ -3587,7 +3587,7 @@
             "last_commit": "2025-07-31T02:38:24Z",
             "owner": "Hannibal046",
             "repo": "Awesome-LLM",
-            "stars": 27264
+            "stars": 27266
           }
         },
         {
@@ -3601,7 +3601,7 @@
             "last_commit": "2025-09-12T03:08:58Z",
             "owner": "WooooDyy",
             "repo": "LLM-Agent-Paper-List",
-            "stars": 8171
+            "stars": 8172
           }
         },
         {
@@ -3615,7 +3615,7 @@
             "last_commit": "2025-11-07T09:27:28Z",
             "owner": "luo-junyu",
             "repo": "Awesome-Agent-Papers",
-            "stars": 2822
+            "stars": 2823
           }
         },
         {
@@ -3626,10 +3626,10 @@
           "repo_info": {
             "archived": false,
             "language": null,
-            "last_commit": "2026-08-13T06:58:58Z",
+            "last_commit": "2026-08-16T02:56:53Z",
             "owner": "kyrolabs",
             "repo": "awesome-agents",
-            "stars": 2742
+            "stars": 2748
           }
         },
         {
@@ -3657,7 +3657,7 @@
             "last_commit": "2026-08-12T18:19:05Z",
             "owner": "js-lee-AI",
             "repo": "awesome-agent-loop-papers",
-            "stars": 2
+            "stars": 3
           }
         }
       ],
@@ -3714,7 +3714,7 @@
     }
   ],
   "metadata": {
-    "last_updated": "2026-08-15T03:25:25.447Z",
+    "last_updated": "2026-08-16T03:35:23.301Z",
     "original_repository": "js-lee-AI/awesome-llm-agent-papers",
     "original_repository_sha": "184f4bf8f83f19612090c2e3cd6578d6a3511fa0",
     "enhanced_repository": "enhansome/enhansome-llm-agent-papers",
