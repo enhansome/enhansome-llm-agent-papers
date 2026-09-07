@@ -16,10 +16,10 @@
             "language": "Python",
             "license": "MIT",
             "last_commit": "2025-07-29T13:44:13Z",
-            "open_issues": 4074,
+            "open_issues": 4081,
             "owner": "microsoft",
             "repo": "JARVIS",
-            "stars": 25235,
+            "stars": 25238,
             "topics": [
               "deep-learning",
               "platform",
@@ -92,7 +92,7 @@
             "open_issues": 8,
             "owner": "MineDojo",
             "repo": "Voyager",
-            "stars": 7178,
+            "stars": 7180,
             "topics": [
               "embodied-learning",
               "large-language-models",
@@ -118,7 +118,7 @@
             "open_issues": 5,
             "owner": "ysymyth",
             "repo": "ReAct",
-            "stars": 4153,
+            "stars": 4155,
             "topics": [
               "decision-making",
               "large-language-models",
@@ -145,7 +145,7 @@
             "open_issues": 24,
             "owner": "noahshinn",
             "repo": "reflexion",
-            "stars": 3255,
+            "stars": 3261,
             "topics": [
               "ai",
               "artificial-intelligence",
@@ -191,7 +191,7 @@
             "open_issues": 27,
             "owner": "luo-junyu",
             "repo": "Awesome-Agent-Papers",
-            "stars": 2844,
+            "stars": 2846,
             "topics": [
               "agent",
               "awesome-list",
@@ -217,7 +217,7 @@
             "open_issues": 18,
             "owner": "weitianxin",
             "repo": "Awesome-Agentic-Reasoning",
-            "stars": 1355,
+            "stars": 1356,
             "topics": [
               "agent",
               "agentic-ai",
@@ -355,7 +355,7 @@
             "open_issues": 0,
             "owner": "selfimproving-agent",
             "repo": "Awesome-Self-Improving-Agents",
-            "stars": 451,
+            "stars": 454,
             "topics": [
               "agent",
               "agent-survey",
@@ -508,7 +508,7 @@
             "open_issues": 131,
             "owner": "FoundationAgents",
             "repo": "MetaGPT",
-            "stars": 70233,
+            "stars": 70247,
             "topics": [
               "agent",
               "gpt",
@@ -535,7 +535,7 @@
             "open_issues": 100,
             "owner": "SWE-agent",
             "repo": "SWE-agent",
-            "stars": 20247,
+            "stars": 20263,
             "topics": [
               "agent",
               "agent-based-model",
@@ -564,7 +564,7 @@
             "open_issues": 163,
             "owner": "lsdefine",
             "repo": "GenericAgent",
-            "stars": 14122,
+            "stars": 14130,
             "topics": [
               "ai-agent",
               "automation",
@@ -601,7 +601,7 @@
             "open_issues": 278,
             "owner": "ShishirPatil",
             "repo": "gorilla",
-            "stars": 13016,
+            "stars": 13017,
             "topics": [
               "api",
               "api-documentation",
@@ -631,7 +631,7 @@
             "open_issues": 71,
             "owner": "MoonshotAI",
             "repo": "Kimi-K2",
-            "stars": 11109,
+            "stars": 11107,
             "topics": []
           },
           "first_seen": "2026-08-28T14:36:34.740Z"
@@ -733,7 +733,7 @@
             "open_issues": 16,
             "owner": "llm-as-a-verifier",
             "repo": "llm-as-a-verifier",
-            "stars": 3090,
+            "stars": 3097,
             "topics": []
           },
           "first_seen": "2026-08-28T14:36:34.740Z"
@@ -754,7 +754,7 @@
             "open_issues": 21,
             "owner": "OS-Copilot",
             "repo": "OS-Copilot",
-            "stars": 1796,
+            "stars": 1795,
             "topics": []
           },
           "first_seen": "2026-08-28T14:36:34.740Z"
@@ -801,7 +801,7 @@
             "open_issues": 103,
             "owner": "web-arena-x",
             "repo": "webarena",
-            "stars": 1601,
+            "stars": 1602,
             "topics": [
               "agent",
               "nlp"
@@ -821,11 +821,11 @@
             "id": 1155766506,
             "language": "Python",
             "license": "MIT",
-            "last_commit": "2026-09-06T03:34:27Z",
-            "open_issues": 247,
+            "last_commit": "2026-09-07T06:32:28Z",
+            "open_issues": 238,
             "owner": "razzant",
             "repo": "ouroboros",
-            "stars": 1270,
+            "stars": 1277,
             "topics": [
               "agentic-ai",
               "ai-agent",
@@ -864,10 +864,10 @@
             "language": "Python",
             "license": "Apache-2.0",
             "last_commit": "2026-09-04T23:07:03Z",
-            "open_issues": 17,
+            "open_issues": 18,
             "owner": "NVIDIA-NeMo",
             "repo": "labs-molt",
-            "stars": 1019,
+            "stars": 1023,
             "topics": []
           },
           "first_seen": "2026-08-28T14:36:34.740Z"
@@ -884,11 +884,11 @@
             "id": 1183057754,
             "language": "Python",
             "license": "Apache-2.0",
-            "last_commit": "2026-09-06T07:17:25Z",
+            "last_commit": "2026-09-06T14:32:15Z",
             "open_issues": 23,
             "owner": "Human-Agent-Society",
             "repo": "CORAL",
-            "stars": 957,
+            "stars": 959,
             "topics": [
               "agent-framework",
               "agent-orchestration",
@@ -951,7 +951,7 @@
             "open_issues": 8,
             "owner": "lapisrocks",
             "repo": "LanguageAgentTreeSearch",
-            "stars": 859,
+            "stars": 861,
             "topics": []
           },
           "first_seen": "2026-08-28T14:36:34.740Z"
@@ -1049,7 +1049,7 @@
             "open_issues": 3,
             "owner": "AIFrontierLab",
             "repo": "AgentArk",
-            "stars": 154,
+            "stars": 155,
             "topics": [
               "agent",
               "ai",
@@ -1171,7 +1171,7 @@
             "open_issues": 33,
             "owner": "deepseek-ai",
             "repo": "DeepSeek-R1",
-            "stars": 92019,
+            "stars": 92010,
             "topics": []
           },
           "first_seen": "2026-08-28T14:36:34.740Z"
@@ -1192,7 +1192,7 @@
             "open_issues": 218,
             "owner": "microsoft",
             "repo": "RD-Agent",
-            "stars": 14525,
+            "stars": 14534,
             "topics": [
               "agent",
               "ai",
@@ -1222,7 +1222,7 @@
             "open_issues": 36,
             "owner": "PeterGriffinJin",
             "repo": "Search-R1",
-            "stars": 5372,
+            "stars": 5378,
             "topics": []
           },
           "first_seen": "2026-08-28T14:36:34.740Z"
@@ -1243,7 +1243,7 @@
             "open_issues": 7,
             "owner": "spcl",
             "repo": "graph-of-thoughts",
-            "stars": 2836,
+            "stars": 2838,
             "topics": [
               "graph-of-thoughts",
               "graph-structures",
@@ -1314,7 +1314,7 @@
             "open_issues": 7,
             "owner": "A-EVO-Lab",
             "repo": "a-evolve",
-            "stars": 773,
+            "stars": 775,
             "topics": [
               "agents",
               "continual-learning",
@@ -1471,7 +1471,7 @@
             "open_issues": 1,
             "owner": "alexisfox7",
             "repo": "PRO-LONG",
-            "stars": 437,
+            "stars": 441,
             "topics": [
               "agent-memory",
               "arc-agi",
@@ -1586,7 +1586,7 @@
             "language": "Python",
             "license": null,
             "last_commit": "2026-08-23T07:06:23Z",
-            "open_issues": 0,
+            "open_issues": 1,
             "owner": "WxxShirley",
             "repo": "Agent-STAR",
             "stars": 45,
@@ -1768,7 +1768,7 @@
             "open_issues": 732,
             "owner": "mem0ai",
             "repo": "mem0",
-            "stars": 64762,
+            "stars": 64814,
             "topics": [
               "agentic-memory",
               "agentic-memory-system",
@@ -1800,11 +1800,11 @@
             "id": 840056306,
             "language": "Python",
             "license": "Apache-2.0",
-            "last_commit": "2026-09-04T17:52:53Z",
+            "last_commit": "2026-09-06T12:29:05Z",
             "open_issues": 490,
             "owner": "getzep",
             "repo": "graphiti",
-            "stars": 30621,
+            "stars": 30650,
             "topics": [
               "agents",
               "graph",
@@ -1830,7 +1830,7 @@
             "open_issues": 39,
             "owner": "letta-ai",
             "repo": "letta",
-            "stars": 24626,
+            "stars": 24638,
             "topics": [
               "ai",
               "ai-agents",
@@ -1856,7 +1856,7 @@
             "open_issues": 64,
             "owner": "MemTensor",
             "repo": "MemOS",
-            "stars": 11201,
+            "stars": 11212,
             "topics": [
               "agent",
               "agentic-ai",
@@ -1897,7 +1897,7 @@
             "open_issues": 8,
             "owner": "OSU-NLP-Group",
             "repo": "HippoRAG",
-            "stars": 3982,
+            "stars": 3983,
             "topics": []
           },
           "first_seen": "2026-08-28T14:36:34.740Z"
@@ -1918,7 +1918,7 @@
             "open_issues": 8,
             "owner": "aiming-lab",
             "repo": "SimpleMem",
-            "stars": 3752,
+            "stars": 3750,
             "topics": [
               "agent",
               "audio",
@@ -1982,7 +1982,7 @@
             "open_issues": 22,
             "owner": "BAI-LAB",
             "repo": "MemoryOS",
-            "stars": 1568,
+            "stars": 1569,
             "topics": [
               "agent",
               "language-model",
@@ -2012,7 +2012,7 @@
             "open_issues": 17,
             "owner": "ace-agent",
             "repo": "ace",
-            "stars": 1297,
+            "stars": 1299,
             "topics": []
           },
           "first_seen": "2026-08-28T14:36:34.740Z"
@@ -2033,7 +2033,7 @@
             "open_issues": 38,
             "owner": "snap-research",
             "repo": "locomo",
-            "stars": 1148,
+            "stars": 1151,
             "topics": []
           },
           "first_seen": "2026-08-28T14:36:34.740Z"
@@ -2054,7 +2054,7 @@
             "open_issues": 45,
             "owner": "xiaowu0162",
             "repo": "LongMemEval",
-            "stars": 1066,
+            "stars": 1068,
             "topics": []
           },
           "first_seen": "2026-08-28T14:36:34.740Z"
@@ -2075,7 +2075,7 @@
             "open_issues": 6,
             "owner": "WujiangXu",
             "repo": "A-mem",
-            "stars": 957,
+            "stars": 958,
             "topics": []
           },
           "first_seen": "2026-08-28T14:36:34.740Z"
@@ -2167,7 +2167,7 @@
             "open_issues": 11,
             "owner": "bingreeky",
             "repo": "GMemory",
-            "stars": 270,
+            "stars": 271,
             "topics": []
           },
           "first_seen": "2026-08-28T14:36:34.740Z"
@@ -2249,20 +2249,23 @@
           "children": [],
           "repo_info": {
             "archived": false,
-            "description": "Distill any document corpus into a navigable skill hierarchy for LLM agents — no retrieval system needed at serve time.",
-            "homepage": null,
+            "description": "Official Findings of EMNLP 2026 implementation of Corpus2Skill: compile a document corpus into a navigable skill hierarchy that LLM agents explore at query time, with document lookup instead of a serving-time vector-search service.",
+            "homepage": "https://arxiv.org/abs/2604.14572",
             "id": 1213313471,
             "language": "Python",
             "license": "MIT",
-            "last_commit": "2026-08-21T08:58:49Z",
+            "last_commit": "2026-09-06T15:14:15Z",
             "open_issues": 1,
             "owner": "dukesun99",
             "repo": "Corpus2Skill",
             "stars": 85,
             "topics": [
               "agent-skills",
+              "agentic-rag",
               "emnlp-2026",
+              "enterprise-knowledge",
               "enterprise-search",
+              "knowledge-management",
               "llm",
               "llm-agents",
               "question-answering",
@@ -2468,7 +2471,7 @@
             "open_issues": 278,
             "owner": "ShishirPatil",
             "repo": "gorilla",
-            "stars": 13016,
+            "stars": 13017,
             "topics": [
               "api",
               "api-documentation",
@@ -2545,7 +2548,7 @@
             "open_issues": 12,
             "owner": "Yifan-Song793",
             "repo": "RestGPT",
-            "stars": 1403,
+            "stars": 1404,
             "topics": []
           },
           "first_seen": "2026-08-28T14:36:34.740Z"
@@ -2958,10 +2961,10 @@
             "language": "Python",
             "license": "CC-BY-4.0",
             "last_commit": "2026-04-15T11:59:09Z",
-            "open_issues": 1049,
+            "open_issues": 1053,
             "owner": "microsoft",
             "repo": "autogen",
-            "stars": 60829,
+            "stars": 60846,
             "topics": [
               "agentic",
               "agentic-agi",
@@ -2993,7 +2996,7 @@
             "open_issues": 72,
             "owner": "OpenBMB",
             "repo": "ChatDev",
-            "stars": 34217,
+            "stars": 34227,
             "topics": []
           },
           "first_seen": "2026-08-28T14:36:34.740Z"
@@ -3010,11 +3013,11 @@
             "id": 615510678,
             "language": "Python",
             "license": "Apache-2.0",
-            "last_commit": "2026-09-03T05:28:46Z",
-            "open_issues": 492,
+            "last_commit": "2026-09-07T06:24:13Z",
+            "open_issues": 471,
             "owner": "camel-ai",
             "repo": "camel",
-            "stars": 17673,
+            "stars": 17678,
             "topics": [
               "agent",
               "ai-societies",
@@ -3072,7 +3075,7 @@
             "open_issues": 23,
             "owner": "togethercomputer",
             "repo": "MoA",
-            "stars": 2976,
+            "stars": 2977,
             "topics": []
           },
           "first_seen": "2026-08-28T14:36:34.740Z"
@@ -3370,7 +3373,7 @@
             "open_issues": 0,
             "owner": "UNITES-Lab",
             "repo": "GoA",
-            "stars": 47,
+            "stars": 48,
             "topics": []
           },
           "first_seen": "2026-08-28T14:36:34.740Z"
@@ -3460,10 +3463,10 @@
             "language": "Python",
             "license": "Apache-2.0",
             "last_commit": "2026-08-21T07:26:58Z",
-            "open_issues": 86,
+            "open_issues": 85,
             "owner": "HKUDS",
             "repo": "CLI-Anything",
-            "stars": 49044,
+            "stars": 49084,
             "topics": []
           },
           "first_seen": "2026-08-28T14:36:34.740Z"
@@ -3484,7 +3487,7 @@
             "open_issues": 1990,
             "owner": "google-research",
             "repo": "google-research",
-            "stars": 38693,
+            "stars": 38703,
             "topics": [
               "ai",
               "machine-learning",
@@ -3509,7 +3512,7 @@
             "open_issues": 92,
             "owner": "Alibaba-NLP",
             "repo": "DeepResearch",
-            "stars": 19913,
+            "stars": 19914,
             "topics": [
               "agent",
               "alibaba",
@@ -3537,10 +3540,10 @@
             "language": "Python",
             "license": "Apache-2.0",
             "last_commit": "2026-08-24T16:27:13Z",
-            "open_issues": 338,
+            "open_issues": 339,
             "owner": "Physical-Intelligence",
             "repo": "openpi",
-            "stars": 13654,
+            "stars": 13673,
             "topics": []
           },
           "first_seen": "2026-08-28T14:36:34.740Z"
@@ -3561,7 +3564,7 @@
             "open_issues": 56,
             "owner": "bytedance",
             "repo": "UI-TARS",
-            "stars": 11429,
+            "stars": 11431,
             "topics": [
               "research"
             ]
@@ -3584,7 +3587,7 @@
             "open_issues": 195,
             "owner": "X-PLUG",
             "repo": "MobileAgent",
-            "stars": 9169,
+            "stars": 9173,
             "topics": [
               "agent",
               "android",
@@ -3618,7 +3621,7 @@
             "open_issues": 195,
             "owner": "X-PLUG",
             "repo": "MobileAgent",
-            "stars": 9169,
+            "stars": 9173,
             "topics": [
               "agent",
               "android",
@@ -3649,10 +3652,10 @@
             "language": "Python",
             "license": "MIT",
             "last_commit": "2025-03-23T23:41:01Z",
-            "open_issues": 116,
+            "open_issues": 117,
             "owner": "openvla",
             "repo": "openvla",
-            "stars": 6957,
+            "stars": 6961,
             "topics": []
           },
           "first_seen": "2026-08-28T14:36:34.740Z"
@@ -3673,7 +3676,7 @@
             "open_issues": 202,
             "owner": "xlang-ai",
             "repo": "OSWorld",
-            "stars": 3125,
+            "stars": 3127,
             "topics": [
               "agent",
               "artificial-intelligence",
@@ -3806,6 +3809,27 @@
         },
         {
           "node_type": "item",
+          "title": "ALFWorld: Aligning Text and Embodied Environments for Interactive Learning",
+          "description": "(Shridhar et al., ICLR 2021) - Widely used benchmark for evaluating LLM-based embodied/household agents (ReAct, Reflexion), bridging text reasoning and embodied execution. [code]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "description": "ALFWorld: Aligning Text and Embodied Environments for Interactive Learning",
+            "homepage": null,
+            "id": 303795676,
+            "language": "Python",
+            "license": "MIT",
+            "last_commit": "2026-02-08T15:40:09Z",
+            "open_issues": 14,
+            "owner": "alfworld",
+            "repo": "alfworld",
+            "stars": 851,
+            "topics": []
+          },
+          "first_seen": "2026-08-28T14:36:34.740Z"
+        },
+        {
+          "node_type": "item",
           "title": "GPT-4V(ision) is a Generalist Web Agent, if Grounded",
           "description": "(Zheng et al., ICML 2024) - First systematic demonstration that multimodal LLMs can act as generalist visual web agents, catalyzing the shift to vision-grounded web/GUI agents. [code]",
           "children": [],
@@ -3824,27 +3848,6 @@
             "topics": [
               "agent"
             ]
-          },
-          "first_seen": "2026-08-28T14:36:34.740Z"
-        },
-        {
-          "node_type": "item",
-          "title": "ALFWorld: Aligning Text and Embodied Environments for Interactive Learning",
-          "description": "(Shridhar et al., ICLR 2021) - Widely used benchmark for evaluating LLM-based embodied/household agents (ReAct, Reflexion), bridging text reasoning and embodied execution. [code]",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "description": "ALFWorld: Aligning Text and Embodied Environments for Interactive Learning",
-            "homepage": null,
-            "id": 303795676,
-            "language": "Python",
-            "license": "MIT",
-            "last_commit": "2026-02-08T15:40:09Z",
-            "open_issues": 14,
-            "owner": "alfworld",
-            "repo": "alfworld",
-            "stars": 850,
-            "topics": []
           },
           "first_seen": "2026-08-28T14:36:34.740Z"
         },
@@ -4286,10 +4289,10 @@
             "language": "Python",
             "license": "Apache-2.0",
             "last_commit": "2026-09-01T05:38:45Z",
-            "open_issues": 363,
+            "open_issues": 365,
             "owner": "TauricResearch",
             "repo": "TradingAgents",
-            "stars": 102644,
+            "stars": 102788,
             "topics": [
               "agent",
               "finance",
@@ -4312,11 +4315,11 @@
             "id": 771302083,
             "language": "TypeScript",
             "license": "MIT",
-            "last_commit": "2026-09-05T21:32:55Z",
-            "open_issues": 663,
+            "last_commit": "2026-09-07T02:04:26Z",
+            "open_issues": 670,
             "owner": "OpenHands",
             "repo": "OpenHands",
-            "stars": 86298,
+            "stars": 86403,
             "topics": [
               "agent",
               "artificial-intelligence",
@@ -4343,11 +4346,11 @@
             "id": 600544354,
             "language": "Jupyter Notebook",
             "license": "MIT",
-            "last_commit": "2026-09-03T06:02:34Z",
+            "last_commit": "2026-09-07T03:16:33Z",
             "open_issues": 84,
             "owner": "AI4Finance-Foundation",
             "repo": "FinGPT",
-            "stars": 21212,
+            "stars": 21217,
             "topics": [
               "chatgpt",
               "finance",
@@ -4382,7 +4385,7 @@
             "open_issues": 119,
             "owner": "SakanaAI",
             "repo": "AI-Scientist",
-            "stars": 14502,
+            "stars": 14507,
             "topics": []
           },
           "first_seen": "2026-08-28T14:36:34.740Z"
@@ -4403,7 +4406,7 @@
             "open_issues": 78,
             "owner": "SakanaAI",
             "repo": "AI-Scientist-v2",
-            "stars": 7093,
+            "stars": 7098,
             "topics": []
           },
           "first_seen": "2026-08-28T14:36:34.740Z"
@@ -4445,7 +4448,7 @@
             "open_issues": 54,
             "owner": "OpenAutoCoder",
             "repo": "Agentless",
-            "stars": 2109,
+            "stars": 2107,
             "topics": [
               "agent",
               "artificial-intelligence",
@@ -4471,7 +4474,7 @@
             "open_issues": 3,
             "owner": "skyllwt",
             "repo": "AutoSci",
-            "stars": 1660,
+            "stars": 1661,
             "topics": []
           },
           "first_seen": "2026-08-28T14:36:34.740Z"
@@ -4534,7 +4537,7 @@
             "open_issues": 15,
             "owner": "ur-whitelab",
             "repo": "chemcrow-public",
-            "stars": 949,
+            "stars": 950,
             "topics": []
           },
           "first_seen": "2026-08-28T14:36:34.740Z"
@@ -4555,7 +4558,7 @@
             "open_issues": 0,
             "owner": "FudanSELab",
             "repo": "Agent4SE-Paper-List",
-            "stars": 555,
+            "stars": 556,
             "topics": [
               "agent",
               "artificial-intelligence",
@@ -4583,7 +4586,7 @@
             "open_issues": 2,
             "owner": "Ayanami1314",
             "repo": "swe-pruner",
-            "stars": 316,
+            "stars": 317,
             "topics": []
           },
           "first_seen": "2026-08-28T14:36:34.740Z"
@@ -4698,7 +4701,7 @@
             "open_issues": 5,
             "owner": "sunblaze-ucb",
             "repo": "vero",
-            "stars": 70,
+            "stars": 72,
             "topics": []
           },
           "first_seen": "2026-08-28T14:36:34.740Z"
@@ -4821,7 +4824,7 @@
             "open_issues": 1,
             "owner": "amazon-science",
             "repo": "PatientAgentBench",
-            "stars": 22,
+            "stars": 23,
             "topics": [
               "agents",
               "benchmark",
@@ -4979,7 +4982,7 @@
             "open_issues": 10,
             "owner": "SWE-bench",
             "repo": "SWE-bench",
-            "stars": 5782,
+            "stars": 5789,
             "topics": [
               "benchmark",
               "language-model",
@@ -5004,7 +5007,7 @@
             "open_issues": 319,
             "owner": "harbor-framework",
             "repo": "terminal-bench-1",
-            "stars": 2564,
+            "stars": 2568,
             "topics": []
           },
           "first_seen": "2026-08-28T14:36:34.740Z"
@@ -5022,10 +5025,10 @@
             "language": "Python",
             "license": "MIT",
             "last_commit": "2026-09-04T17:11:46Z",
-            "open_issues": 189,
+            "open_issues": 190,
             "owner": "sierra-research",
             "repo": "tau2-bench",
-            "stars": 1955,
+            "stars": 1962,
             "topics": [
               "ai",
               "benchmark",
@@ -5052,7 +5055,7 @@
             "open_issues": 53,
             "owner": "sierra-research",
             "repo": "tau-bench",
-            "stars": 1423,
+            "stars": 1425,
             "topics": []
           },
           "first_seen": "2026-08-28T14:36:34.740Z"
@@ -5098,7 +5101,7 @@
             "open_issues": 52,
             "owner": "TIGER-AI-Lab",
             "repo": "ClawBench",
-            "stars": 656,
+            "stars": 664,
             "topics": [
               "agent-evaluation",
               "agentic-ai",
@@ -5140,7 +5143,7 @@
             "open_issues": 2,
             "owner": "OSU-NLP-Group",
             "repo": "TravelPlanner",
-            "stars": 544,
+            "stars": 545,
             "topics": [
               "autonomous-agents",
               "language-agent",
@@ -5208,7 +5211,7 @@
             "open_issues": 11,
             "owner": "ucbepic",
             "repo": "DataAgentBench",
-            "stars": 155,
+            "stars": 157,
             "topics": [
               "agents",
               "data-agents",
@@ -5278,7 +5281,7 @@
             "open_issues": 6,
             "owner": "GAIR-NLP",
             "repo": "AgencyBench",
-            "stars": 95,
+            "stars": 96,
             "topics": []
           },
           "first_seen": "2026-08-28T14:36:34.740Z"
@@ -5379,7 +5382,7 @@
             "id": 1270274311,
             "language": "Python",
             "license": "MIT",
-            "last_commit": "2026-07-28T06:16:11Z",
+            "last_commit": "2026-09-06T12:54:53Z",
             "open_issues": 0,
             "owner": "Hik289",
             "repo": "Harness-induce-bias",
@@ -5596,10 +5599,10 @@
             "language": "Python",
             "license": "MIT",
             "last_commit": "2026-06-02T10:01:31Z",
-            "open_issues": 51,
+            "open_issues": 50,
             "owner": "ethz-spylab",
             "repo": "agentdojo",
-            "stars": 804,
+            "stars": 806,
             "topics": [
               "benchmark",
               "large-language-models",
@@ -5643,10 +5646,10 @@
             "language": "Python",
             "license": "MIT",
             "last_commit": "2026-09-06T02:05:50Z",
-            "open_issues": 203,
+            "open_issues": 206,
             "owner": "UKGovernmentBEIS",
             "repo": "inspect_evals",
-            "stars": 658,
+            "stars": 659,
             "topics": []
           },
           "first_seen": "2026-08-28T14:36:34.740Z"
@@ -5857,7 +5860,7 @@
             "open_issues": 2,
             "owner": "meg-tong",
             "repo": "sycophancy-eval",
-            "stars": 132,
+            "stars": 133,
             "topics": []
           },
           "first_seen": "2026-08-28T14:36:34.740Z"
@@ -6154,10 +6157,10 @@
             "language": null,
             "license": "NOASSERTION",
             "last_commit": "2026-08-21T18:52:45Z",
-            "open_issues": 995,
+            "open_issues": 1001,
             "owner": "e2b-dev",
             "repo": "awesome-ai-agents",
-            "stars": 29896,
+            "stars": 29921,
             "topics": [
               "agent",
               "ai",
@@ -6192,7 +6195,7 @@
             "open_issues": 448,
             "owner": "Hannibal046",
             "repo": "Awesome-LLM",
-            "stars": 27323,
+            "stars": 27330,
             "topics": []
           },
           "first_seen": "2026-08-28T14:36:34.740Z"
@@ -6240,7 +6243,7 @@
             "open_issues": 27,
             "owner": "luo-junyu",
             "repo": "Awesome-Agent-Papers",
-            "stars": 2844,
+            "stars": 2846,
             "topics": [
               "agent",
               "awesome-list",
@@ -6262,11 +6265,11 @@
             "id": 661283123,
             "language": null,
             "license": null,
-            "last_commit": "2026-09-05T16:43:02Z",
+            "last_commit": "2026-09-07T01:09:22Z",
             "open_issues": 1,
             "owner": "kyrolabs",
             "repo": "awesome-agents",
-            "stars": 2799,
+            "stars": 2802,
             "topics": []
           },
           "first_seen": "2026-08-28T14:36:34.740Z"
@@ -6358,7 +6361,7 @@
             "open_issues": 1,
             "owner": "js-lee-AI",
             "repo": "awesome-llm-agent-papers",
-            "stars": 73,
+            "stars": 74,
             "topics": [
               "agent-benchmark",
               "agent-survey",
@@ -6399,7 +6402,7 @@
             "open_issues": 1,
             "owner": "js-lee-AI",
             "repo": "awesome-llm-agent-papers",
-            "stars": 73,
+            "stars": 74,
             "topics": [
               "agent-benchmark",
               "agent-survey",
@@ -6440,7 +6443,7 @@
             "open_issues": 1,
             "owner": "js-lee-AI",
             "repo": "awesome-llm-agent-papers",
-            "stars": 73,
+            "stars": 74,
             "topics": [
               "agent-benchmark",
               "agent-survey",
@@ -6481,7 +6484,7 @@
             "open_issues": 1,
             "owner": "js-lee-AI",
             "repo": "awesome-llm-agent-papers",
-            "stars": 73,
+            "stars": 74,
             "topics": [
               "agent-benchmark",
               "agent-survey",
@@ -6522,7 +6525,7 @@
             "open_issues": 1,
             "owner": "js-lee-AI",
             "repo": "awesome-llm-agent-papers",
-            "stars": 73,
+            "stars": 74,
             "topics": [
               "agent-benchmark",
               "agent-survey",
@@ -6563,7 +6566,7 @@
             "open_issues": 1,
             "owner": "js-lee-AI",
             "repo": "awesome-llm-agent-papers",
-            "stars": 73,
+            "stars": 74,
             "topics": [
               "agent-benchmark",
               "agent-survey",
@@ -6604,7 +6607,7 @@
             "open_issues": 1,
             "owner": "js-lee-AI",
             "repo": "awesome-llm-agent-papers",
-            "stars": 73,
+            "stars": 74,
             "topics": [
               "agent-benchmark",
               "agent-survey",
@@ -6645,7 +6648,7 @@
             "open_issues": 1,
             "owner": "js-lee-AI",
             "repo": "awesome-llm-agent-papers",
-            "stars": 73,
+            "stars": 74,
             "topics": [
               "agent-benchmark",
               "agent-survey",
@@ -6686,7 +6689,7 @@
             "open_issues": 1,
             "owner": "js-lee-AI",
             "repo": "awesome-llm-agent-papers",
-            "stars": 73,
+            "stars": 74,
             "topics": [
               "agent-benchmark",
               "agent-survey",
@@ -6733,7 +6736,7 @@
             "open_issues": 1,
             "owner": "js-lee-AI",
             "repo": "awesome-llm-agent-papers",
-            "stars": 73,
+            "stars": 74,
             "topics": [
               "agent-benchmark",
               "agent-survey",
@@ -6774,7 +6777,7 @@
             "open_issues": 1,
             "owner": "js-lee-AI",
             "repo": "awesome-llm-agent-papers",
-            "stars": 73,
+            "stars": 74,
             "topics": [
               "agent-benchmark",
               "agent-survey",
@@ -6815,7 +6818,7 @@
             "open_issues": 1,
             "owner": "js-lee-AI",
             "repo": "awesome-llm-agent-papers",
-            "stars": 73,
+            "stars": 74,
             "topics": [
               "agent-benchmark",
               "agent-survey",
@@ -6856,7 +6859,7 @@
             "open_issues": 1,
             "owner": "js-lee-AI",
             "repo": "awesome-llm-agent-papers",
-            "stars": 73,
+            "stars": 74,
             "topics": [
               "agent-benchmark",
               "agent-survey",
@@ -6897,7 +6900,7 @@
             "open_issues": 1,
             "owner": "js-lee-AI",
             "repo": "awesome-llm-agent-papers",
-            "stars": 73,
+            "stars": 74,
             "topics": [
               "agent-benchmark",
               "agent-survey",
@@ -6927,7 +6930,7 @@
     }
   ],
   "metadata": {
-    "last_updated": "2026-09-06T07:19:26.983Z",
+    "last_updated": "2026-09-07T07:34:01.458Z",
     "original_repository_info": {
       "archived": false,
       "description": "A curated, continuously updated reading list of 200+ papers on LLM agents: planning, memory, tool use, multi-agent, evaluation & safety. Companion to the survey 'LLM Agents: A Survey'.",
@@ -6939,7 +6942,7 @@
       "open_issues": 1,
       "owner": "js-lee-AI",
       "repo": "awesome-llm-agent-papers",
-      "stars": 73,
+      "stars": 74,
       "topics": [
         "agent-benchmark",
         "agent-survey",
