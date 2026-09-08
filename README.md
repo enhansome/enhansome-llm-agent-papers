@@ -44,7 +44,7 @@ LLM agents that plan, remember, use tools, and cooperate. Companion to the surve
 
 **Topics covered:** cognitive architectures · ReAct & reasoning-and-acting · long-horizon planning · agent memory · tool-augmented LLMs · multi-agent collaboration · web / code / embodied agents · agent benchmarks & evaluation · safety, alignment & indirect prompt injection.
 
-> 🔁 **Companion deep-dive, now live**: [**Awesome Agent Loop Papers**](https://github.com/js-lee-AI/awesome-agent-loop-papers) ⭐ 4 | 🐛 1 | 📅 2026-08-23 goes below the components to the loop itself, with 524 papers and 60 open-source artifacts (frameworks, coding harnesses, memory and sandbox infrastructure, skill libraries, registries). Companion to *The Agent Loop: A Survey of Control Strategies, Skills, and Harnesses for LLM Agents*.
+> 🔁 **Companion deep-dive, now live**: [**Awesome Agent Loop Papers**](https://github.com/js-lee-AI/awesome-agent-loop-papers) ⭐ 4 | 🐛 0 | 📅 2026-09-07 goes below the components to the loop itself, with 524 papers and 60 open-source artifacts (frameworks, coding harnesses, memory and sandbox infrastructure, skill libraries, registries). Companion to *The Agent Loop: A Survey of Control Strategies, Skills, and Harnesses for LLM Agents*.
 
 This repository collects must-read papers on **LLM-based agents**: language models equipped with planning, memory, tool use, and multi-agent coordination to pursue goals over long horizons. Papers follow the taxonomy of the accompanying survey, covering the core components of an agent, the environments and applications they are deployed in, and the cross-cutting concerns of evaluation and safety. Each entry links to the paper and, where an official implementation exists, to its code.
 
@@ -97,58 +97,58 @@ Fresh 2026 work that is already drawing attention.
 * [⭐ Starter Kit](#starter-kit)
 * [🔥 10 to Watch (2026)](#to-watch)
 * **🧭 Background**
-  * [📚 Surveys & Position Papers (55)](#surveys)
-  * [🏗️ Agent Architectures & Frameworks (46)](#architectures)
+  * [📚 Surveys & Position Papers (57)](#surveys)
+  * [🏗️ Agent Architectures & Frameworks (48)](#architectures)
 * **🧱 Part I: Core Components**
-  * [🧠 Planning & Reasoning (46)](#planning)
-  * [💾 Memory (52)](#memory)
-  * [🔧 Tool Use (43)](#tools)
-  * [🤝 Multi-Agent Systems (49)](#multi-agent)
+  * [🧠 Planning & Reasoning (48)](#planning)
+  * [💾 Memory (54)](#memory)
+  * [🔧 Tool Use (45)](#tools)
+  * [🤝 Multi-Agent Systems (51)](#multi-agent)
 * **🌍 Part II: Agents in Context**
-  * [🌐 Interactive Environments (54)](#environments)
-  * [🚀 Applications (51)](#applications)
+  * [🌐 Interactive Environments (56)](#environments)
+  * [🚀 Applications (53)](#applications)
 * **⚖️ Part III: Cross-Cutting Concerns**
-  * [📊 Evaluation & Benchmarks (46)](#evaluation)
-  * [🛡️ Safety & Alignment (55)](#safety)
+  * [📊 Evaluation & Benchmarks (48)](#evaluation)
+  * [🛡️ Safety & Alignment (57)](#safety)
 
 ## 🧭 Background
 
 <a id="surveys"></a>
 
-### 📚 Surveys & Position Papers (55)
+### 📚 Surveys & Position Papers (57)
 
 *Corresponds to §1-§3 (Introduction, Background, Taxonomy).*
 
 <details>
-<summary><b>Show 55 papers</b></summary>
+<summary><b>Show 57 papers</b></summary>
 
-* **[HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in Hugging Face](https://arxiv.org/abs/2303.17580)** (Shen et al., NeurIPS 2023) - *Foundational example of the 'LLM-as-orchestrator-of-tools/models' agent pattern.* \[[code](https://github.com/microsoft/JARVIS) ⭐ 25,238 | 🐛 4,081 | 🌐 Python | 📅 2025-07-29]
+* **[HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in Hugging Face](https://arxiv.org/abs/2303.17580)** (Shen et al., NeurIPS 2023) - *Foundational example of the 'LLM-as-orchestrator-of-tools/models' agent pattern.* \[[code](https://github.com/microsoft/JARVIS) ⭐ 25,240 | 🐛 4,082 | 🌐 Python | 📅 2025-07-29]
 
-* **[Generative Agents: Interactive Simulacra of Human Behavior](https://arxiv.org/abs/2304.03442)** (Park et al., arXiv 2023) - *Foundational demonstration of LLM-driven agent societies/simulation.* ⭐ \[[code](https://github.com/joonspk-research/generative_agents) ⭐ 22,066 | 🐛 146 | 📅 2024-08-05]
+* **[Generative Agents: Interactive Simulacra of Human Behavior](https://arxiv.org/abs/2304.03442)** (Park et al., arXiv 2023) - *Foundational demonstration of LLM-driven agent societies/simulation.* ⭐ \[[code](https://github.com/joonspk-research/generative_agents) ⭐ 22,073 | 🐛 146 | 📅 2024-08-05]
 
 * **[The Rise and Potential of Large Language Model Based Agents: A Survey](https://arxiv.org/abs/2309.07864)** (Xi et al., arXiv 2023) - *Co-foundational with Wang et al. 2023 as one of the two seminal general surveys.* \[[code](https://github.com/WooooDyy/LLM-Agent-Paper-List) ⭐ 8,197 | 🐛 31 | 📅 2025-09-12]
 
-* **[Voyager: An Open-Ended Embodied Agent with Large Language Models](https://arxiv.org/abs/2305.16291)** (Wang et al., TMLR 2023) - *Seminal example of embodied, code-skill-based, lifelong-learning LLM agents.* ⭐ \[[code](https://github.com/MineDojo/Voyager) ⭐ 7,180 | 🐛 8 | 🌐 JavaScript | 📅 2024-04-03]
+* **[Voyager: An Open-Ended Embodied Agent with Large Language Models](https://arxiv.org/abs/2305.16291)** (Wang et al., TMLR 2023) - *Seminal example of embodied, code-skill-based, lifelong-learning LLM agents.* ⭐ \[[code](https://github.com/MineDojo/Voyager) ⭐ 7,183 | 🐛 8 | 🌐 JavaScript | 📅 2024-04-03]
 
-* **[ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629)** (Yao et al., ICLR 2023) - *The single most-cited technical precursor of modern LLM agents.* ⭐ \[[code](https://github.com/ysymyth/ReAct) ⭐ 4,155 | 🐛 5 | 🌐 Jupyter Notebook | 📅 2024-02-06]
+* **[ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629)** (Yao et al., ICLR 2023) - *The single most-cited technical precursor of modern LLM agents.* ⭐ \[[code](https://github.com/ysymyth/ReAct) ⭐ 4,157 | 🐛 5 | 🌐 Jupyter Notebook | 📅 2024-02-06]
 
-* **[Reflexion: Language Agents with Verbal Reinforcement Learning](https://arxiv.org/abs/2303.11366)** (Shinn et al., NeurIPS 2023) - *Established the 'self-reflection + memory' loop as an alternative to gradient-based RL for agent self-improvement.* ⭐ \[[code](https://github.com/noahshinn/reflexion) ⭐ 3,261 | 🐛 24 | 🌐 Python | 📅 2025-01-14]
+* **[Reflexion: Language Agents with Verbal Reinforcement Learning](https://arxiv.org/abs/2303.11366)** (Shinn et al., NeurIPS 2023) - *Established the 'self-reflection + memory' loop as an alternative to gradient-based RL for agent self-improvement.* ⭐ \[[code](https://github.com/noahshinn/reflexion) ⭐ 3,262 | 🐛 24 | 🌐 Python | 📅 2025-01-14]
 
 * **[A Survey on Large Language Model based Autonomous Agents](https://arxiv.org/abs/2308.11432)** (Wang et al., arXiv 2023) - *The canonical, most-cited general-purpose LLM-agent survey.* ⭐ \[[code](https://github.com/Paitesanshi/LLM-Agent-Survey) ⭐ 2,911 | 🐛 16 | 📅 2025-02-20]
 
-* **[Large Language Model Agent: A Survey on Methodology, Applications and Challenges](https://arxiv.org/abs/2503.21460)** (Luo et al., arXiv 2025) - *One of the most comprehensive and recent (2025) general surveys.* \[[code](https://github.com/luo-junyu/Awesome-Agent-Papers) ⭐ 2,846 | 🐛 27 | 📅 2025-11-07]
+* **[Large Language Model Agent: A Survey on Methodology, Applications and Challenges](https://arxiv.org/abs/2503.21460)** (Luo et al., arXiv 2025) - *One of the most comprehensive and recent (2025) general surveys.* \[[code](https://github.com/luo-junyu/Awesome-Agent-Papers) ⭐ 2,847 | 🐛 27 | 📅 2025-11-07]
 
-* **[Agentic Reasoning for Large Language Models](https://arxiv.org/abs/2601.12538)** (Wei et al., arXiv 2026) - *Survey organizing agentic reasoning into single-agent, self-evolving, and multi-agent layers, bridging in-context reasoning and post-training.* \[[code](https://github.com/weitianxin/Awesome-Agentic-Reasoning) ⭐ 1,356 | 🐛 18 | 📅 2026-03-09]
+* **[Agentic Reasoning for Large Language Models](https://arxiv.org/abs/2601.12538)** (Wei et al., arXiv 2026) - *Survey organizing agentic reasoning into single-agent, self-evolving, and multi-agent layers, bridging in-context reasoning and post-training.* \[[code](https://github.com/weitianxin/Awesome-Agentic-Reasoning) ⭐ 1,358 | 🐛 18 | 📅 2026-03-09]
 
 * **[Large Language Model based Multi-Agents: A Survey of Progress and Challenges](https://arxiv.org/abs/2402.01680)** (Guo et al., IJCAI 2024) - *The standard reference survey specifically for the multi-agent branch of LLM agents.* ⭐ \[[code](https://github.com/taichengguo/LLM_MultiAgents_Survey_Papers) ⭐ 1,310 | 🐛 2 | 📅 2026-08-21]
 
-* **[Cognitive Architectures for Language Agents](https://arxiv.org/abs/2309.02427)** (Sumers et al., TMLR 2023) - *The most widely adopted conceptual/architectural vocabulary for describing LLM agents.* ⭐ \[[code](https://github.com/ysymyth/awesome-language-agents) ⭐ 1,256 | 🐛 8 | 🌐 TeX | 📅 2025-01-16]
+* **[Cognitive Architectures for Language Agents](https://arxiv.org/abs/2309.02427)** (Sumers et al., TMLR 2023) - *The most widely adopted conceptual/architectural vocabulary for describing LLM agents.* ⭐ \[[code](https://github.com/ysymyth/awesome-language-agents) ⭐ 1,255 | 🐛 8 | 🌐 TeX | 📅 2025-01-16]
 
-* **[A Survey on the Memory Mechanism of Large Language Model based Agents](https://arxiv.org/abs/2404.13501)** (Zhang et al., arXiv 2024) - *The standard survey for the memory subsystem of LLM agents.* \[[code](https://github.com/nuster1128/LLM_Agent_Memory_Survey) ⭐ 507 | 🐛 0 | 📅 2025-07-28]
+* **[A Survey on the Memory Mechanism of Large Language Model based Agents](https://arxiv.org/abs/2404.13501)** (Zhang et al., arXiv 2024) - *The standard survey for the memory subsystem of LLM agents.* \[[code](https://github.com/nuster1128/LLM_Agent_Memory_Survey) ⭐ 506 | 🐛 0 | 📅 2025-07-28]
 
 * **[Tool Learning with Large Language Models: A Survey](https://arxiv.org/abs/2405.17935)** (Qu et al., arXiv 2024) - *The definitive survey for the tool-use pillar of LLM agents.* \[[code](https://github.com/quchangle1/LLM-Tool-Survey) ⭐ 488 | 🐛 3 | 📅 2025-08-09]
 
-* **[Self-Improvements in Modern Agentic Systems: A Survey](https://arxiv.org/abs/2607.13104)** (Ren et al., arXiv 2026) - *Frames a modern agent as a foundation model plus an operational scaffold, and organizes self-improvement by what gets updated (weights or scaffold) and which signal drives the change.* \[[code](https://github.com/selfimproving-agent/awesome-Self-Improving-Agents) ⭐ 454 | 🐛 0 | 🌐 TeX | 📅 2026-09-04]
+* **[Self-Improvements in Modern Agentic Systems: A Survey](https://arxiv.org/abs/2607.13104)** (Ren et al., arXiv 2026) - *Frames a modern agent as a foundation model plus an operational scaffold, and organizes self-improvement by what gets updated (weights or scaffold) and which signal drives the change.* \[[code](https://github.com/selfimproving-agent/awesome-Self-Improving-Agents) ⭐ 459 | 🐛 0 | 🌐 TeX | 📅 2026-09-04]
 
 * **[Igniting Language Intelligence: The Hitchhiker's Guide From Chain-of-Thought Reasoning to Language Agents](https://arxiv.org/abs/2311.11797)** (Zhang et al., arXiv 2023) - *Bridges the reasoning (CoT) literature and agent literature.* \[[code](https://github.com/Zoeyyao27/CoT-Igniting-Agent) ⭐ 364 | 🐛 0 | 📅 2023-11-25]
 
@@ -156,7 +156,7 @@ Fresh 2026 work that is already drawing attention.
 
 * **[From Question Answering to Task Completion: A Survey on Agent System and Harness Design](https://arxiv.org/abs/2606.20683)** (Guo et al., arXiv 2026) - *Reads agents through a model-versus-harness lens, decomposing the harness into six runtime responsibilities and asking where the performance bottleneck actually sits.* \[[code](https://github.com/ggjy/Awesome-Agent-Engineering) ⭐ 68 | 🐛 3 | 📅 2026-06-17]
 
-* **[From Storage to Experience: A Survey on the Evolution of LLM Agent Memory Mechanisms](https://arxiv.org/abs/2605.06716)** (Luo et al., arXiv 2026) - *Surveys agent memory through a three-stage evolution from storage to reflection to experience, driven by consistency, dynamics, and continual learning.* \[[code](https://github.com/FeishuLuo/Evolving-LLM-Agent-Memory-Survey) ⭐ 51 | 🐛 2 | 📅 2026-04-13]
+* **[From Storage to Experience: A Survey on the Evolution of LLM Agent Memory Mechanisms](https://arxiv.org/abs/2605.06716)** (Luo et al., arXiv 2026) - *Surveys agent memory through a three-stage evolution from storage to reflection to experience, driven by consistency, dynamics, and continual learning.* \[[code](https://github.com/FeishuLuo/Evolving-LLM-Agent-Memory-Survey) ⭐ 52 | 🐛 2 | 📅 2026-04-13]
 
 * **[Bridging the Agent-World Gap: Text World Models for LLM-based Agents](https://arxiv.org/abs/2606.09032)** (Li et al., arXiv 2026) - *Systematizes text world models (LLM-as-WM vs code-as-WM) that give agents explicit environment prediction for planning and verification.* \[[code](https://github.com/sustech-nlp/awesome-text-world-models) ⭐ 16 | 🐛 0 | 📅 2026-06-09]
 
@@ -232,52 +232,56 @@ Fresh 2026 work that is already drawing attention.
 
 * **[Information Retrieval Misses the Mark for LLM Agents](https://doi.org/10.2139/ssrn.6903579)** (Sun et al., SSRN 2026) - *Position paper answering the "RAG is dead, agents just need grep" reading of deployed practice: it grants that the substrate has shifted but argues the mismatch is structural across five dimensions, since IR's assumed corpus, input, objective, episode and retrievable all sit wrong for an agent that plans, browses, calls tools and decides whether to keep searching, and it tests the gap by holding the agent fixed while swapping BM25, vector, grep, hybrid and closed-book retrieval on HotpotQA-distractor and 2WikiMultihopQA, arguing for retrieval recast as a state-conditioned evidence-acquisition policy.*
 
+* **[Terminal Agents: A Survey of AI Agents in Command-Line Environments](https://arxiv.org/abs/2608.20485)** (Bin et al., arXiv 2026) - *Treats the terminal, rather than the task domain, as the organizing lens: agents whose progress-bearing loop runs through command execution and textual feedback, mapped across architecture, competence acquisition and evaluation on a seven-dimensional competence profile, with the survey's own fixed-condition diagnostics showing that benchmark families expose different process signals and that matched system comparisons come out benchmark-dependent, which limits how far any result can be attributed to a single component.*
+
+* **[Autonomous Research Agents: A Survey of AI Scientists and the Verification Gap](https://arxiv.org/abs/2608.05179)** (Ding et al., arXiv 2026) - *Codes 26 of 125 screened AI-scientist systems along seven audit dimensions and finds the bottleneck has moved from capability to checkability: 83 per cent of the 24 runnable systems release code, but only 38 per cent release seeds or execution traces and only 38 per cent report any novelty verification, and among nine closed-loop systems seven are mechanical reruns with no externally validated in-loop oracle anywhere in the corpus.*
+
 </details>
 
 <sub><a href="#contents">↑ Back to Contents</a></sub>
 
 <a id="architectures"></a>
 
-### 🏗️ Agent Architectures & Frameworks (46)
+### 🏗️ Agent Architectures & Frameworks (48)
 
 *Corresponds to §2 (Background) and the running examples throughout.*
 
 <details>
-<summary><b>Show 46 papers</b></summary>
+<summary><b>Show 48 papers</b></summary>
 
-* **[MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework](https://arxiv.org/abs/2308.00352)** (Hong et al., ICLR 2024) - *Widely cited framework showing how single-agent role/procedure templates improve reliability, marking the transition point between single- and multi-agent framework design.* \[[code](https://github.com/geekan/MetaGPT) ⭐ 70,247 | 🐛 131 | 🌐 Python | 📅 2026-01-21]
+* **[MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework](https://arxiv.org/abs/2308.00352)** (Hong et al., ICLR 2024) - *Widely cited framework showing how single-agent role/procedure templates improve reliability, marking the transition point between single- and multi-agent framework design.* \[[code](https://github.com/geekan/MetaGPT) ⭐ 70,261 | 🐛 134 | 🌐 Python | 📅 2026-01-21]
 
-* **[SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering](https://arxiv.org/abs/2405.15793)** (Yang et al., NeurIPS 2024) - *Demonstrates how interface design materially changes single-agent capability, now standard in coding-agent design.* \[[code](https://github.com/princeton-nlp/SWE-agent) ⭐ 20,263 | 🐛 100 | 🌐 Python | 📅 2026-08-31]
+* **[SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering](https://arxiv.org/abs/2405.15793)** (Yang et al., NeurIPS 2024) - *Demonstrates how interface design materially changes single-agent capability, now standard in coding-agent design.* \[[code](https://github.com/princeton-nlp/SWE-agent) ⭐ 20,275 | 🐛 101 | 🌐 Python | 📅 2026-09-07]
 
-* **[GenericAgent: A Token-Efficient Self-Evolving LLM Agent via Contextual Information Density Maximization](https://arxiv.org/abs/2604.17091)** (Liang et al., arXiv 2026) - *Token-efficient self-evolving agent that accumulates contextual experience; one of the most-starred 2026 agent frameworks.* \[[code](https://github.com/lsdefine/GenericAgent) ⭐ 14,130 | 🐛 163 | 🌐 Python | 📅 2026-09-03]
+* **[GenericAgent: A Token-Efficient Self-Evolving LLM Agent via Contextual Information Density Maximization](https://arxiv.org/abs/2604.17091)** (Liang et al., arXiv 2026) - *Token-efficient self-evolving agent that accumulates contextual experience; one of the most-starred 2026 agent frameworks.* \[[code](https://github.com/lsdefine/GenericAgent) ⭐ 14,139 | 🐛 164 | 🌐 Python | 📅 2026-09-03]
 
-* **[Gorilla: Large Language Model Connected with Massive APIs](https://arxiv.org/abs/2305.15334)** (Patil et al., NeurIPS 2024) - *Key single-agent tool-use paper demonstrating that fine-tuning plus retrieval can make an agent reliably invoke large real-world API catalogs.* \[[code](https://github.com/ShishirPatil/gorilla) ⭐ 13,017 | 🐛 278 | 🌐 Python | 📅 2026-04-13]
+* **[Gorilla: Large Language Model Connected with Massive APIs](https://arxiv.org/abs/2305.15334)** (Patil et al., NeurIPS 2024) - *Key single-agent tool-use paper demonstrating that fine-tuning plus retrieval can make an agent reliably invoke large real-world API catalogs.* \[[code](https://github.com/ShishirPatil/gorilla) ⭐ 13,019 | 🐛 278 | 🌐 Python | 📅 2026-04-13]
 
-* **[Kimi K2: Open Agentic Intelligence](https://arxiv.org/abs/2507.20534)** (Kimi Team, arXiv 2025) - *Flagship open model built explicitly around agentic post-training at scale.* \[[code](https://github.com/MoonshotAI/Kimi-K2) ⭐ 11,107 | 🐛 71 | 📅 2026-01-21]
+* **[Kimi K2: Open Agentic Intelligence](https://arxiv.org/abs/2507.20534)** (Kimi Team, arXiv 2025) - *Flagship open model built explicitly around agentic post-training at scale.* \[[code](https://github.com/MoonshotAI/Kimi-K2) ⭐ 11,108 | 🐛 71 | 📅 2026-01-21]
 
 * **[AppAgent: Multimodal Agents as Smartphone Users](https://arxiv.org/abs/2312.13771)** (Zhang et al., CHI 2025) - *Representative recent single-agent architecture extending the ReAct/tool-use paradigm to GUI/mobile control.* \[[code](https://github.com/TencentQQGYLab/AppAgent) ⭐ 6,874 | 🐛 99 | 🌐 Python | 📅 2025-03-19]
 
 * **[Tree of Thoughts: Deliberate Problem Solving with Large Language Models](https://arxiv.org/abs/2305.10601)** (Yao et al., NeurIPS 2023) - *A core deliberate-search reasoning architecture underpinning later single-agent planning/search frameworks like LATS.* \[[code](https://github.com/princeton-nlp/tree-of-thought-llm) ⭐ 6,062 | 🐛 8 | 🌐 Python | 📅 2025-01-16]
 
-* **[AgentBench: Evaluating LLMs as Agents](https://arxiv.org/abs/2308.03688)** (Liu et al., ICLR 2024) - *The standard reference benchmark for measuring general single-agent capability across heterogeneous environments.* ⭐ \[[code](https://github.com/THUDM/AgentBench) ⭐ 3,714 | 🐛 76 | 🌐 Python | 📅 2026-02-08]
+* **[AgentBench: Evaluating LLMs as Agents](https://arxiv.org/abs/2308.03688)** (Liu et al., ICLR 2024) - *The standard reference benchmark for measuring general single-agent capability across heterogeneous environments.* ⭐ \[[code](https://github.com/THUDM/AgentBench) ⭐ 3,716 | 🐛 76 | 🌐 Python | 📅 2026-02-08]
 
-* **[LLM-as-a-Verifier: A General-Purpose Verification Framework](https://arxiv.org/abs/2607.05391)** (Kwok et al., arXiv 2026) - *Treats verification as its own scaling axis: continuous scores from scoring-token logits, scaled by granularity, repeated evaluation and criteria decomposition, reach 86.5% on Terminal-Bench V2 without extra training.* \[[code](https://github.com/llm-as-a-verifier/llm-as-a-verifier) ⭐ 3,097 | 🐛 16 | 🌐 Python | 📅 2026-08-20]
+* **[LLM-as-a-Verifier: A General-Purpose Verification Framework](https://arxiv.org/abs/2607.05391)** (Kwok et al., arXiv 2026) - *Treats verification as its own scaling axis: continuous scores from scoring-token logits, scaled by granularity, repeated evaluation and criteria decomposition, reach 86.5% on Terminal-Bench V2 without extra training.* \[[code](https://github.com/llm-as-a-verifier/llm-as-a-verifier) ⭐ 3,156 | 🐛 18 | 🌐 Python | 📅 2026-08-20]
 
 * **[OS-Copilot: Towards Generalist Computer Agents with Self-Improvement](https://arxiv.org/abs/2402.07456)** (Wu et al., arXiv 2024) - *A leading recent example of a general-purpose, self-improving OS-level single agent, extending AutoGPT-style autonomy to real computer environments.* \[[code](https://github.com/OS-Copilot/OS-Copilot) ⭐ 1,795 | 🐛 21 | 🌐 Python | 📅 2024-09-09]
 
 * **[Executable Code Actions Elicit Better LLM Agents](https://arxiv.org/abs/2402.01030)** (Wang et al., ICML 2024) - *Established 'code-as-action' as a leading alternative action-space design for single agents.* \[[code](https://github.com/xingyaoww/code-act) ⭐ 1,700 | 🐛 15 | 🌐 Python | 📅 2024-05-23]
 
-* **[WebArena: A Realistic Web Environment for Building Autonomous Agents](https://arxiv.org/abs/2307.13854)** (Zhou et al., ICLR 2024) - *The de facto standard testbed for web-browsing single-agent architectures.* \[[code](https://github.com/web-arena-x/webarena) ⭐ 1,602 | 🐛 103 | 🌐 Python | 📅 2025-11-26]
+* **[WebArena: A Realistic Web Environment for Building Autonomous Agents](https://arxiv.org/abs/2307.13854)** (Zhou et al., ICLR 2024) - *The de facto standard testbed for web-browsing single-agent architectures.* \[[code](https://github.com/web-arena-x/webarena) ⭐ 1,605 | 🐛 103 | 🌐 Python | 📅 2025-11-26]
 
-* **[Ouroboros: A Self-Developing Frontier Coding Agent with Reviewed Core Evolution](https://arxiv.org/abs/2608.08311)** (Razzhigaev et al., arXiv 2026) - *A coding-agent harness whose tools, prompts, context assembly, and core implementation improve through reviewed commits that become the runtime for later work; reports 86.74% on Terminal-Bench 2.1 and 90.69% on OSWorld-Verified from frozen snapshots, while a separate 161-day deployment keeps evolving live.* \[[code](https://github.com/razzant/ouroboros) ⭐ 1,277 | 🐛 238 | 🌐 Python | 📅 2026-09-07]
+* **[Ouroboros: A Self-Developing Frontier Coding Agent with Reviewed Core Evolution](https://arxiv.org/abs/2608.08311)** (Razzhigaev et al., arXiv 2026) - *A coding-agent harness whose tools, prompts, context assembly, and core implementation improve through reviewed commits that become the runtime for later work; reports 86.74% on Terminal-Bench 2.1 and 90.69% on OSWorld-Verified from frozen snapshots, while a separate 161-day deployment keeps evolving live.* \[[code](https://github.com/razzant/ouroboros) ⭐ 1,279 | 🐛 200 | 🌐 Python | 📅 2026-09-07]
 
-* **[Molt: A Scalable PyTorch-Native Training Framework for Agentic Reinforcement Learning](https://arxiv.org/abs/2607.21653)** (Hu et al., arXiv 2026) - *Shows a compact PyTorch-native agentic RL trainer, small enough for a researcher or coding assistant to read end to end, stays statistically comparable to a Megatron-based stack.* \[[code](https://github.com/NVIDIA-NeMo/labs-molt) ⭐ 1,023 | 🐛 18 | 🌐 Python | 📅 2026-09-04]
+* **[Molt: A Scalable PyTorch-Native Training Framework for Agentic Reinforcement Learning](https://arxiv.org/abs/2607.21653)** (Hu et al., arXiv 2026) - *Shows a compact PyTorch-native agentic RL trainer, small enough for a researcher or coding assistant to read end to end, stays statistically comparable to a Megatron-based stack.* \[[code](https://github.com/NVIDIA-NeMo/labs-molt) ⭐ 1,028 | 🐛 18 | 🌐 Python | 📅 2026-09-08]
 
-* **[CORAL: Towards Autonomous Multi-Agent Evolution for Open-Ended Discovery](https://arxiv.org/abs/2604.01658)** (Qu et al., COLM 2026) - *Replaces hard-coded exploration rules with long-running agents that explore, reflect and collaborate through shared persistent memory, under isolated workspaces and evaluator separation; sets state of the art on 10 optimization tasks at 3 to 10 times the improvement rate per evaluation, and four co-evolving agents take Anthropic's kernel task from 1363 to 1103 cycles.* \[[code](https://github.com/Human-Agent-Society/CORAL) ⭐ 959 | 🐛 23 | 🌐 Python | 📅 2026-09-06]
+* **[CORAL: Towards Autonomous Multi-Agent Evolution for Open-Ended Discovery](https://arxiv.org/abs/2604.01658)** (Qu et al., COLM 2026) - *Replaces hard-coded exploration rules with long-running agents that explore, reflect and collaborate through shared persistent memory, under isolated workspaces and evaluator separation; sets state of the art on 10 optimization tasks at 3 to 10 times the improvement rate per evaluation, and four co-evolving agents take Anthropic's kernel task from 1363 to 1103 cycles.* \[[code](https://github.com/Human-Agent-Society/CORAL) ⭐ 960 | 🐛 19 | 🌐 Python | 📅 2026-09-08]
 
 * **[ReWOO: Decoupling Reasoning from Observations for Efficient Augmented Language Models](https://arxiv.org/abs/2305.18323)** (Xu et al., arXiv 2023) - *Influential efficiency-oriented alternative to the ReAct loop, illustrating the plan-then-execute vs. interleaved architectural design axis.* \[[code](https://github.com/billxbf/ReWOO) ⭐ 942 | 🐛 4 | 🌐 Python | 📅 2023-07-28]
 
-* **[Language Agent Tree Search Unifies Reasoning, Acting, and Planning in Language Models](https://arxiv.org/abs/2310.04406)** (Zhou et al., ICML 2024) - *Represents the state-of-the-art convergence of search-based planning with the ReAct/Reflexion lineage.* \[[code](https://github.com/lapisrocks/LanguageAgentTreeSearch) ⭐ 861 | 🐛 8 | 🌐 Python | 📅 2024-07-30]
+* **[Language Agent Tree Search Unifies Reasoning, Acting, and Planning in Language Models](https://arxiv.org/abs/2310.04406)** (Zhou et al., ICML 2024) - *Represents the state-of-the-art convergence of search-based planning with the ReAct/Reflexion lineage.* \[[code](https://github.com/lapisrocks/LanguageAgentTreeSearch) ⭐ 862 | 🐛 8 | 🌐 Python | 📅 2024-07-30]
 
 * **[SELF-REFINE: Iterative Refinement with Self-Feedback](https://arxiv.org/abs/2303.17651)** (Madaan et al., NeurIPS 2023) - *A minimal, widely-adopted single-agent self-improvement loop that is reused as a subroutine inside many larger agent architectures.* \[[code](https://github.com/madaan/self-refine) ⭐ 820 | 🐛 10 | 🌐 Python | 📅 2024-10-04]
 
@@ -285,7 +289,7 @@ Fresh 2026 work that is already drawing attention.
 
 * **[Codified Context: Infrastructure for AI Agents in a Complex Codebase](https://arxiv.org/abs/2602.20478)** (Vasilopoulos et al., arXiv 2026) - *Proposes a three-component infrastructure (a conventions constitution, 19 specialized agents, and a knowledge base of 34 specification documents) to give LLM coding assistants persistent context.* \[[code](https://github.com/arisvas4/codified-context-infrastructure) ⭐ 185 | 🐛 1 | 🌐 Python | 📅 2026-04-01]
 
-* **[AgentArk: Distilling Multi-Agent Intelligence into a Single LLM Agent](https://arxiv.org/abs/2602.03955)** (Luo et al., arXiv 2026) - *Distills multi-agent intelligence into a single LLM agent, retaining collaboration gains at lower cost.* \[[code](https://github.com/AIFrontierLab/AgentArk) ⭐ 155 | 🐛 3 | 🌐 Python | 📅 2026-05-09]
+* **[AgentArk: Distilling Multi-Agent Intelligence into a Single LLM Agent](https://arxiv.org/abs/2602.03955)** (Luo et al., arXiv 2026) - *Distills multi-agent intelligence into a single LLM agent, retaining collaboration gains at lower cost.* \[[code](https://github.com/AIFrontierLab/AgentArk) ⭐ 157 | 🐛 3 | 🌐 Python | 📅 2026-05-09]
 
 * **[Orchestral AI: A Framework for Agent Orchestration](https://arxiv.org/abs/2601.02577)** (Roman et al., arXiv 2026) - *Framework for composing and orchestrating specialized agents behind a single interface.* \[[code](https://github.com/orchestralAI/orchestral-ai) ⭐ 109 | 🐛 2 | 📅 2026-01-07]
 
@@ -337,6 +341,10 @@ Fresh 2026 work that is already drawing attention.
 
 * **[Persistent Recursive Worlds Enable Autonomous Software Evolution](https://arxiv.org/abs/2608.10450)** (Huang et al., arXiv 2026) - *Makes the software project persistent rather than the agent: finite-lived agents propose local changes and only accepted consequences advance the version history, and one run of over 120 hours built a roughly 250k-line Rust C compiler that passed the complete c-testsuite for 44 US dollars in model-token charges.*
 
+* **[What Does Multi-Harness RL Learn? Credit Assignment and Portability in Coding Agents](https://arxiv.org/abs/2609.04518)** (Le et al., arXiv 2026) - *Replays frozen records from Aider, OpenHands, Qwen Code and SWE-agent to isolate whether pooling harnesses inside one advantage group buys portable skill, and the evaluation harness dominates everything else: across 24,000 sealed evaluations it moves mean solve rate from 2.14 to 9.27 per cent where the training recipe moves it by 1.16, while cross-harness grouping beats within-harness grouping by 0.25 points on a held-out harness, a confidence interval spanning zero and narrower than each rule's own seed range.*
+
+* **[TROVE: Adaptive Agent Skill Orchestration via Trace-Grounded Route Validation and Editing](https://arxiv.org/abs/2609.05019)** (Wang et al., arXiv 2026) - *Treats a planned route as provisional rather than committed: offline it distils evaluated workflow-search traces into atomic and composite skills plus an outcome-conditioned transition graph, and online it keeps the valid continuation, inserts a trace-supported local response, or replaces only the invalid suffix, so runtime evidence buys local repair instead of a broad replan; ablations put most of the offline benefit in the composite skills and most of the efficiency gain in suffix replacement.*
+
 </details>
 
 <sub><a href="#contents">↑ Back to Contents</a></sub>
@@ -345,26 +353,26 @@ Fresh 2026 work that is already drawing attention.
 
 <a id="planning"></a>
 
-### 🧠 Planning & Reasoning (46)
+### 🧠 Planning & Reasoning (48)
 
 *Corresponds to §4 (Planning and Reasoning).*
 
 <details>
-<summary><b>Show 46 papers</b></summary>
+<summary><b>Show 48 papers</b></summary>
 
-* **[DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning](https://arxiv.org/abs/2501.12948)** (Guo et al., Nature 2025) - *Landmark open reasoning-model release demonstrating RL-induced emergent planning/reflection behaviors now underpinning next-generation reasoning agents.* \[[code](https://github.com/deepseek-ai/DeepSeek-R1) ⭐ 92,010 | 🐛 33 | 📅 2025-06-27]
+* **[DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning](https://arxiv.org/abs/2501.12948)** (Guo et al., Nature 2025) - *Landmark open reasoning-model release demonstrating RL-induced emergent planning/reflection behaviors now underpinning next-generation reasoning agents.* \[[code](https://github.com/deepseek-ai/DeepSeek-R1) ⭐ 92,003 | 🐛 33 | 📅 2025-06-27]
 
-* **[Reasoning as Gradient: Scaling MLE Agents Beyond Tree Search](https://arxiv.org/abs/2603.01692)** (Zhang et al., arXiv 2026) - *Replaces tree search in an MLE agent with a gradient-style optimization framework, mapping reasoning to gradients and success memory to momentum.* \[[code](https://github.com/microsoft/RD-Agent) ⭐ 14,534 | 🐛 218 | 🌐 Python | 📅 2026-09-04]
+* **[Reasoning as Gradient: Scaling MLE Agents Beyond Tree Search](https://arxiv.org/abs/2603.01692)** (Zhang et al., arXiv 2026) - *Replaces tree search in an MLE agent with a gradient-style optimization framework, mapping reasoning to gradients and success memory to momentum.* \[[code](https://github.com/microsoft/RD-Agent) ⭐ 14,548 | 🐛 218 | 🌐 Python | 📅 2026-09-04]
 
-* **[Search-R1: Training LLMs to Reason and Leverage Search Engines with Reinforcement Learning](https://arxiv.org/abs/2503.09516)** (Jin et al., arXiv 2025) - *Canonical agentic-RL result: the model learns to interleave search-engine calls with its own reasoning from outcome rewards alone.* \[[code](https://github.com/PeterGriffinJin/Search-R1) ⭐ 5,378 | 🐛 36 | 🌐 Python | 📅 2025-11-13]
+* **[Search-R1: Training LLMs to Reason and Leverage Search Engines with Reinforcement Learning](https://arxiv.org/abs/2503.09516)** (Jin et al., arXiv 2025) - *Canonical agentic-RL result: the model learns to interleave search-engine calls with its own reasoning from outcome rewards alone.* \[[code](https://github.com/PeterGriffinJin/Search-R1) ⭐ 5,387 | 🐛 36 | 🌐 Python | 📅 2025-11-13]
 
 * **[Graph of Thoughts: Solving Elaborate Problems with Large Language Models](https://arxiv.org/abs/2308.09687)** (Besta et al., AAAI 2024) - *Extends structured-reasoning/search frameworks used by agents beyond trees, improving quality and cost on complex multi-step tasks.* \[[code](https://github.com/spcl/graph-of-thoughts) ⭐ 2,838 | 🐛 7 | 🌐 Python | 📅 2026-03-24]
 
-* **[Reasoning with Language Model is Planning with World Model](https://arxiv.org/abs/2305.14992)** (Hao et al., EMNLP 2023) - *Connects classical planning-as-search (MCTS, world models) with LLM reasoning, directly relevant to agent planning under uncertainty.* \[[code](https://github.com/maitrix-org/llm-reasoners) ⭐ 2,344 | 🐛 32 | 🌐 Python | 📅 2025-06-10]
+* **[Reasoning with Language Model is Planning with World Model](https://arxiv.org/abs/2305.14992)** (Hao et al., EMNLP 2023) - *Connects classical planning-as-search (MCTS, world models) with LLM reasoning, directly relevant to agent planning under uncertainty.* \[[code](https://github.com/maitrix-org/llm-reasoners) ⭐ 2,343 | 🐛 32 | 🌐 Python | 📅 2025-06-10]
 
 * **[Let's Verify Step by Step](https://arxiv.org/abs/2305.20050)** (Lightman et al., ICLR 2024) - *Establishes process reward models/step-level verification, now a standard component for guiding search and self-critique in reasoning agents.* \[[code](https://github.com/openai/prm800k) ⚠️ Archived]
 
-* **[Harness Updating Is Not Harness Benefit: Disentangling Evolution Capabilities in Self-Evolving LLM Agents](https://arxiv.org/abs/2605.30621)** (Lin et al., arXiv 2026) - *Separates 'harness-updating' from 'harness-benefit' in self-evolving agents, finding a non-monotonic benefit curve across model tiers.* \[[code](https://github.com/A-EVO-Lab/a-evolve) ⭐ 775 | 🐛 7 | 🌐 Python | 📅 2026-08-22]
+* **[Harness Updating Is Not Harness Benefit: Disentangling Evolution Capabilities in Self-Evolving LLM Agents](https://arxiv.org/abs/2605.30621)** (Lin et al., arXiv 2026) - *Separates 'harness-updating' from 'harness-benefit' in self-evolving agents, finding a non-monotonic benefit curve across model tiers.* \[[code](https://github.com/A-EVO-Lab/a-evolve) ⭐ 776 | 🐛 7 | 🌐 Python | 📅 2026-08-22]
 
 * **[CRITIC: Large Language Models Can Self-Correct with Tool-Interactive Critiquing](https://arxiv.org/abs/2305.11738)** (Gou et al., ICLR 2024) - *Bridges self-critique with tool-augmented verification, a key mechanism in modern agent frameworks that ground reflection in external feedback.* \[[code](https://github.com/microsoft/ProphetNet/tree/master/CRITIC) ⭐ 745 | 🐛 55 | 🌐 Python | 📅 2024-07-25]
 
@@ -376,7 +384,7 @@ Fresh 2026 work that is already drawing attention.
 
 * **[Large Language Models are Zero-Shot Reasoners](https://arxiv.org/abs/2205.11916)** (Kojima et al., NeurIPS 2022) - *Established that reasoning behavior is latent and promptable zero-shot, a key enabler for general-purpose agent prompting templates.* \[[code](https://github.com/kojima-takeshi188/zero_shot_cot) ⭐ 444 | 🐛 8 | 🌐 Python | 📅 2023-10-09]
 
-* **[PRO-LONG: Programmatic Memory Enables Long-Horizon Reasoning](https://arxiv.org/abs/2607.20064)** (Fox et al., arXiv 2026) - *Keeping the full structured interaction log and searching it with a coding agent adds 18 points on ARC-AGI-3 over a base coding agent, matching specialist harnesses at 4.2-5.8x fewer tokens.* \[[code](https://github.com/alexisfox7/PRO-LONG) ⭐ 441 | 🐛 1 | 🌐 Python | 📅 2026-08-21]
+* **[PRO-LONG: Programmatic Memory Enables Long-Horizon Reasoning](https://arxiv.org/abs/2607.20064)** (Fox et al., arXiv 2026) - *Keeping the full structured interaction log and searching it with a coding agent adds 18 points on ARC-AGI-3 over a base coding agent, matching specialist harnesses at 4.2-5.8x fewer tokens.* \[[code](https://github.com/alexisfox7/PRO-LONG) ⭐ 443 | 🐛 1 | 🌐 Python | 📅 2026-08-21]
 
 * **[STaR: Bootstrapping Reasoning With Reasoning](https://arxiv.org/abs/2203.14465)** (Zelikman et al., NeurIPS 2022) - *Precursor to the RL-based reasoning-model training paradigm (e.g., DeepSeek-R1, o1) used to instill self-generated reasoning in agents.* \[[code](https://github.com/ezelikman/STaR) ⭐ 232 | 🐛 1 | 🌐 Python | 📅 2023-02-21]
 
@@ -386,7 +394,7 @@ Fresh 2026 work that is already drawing attention.
 
 * **[Large Language Models for Planning: A Comprehensive and Systematic Survey](https://arxiv.org/abs/2505.19683)** (Cao et al., arXiv 2025) - *A dedicated, up-to-date survey covering exactly the planning-strategies portion of this sub-topic, ideal for anchoring taxonomy claims.* \[[code](https://github.com/Quester-one/Awesome-LLM-Planning) ⭐ 59 | 🐛 1 | 📅 2025-07-07]
 
-* **[Demystifying Reinforcement Learning for Long-Horizon Tool-Using Agents: A Comprehensive Recipe](https://arxiv.org/abs/2603.21972)** (Wu et al., arXiv 2026) - *Empirical recipe over reward shaping, model scale, data, and algorithm choices for agentic RL, reaching SOTA on TravelPlanner.* \[[code](https://github.com/WxxShirley/Agent-STAR) ⭐ 45 | 🐛 1 | 🌐 Python | 📅 2026-08-23]
+* **[Demystifying Reinforcement Learning for Long-Horizon Tool-Using Agents: A Comprehensive Recipe](https://arxiv.org/abs/2603.21972)** (Wu et al., arXiv 2026) - *Empirical recipe over reward shaping, model scale, data, and algorithm choices for agentic RL, reaching SOTA on TravelPlanner.* \[[code](https://github.com/WxxShirley/Agent-STAR) ⭐ 46 | 🐛 1 | 🌐 Python | 📅 2026-08-23]
 
 * **[Learning from Trials and Errors: Reflective Test-Time Planning for Embodied LLMs](https://arxiv.org/abs/2602.21198)** (Hong et al., arXiv 2026) - *Reflective test-time planning for embodied agents that learns from its own trials and errors within a single episode.* \[[code](https://github.com/Reflective-Test-Time-Planning/Reflective-Test-Time-Planning) ⭐ 34 | 🐛 1 | 🌐 Jupyter Notebook | 📅 2026-05-13]
 
@@ -444,42 +452,46 @@ Fresh 2026 work that is already drawing attention.
 
 * **[Second Thought: Reasoning in Parallel as LLM Agents Act and Observe](https://arxiv.org/abs/2608.13667)** (Sun et al., arXiv 2026) - *Forks four auxiliary reasoning branches into the idle window where a ReAct agent is waiting on the environment and merges them back at the observation, lowering turn counts in all nine model-benchmark pairs and main-thread decoding by up to 43% in six of them, with Pass\@1 statistically unchanged in seven of nine.*
 
+* **[CHIME: Credit-Aware Hierarchical Memory Evolution for Long-Horizon Agentic Planning](https://arxiv.org/abs/2609.02074)** (Ye et al., arXiv 2026) - *Keeps a planning bank separate from an execution bank and attributes each task outcome to the plan, the execution, both or neither before writing anything down, on the argument that final-outcome feedback conflates plan quality with execution error and environment noise; the resulting memory is smaller, its learned values track downstream utility with planning memories worth more than execution ones, and it transfers across backbone models.*
+
+* **[Do GUI Agents Know When Not to Act? Enabling Conflict-Aware Termination for Multimodal GUI Agents](https://arxiv.org/abs/2609.03438)** (Huang et al., arXiv 2026) - *Benchmarks the decision to stop rather than the decision to act, covering instructions that contradict themselves and instructions that contradict what is on screen, and finds execution-biased overcompliance: agents that score well on feasible tasks keep executing under conflicting ones, which an inference-time feasibility check plus action modulation reduces across five agents without costing normal task performance.*
+
 </details>
 
 <sub><a href="#contents">↑ Back to Contents</a></sub>
 
 <a id="memory"></a>
 
-### 💾 Memory (52)
+### 💾 Memory (54)
 
 *Corresponds to §5 (Memory).*
 
 <details>
-<summary><b>Show 52 papers</b></summary>
+<summary><b>Show 54 papers</b></summary>
 
-* **[Mem0: Building Production-Ready AI Agents with Scalable Long-Term Memory](https://arxiv.org/abs/2504.19413)** (Chhikara et al., arXiv 2025) - *A leading production-oriented, widely-deployed long-term memory system for LLM agents, frequently used as a state-of-the-art comparison point.* \[[code](https://github.com/mem0ai/mem0) ⭐ 64,814 | 🐛 732 | 🌐 Python | 📅 2026-09-04]
+* **[Mem0: Building Production-Ready AI Agents with Scalable Long-Term Memory](https://arxiv.org/abs/2504.19413)** (Chhikara et al., arXiv 2025) - *A leading production-oriented, widely-deployed long-term memory system for LLM agents, frequently used as a state-of-the-art comparison point.* \[[code](https://github.com/mem0ai/mem0) ⭐ 64,879 | 🐛 739 | 🌐 Python | 📅 2026-09-04]
 
-* **[Zep: A Temporal Knowledge Graph Architecture for Agent Memory](https://arxiv.org/abs/2501.13956)** (Rasmussen et al., arXiv 2025) - *A bi-temporal knowledge-graph memory engine (Graphiti) that dynamically fuses chat and business data, surpassing MemGPT on DMR and LongMemEval; a standard production-memory reference.* \[[code](https://github.com/getzep/graphiti) ⭐ 30,650 | 🐛 490 | 🌐 Python | 📅 2026-09-06]
+* **[Zep: A Temporal Knowledge Graph Architecture for Agent Memory](https://arxiv.org/abs/2501.13956)** (Rasmussen et al., arXiv 2025) - *A bi-temporal knowledge-graph memory engine (Graphiti) that dynamically fuses chat and business data, surpassing MemGPT on DMR and LongMemEval; a standard production-memory reference.* \[[code](https://github.com/getzep/graphiti) ⭐ 30,688 | 🐛 492 | 🌐 Python | 📅 2026-09-06]
 
-* **[MemGPT: Towards LLMs as Operating Systems](https://arxiv.org/abs/2310.08560)** (Packer et al., COLM 2024) - *One of the most widely cited and productized (Letta) architectures for tiered, self-managed long-term memory in LLM agents.* \[[code](https://github.com/cpacker/MemGPT) ⭐ 24,638 | 🐛 39 | 📅 2026-08-23]
+* **[MemGPT: Towards LLMs as Operating Systems](https://arxiv.org/abs/2310.08560)** (Packer et al., COLM 2024) - *One of the most widely cited and productized (Letta) architectures for tiered, self-managed long-term memory in LLM agents.* \[[code](https://github.com/cpacker/MemGPT) ⭐ 24,653 | 🐛 39 | 📅 2026-08-23]
 
-* **[MemOS: A Memory OS for AI System](https://arxiv.org/abs/2507.03724)** (Li et al., arXiv 2025) - *Promotes memory to a first-class resource (MemCube), unifying parametric, activation, and plaintext memory under one scheduling-and-governance operating system.* \[[code](https://github.com/MemTensor/MemOS) ⭐ 11,212 | 🐛 64 | 🌐 TypeScript | 📅 2026-09-03]
+* **[MemOS: A Memory OS for AI System](https://arxiv.org/abs/2507.03724)** (Li et al., arXiv 2025) - *Promotes memory to a first-class resource (MemCube), unifying parametric, activation, and plaintext memory under one scheduling-and-governance operating system.* \[[code](https://github.com/MemTensor/MemOS) ⭐ 11,226 | 🐛 66 | 🌐 TypeScript | 📅 2026-09-08]
 
-* **[HippoRAG: Neurobiologically Inspired Long-Term Memory for Large Language Models](https://arxiv.org/abs/2405.14831)** (Gutiérrez et al., NeurIPS 2024) - *A highly influential neuro-inspired long-term memory/RAG framework bridging knowledge-graph retrieval and agent memory, widely adopted as a strong baseline.* \[[code](https://github.com/OSU-NLP-Group/HippoRAG) ⭐ 3,983 | 🐛 8 | 🌐 Python | 📅 2026-09-03]
+* **[HippoRAG: Neurobiologically Inspired Long-Term Memory for Large Language Models](https://arxiv.org/abs/2405.14831)** (Gutiérrez et al., NeurIPS 2024) - *A highly influential neuro-inspired long-term memory/RAG framework bridging knowledge-graph retrieval and agent memory, widely adopted as a strong baseline.* \[[code](https://github.com/OSU-NLP-Group/HippoRAG) ⭐ 3,988 | 🐛 8 | 🌐 Python | 📅 2026-09-03]
 
 * **[SimpleMem: Efficient Lifelong Memory for LLM Agents](https://arxiv.org/abs/2601.02553)** (Liu et al., arXiv 2026) - *Semantic-compression lifelong memory (structured compression, online synthesis, intent-aware retrieval) cutting inference tokens up to 30x.* \[[code](https://github.com/aiming-lab/SimpleMem) ⭐ 3,750 | 🐛 8 | 🌐 Python | 📅 2026-07-24]
 
-* **[MIRIX: Multi-Agent Memory System for LLM-Based Agents](https://arxiv.org/abs/2507.07957)** (Wang et al., arXiv 2025) - *Illustrates the current frontier trend of multi-agent, multi-type (multimodal) memory architectures for LLM-based agents.* \[[code](https://github.com/Mirix-AI/MIRIX) ⭐ 3,440 | 🐛 45 | 🌐 Python | 📅 2026-08-20]
+* **[MIRIX: Multi-Agent Memory System for LLM-Based Agents](https://arxiv.org/abs/2507.07957)** (Wang et al., arXiv 2025) - *Illustrates the current frontier trend of multi-agent, multi-type (multimodal) memory architectures for LLM-based agents.* \[[code](https://github.com/Mirix-AI/MIRIX) ⭐ 3,439 | 🐛 45 | 🌐 Python | 📅 2026-08-20]
 
-* **[Memory OS of AI Agent](https://arxiv.org/abs/2506.06326)** (Kang et al., EMNLP 2025) - *Applies operating-system memory management (STM/MTM/LPM tiers with heat-based promotion and segmented paging) to agent memory, with strong LoCoMo gains.* \[[code](https://github.com/BAI-LAB/MemoryOS) ⭐ 1,569 | 🐛 22 | 🌐 Python | 📅 2026-07-07]
+* **[Memory OS of AI Agent](https://arxiv.org/abs/2506.06326)** (Kang et al., EMNLP 2025) - *Applies operating-system memory management (STM/MTM/LPM tiers with heat-based promotion and segmented paging) to agent memory, with strong LoCoMo gains.* \[[code](https://github.com/BAI-LAB/MemoryOS) ⭐ 1,570 | 🐛 22 | 🌐 Python | 📅 2026-07-07]
 
-* **[Agentic Context Engineering: Evolving Contexts for Self-Improving Language Models](https://arxiv.org/abs/2510.04618)** (Zhang et al., ICLR 2026) - *Evolves the context itself as a playbook via generate–reflect–curate delta operations, countering brevity bias and context collapse for self-improving agents.* \[[code](https://github.com/ace-agent/ace) ⭐ 1,299 | 🐛 17 | 🌐 Python | 📅 2026-08-24]
+* **[Agentic Context Engineering: Evolving Contexts for Self-Improving Language Models](https://arxiv.org/abs/2510.04618)** (Zhang et al., ICLR 2026) - *Evolves the context itself as a playbook via generate–reflect–curate delta operations, countering brevity bias and context collapse for self-improving agents.* \[[code](https://github.com/ace-agent/ace) ⭐ 1,300 | 🐛 17 | 🌐 Python | 📅 2026-08-24]
 
-* **[Evaluating Very Long-Term Conversational Memory of LLM Agents](https://arxiv.org/abs/2402.17753)** (Maharana et al., ACL 2024) - *The standard benchmark used to evaluate and compare long-term conversational memory systems for LLM agents (used by Mem0, MIRIX, A-MEM, etc.).* \[[code](https://github.com/snap-research/locomo) ⭐ 1,151 | 🐛 38 | 🌐 Python | 📅 2024-08-13]
+* **[Evaluating Very Long-Term Conversational Memory of LLM Agents](https://arxiv.org/abs/2402.17753)** (Maharana et al., ACL 2024) - *The standard benchmark used to evaluate and compare long-term conversational memory systems for LLM agents (used by Mem0, MIRIX, A-MEM, etc.).* \[[code](https://github.com/snap-research/locomo) ⭐ 1,154 | 🐛 38 | 🌐 Python | 📅 2024-08-13]
 
-* **[LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory](https://arxiv.org/abs/2410.10813)** (Wu et al., ICLR 2025) - *Decomposes long-term interactive memory into five separately testable abilities.* \[[code](https://github.com/xiaowu0162/LongMemEval) ⭐ 1,068 | 🐛 45 | 🌐 Python | 📅 2026-05-11]
+* **[LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory](https://arxiv.org/abs/2410.10813)** (Wu et al., ICLR 2025) - *Decomposes long-term interactive memory into five separately testable abilities.* \[[code](https://github.com/xiaowu0162/LongMemEval) ⭐ 1,069 | 🐛 45 | 🌐 Python | 📅 2026-05-11]
 
-* **[A-MEM: Agentic Memory for LLM Agents](https://arxiv.org/abs/2502.12110)** (Xu et al., arXiv 2025) - *Representative of the newest generation of dynamically self-organizing (graph/note-linking) long-term memory systems for LLM agents.* \[[code](https://github.com/WujiangXu/A-mem) ⭐ 958 | 🐛 6 | 🌐 Python | 📅 2026-03-05]
+* **[A-MEM: Agentic Memory for LLM Agents](https://arxiv.org/abs/2502.12110)** (Xu et al., arXiv 2025) - *Representative of the newest generation of dynamically self-organizing (graph/note-linking) long-term memory systems for LLM agents.* \[[code](https://github.com/WujiangXu/A-mem) ⭐ 960 | 🐛 6 | 🌐 Python | 📅 2026-03-05]
 
 * **[Augmenting Language Models with Long-Term Memory](https://arxiv.org/abs/2306.07174)** (Wang et al., NeurIPS 2023) - *Key architectural approach to giving the underlying language model itself (not just an agent scaffold) a trainable long-term memory retrieval mechanism.* \[[code](https://github.com/Victorwz/LongMem) ⭐ 827 | 🐛 12 | 🌐 Python | 📅 2024-03-30]
 
@@ -561,24 +573,28 @@ Fresh 2026 work that is already drawing attention.
 
 * **[When Your Agent Opens the Chat App: Agent-Controlled Search over Raw Chat Logs Rivals Structured Memory](https://arxiv.org/abs/2608.12888)** (Li et al., arXiv 2026) - *An agent given an iterative keyword-search loop over the unmodified chat archive, indexed lexically at turn granularity with no summaries, embeddings, trees or graphs built in advance, reaches the highest mean accuracy of any system compared (58.2 against 53.2 for HippoRAG 2) across roughly 2,800 questions under MemoryAgentBench's incremental multi-turn setting on a matched GPT-4o-mini backbone.*
 
+* **[Does Your Agent's Memory Survive a Model Upgrade? A Controlled Study of Memory Portability](https://arxiv.org/abs/2609.05339)** (Goyal et al., arXiv 2026) - *Holds the stored history fixed and swaps the model, showing that memory format decides whether an upgrade is survivable: a fixed-schema knowledge graph moves accuracy by 0.0004 points, model-compressed notes swing asymmetrically by +9.91 or -13.28 points depending on migration direction, a half-migrated embedding index captures only 4.96 of the 11.90 points full re-embedding recovers, and store-only repair of notes misses a 90 per cent recovery target in all 48 histories unless the raw source was kept.*
+
+* **[The Memory Trust Gap: Capability-Dependent Failures in Persistent-Memory Agents](https://arxiv.org/abs/2609.01852)** (Hu et al., arXiv 2026) - *Separates the case where memory is the only source from the case where an authoritative tool holds the right value, and reads the failure as over-trust rather than confusion: models answer from a stale stored value 0.92 to 1.00 of the time when memory is all they have, and the harm under the trap condition is capability-gated, with the larger models in a Qwen3 size series collapsing hardest once a stale note is dressed up as current.*
+
 </details>
 
 <sub><a href="#contents">↑ Back to Contents</a></sub>
 
 <a id="tools"></a>
 
-### 🔧 Tool Use (43)
+### 🔧 Tool Use (45)
 
 *Corresponds to §6 (Tool Use and Action Execution).*
 
 <details>
-<summary><b>Show 43 papers</b></summary>
+<summary><b>Show 45 papers</b></summary>
 
-* **[The Berkeley Function Calling Leaderboard (BFCL): From Tool Use to Agentic Evaluation of Large Language Models](https://openreview.net/forum?id=2GmDdhBdDk)** (Patil et al., ICML 2025) - *The de facto standard leaderboard/benchmark for comparing LLM function-calling and tool-use performance, referenced by nearly all subsequent function-calling papers.* \[[code](https://github.com/ShishirPatil/gorilla) ⭐ 13,017 | 🐛 278 | 🌐 Python | 📅 2026-04-13]
+* **[The Berkeley Function Calling Leaderboard (BFCL): From Tool Use to Agentic Evaluation of Large Language Models](https://openreview.net/forum?id=2GmDdhBdDk)** (Patil et al., ICML 2025) - *The de facto standard leaderboard/benchmark for comparing LLM function-calling and tool-use performance, referenced by nearly all subsequent function-calling papers.* \[[code](https://github.com/ShishirPatil/gorilla) ⭐ 13,019 | 🐛 278 | 🌐 Python | 📅 2026-04-13]
 
-* **[ToolLLM: Facilitating Large Language Models to Master 16000+ Real-world APIs](https://arxiv.org/abs/2307.16789)** (Qin et al., ICLR 2024) - *One of the largest and most cited tool-use datasets/frameworks, establishing ToolBench as a standard training/evaluation resource for open-source tool-use LLMs.* \[[code](https://github.com/OpenBMB/ToolBench) ⭐ 5,735 | 🐛 164 | 🌐 Python | 📅 2025-05-21]
+* **[ToolLLM: Facilitating Large Language Models to Master 16000+ Real-world APIs](https://arxiv.org/abs/2307.16789)** (Qin et al., ICLR 2024) - *One of the largest and most cited tool-use datasets/frameworks, establishing ToolBench as a standard training/evaluation resource for open-source tool-use LLMs.* \[[code](https://github.com/OpenBMB/ToolBench) ⭐ 5,736 | 🐛 164 | 🌐 Python | 📅 2025-05-21]
 
-* **[API-Bank: A Comprehensive Benchmark for Tool-Augmented LLMs](https://arxiv.org/abs/2304.08244)** (Li et al., EMNLP 2023) - *One of the earliest and most cited dedicated benchmarks for evaluating and training tool-augmented dialogue LLMs.* \[[code](https://github.com/AlibabaResearch/DAMO-ConvAI) ⭐ 1,592 | 🐛 80 | 🌐 Python | 📅 2026-06-10]
+* **[API-Bank: A Comprehensive Benchmark for Tool-Augmented LLMs](https://arxiv.org/abs/2304.08244)** (Li et al., EMNLP 2023) - *One of the earliest and most cited dedicated benchmarks for evaluating and training tool-augmented dialogue LLMs.* \[[code](https://github.com/AlibabaResearch/DAMO-ConvAI) ⭐ 1,594 | 🐛 80 | 🌐 Python | 📅 2026-06-10]
 
 * **[RestGPT: Connecting Large Language Models with Real-World RESTful APIs](https://arxiv.org/abs/2306.06624)** (Song et al., arXiv 2023) - *Demonstrates tool-use extended to complex, stateful real-world REST APIs beyond toy tool sets, with a benchmark still used for API-grounded agent evaluation.* \[[code](https://github.com/Yifan-Song793/RestGPT) ⭐ 1,404 | 🐛 12 | 🌐 Python | 📅 2024-06-07]
 
@@ -598,9 +614,9 @@ Fresh 2026 work that is already drawing attention.
 
 * **[StableToolBench: Towards Stable Large-Scale Benchmarking on Tool Learning of Large Language Models](https://arxiv.org/abs/2403.07714)** (Guo et al., ACL 2024) - *Widely used evaluation infrastructure paper that fixed reproducibility problems plaguing large-scale real-API tool-learning benchmarks.* \[[code](https://github.com/THUNLP-MT/StableToolBench) ⭐ 240 | 🐛 20 | 🌐 Python | 📅 2025-04-15]
 
-* **[MCP-Atlas: A Large-Scale Benchmark for Tool-Use Competency with Real MCP Servers](https://arxiv.org/abs/2602.00933)** (Bandi et al., arXiv 2026) - *Large-scale tool-use benchmark built on real Model Context Protocol servers rather than synthetic tool stubs.* \[[code](https://github.com/scaleapi/mcp-atlas) ⭐ 151 | 🐛 36 | 🌐 Python | 📅 2026-09-03]
+* **[MCP-Atlas: A Large-Scale Benchmark for Tool-Use Competency with Real MCP Servers](https://arxiv.org/abs/2602.00933)** (Bandi et al., arXiv 2026) - *Large-scale tool-use benchmark built on real Model Context Protocol servers rather than synthetic tool stubs.* \[[code](https://github.com/scaleapi/mcp-atlas) ⭐ 152 | 🐛 37 | 🌐 Python | 📅 2026-09-03]
 
-* **[HANDBOOK.md: A Benchmark for Long-Context Agentic Instruction Following](https://arxiv.org/abs/2607.25398)** (Panavas et al., arXiv 2026) - *Hand an agent a 20 to 124 page policy document plus MCP tools and it stops obeying: the best of thirty configurations passes 36.2% of trials under strict grading.* \[[code](https://github.com/surge-ai/handbook) ⭐ 50 | 🐛 1 | 🌐 Python | 📅 2026-08-14]
+* **[HANDBOOK.md: A Benchmark for Long-Context Agentic Instruction Following](https://arxiv.org/abs/2607.25398)** (Panavas et al., arXiv 2026) - *Hand an agent a 20 to 124 page policy document plus MCP tools and it stops obeying: the best of thirty configurations passes 36.2% of trials under strict grading.* \[[code](https://github.com/surge-ai/handbook) ⭐ 51 | 🐛 1 | 🌐 Python | 📅 2026-08-14]
 
 * **[PlanBench-XL: Evaluating Long-Horizon Planning of LLM Tool-Use Agents in Large-Scale Tool Ecosystems](https://arxiv.org/abs/2606.22388)** (Liu et al., arXiv 2026) - *Long-horizon planning benchmark for tool-use agents in large tool ecosystems, where retrieval and selection dominate.* \[[code](https://github.com/JiayuJeff/PlanBench-XL) ⭐ 40 | 🐛 0 | 🌐 Python | 📅 2026-07-16]
 
@@ -660,32 +676,36 @@ Fresh 2026 work that is already drawing attention.
 
 * **[Thinking With Tools, Not With Pixels: Tool Calls as Text Scaffolds for Visual Reasoning](https://arxiv.org/abs/2608.09682)** (Shao et al., arXiv 2026) - *Replacing the images that crop and zoom tools return with a text placeholder matches or exceeds full thinking-with-images across LoRA, full fine-tuning and RL, so the load-bearing signal is the structured text emitted at call time rather than the returned pixels; latency falls 29 to 46% and tool-execution API calls disappear.*
 
+* **[Can MCP Clients Decide What to Do After Failure? A Result-Only Actionability Audit](https://arxiv.org/abs/2609.00072)** (Mehan, arXiv 2026) - *Asks what deterministic software can decide from a completed MCP failure result alone, and in a deliberately small sample of 21 induced failures across ten reachable servers the typed fields make failure visible in 18 cases and a broad policy readable in 8, while never exposing a specific cause, target, executable repair or replay constraint, which leaves recovery resting on prose somebody has to interpret.*
+
+* **[One Policy Is Enough: Single-Agent Reinforcement Learning Outperforms Tree Search for Chemistry Tool Learning](https://arxiv.org/abs/2608.30952)** (Dariani et al., arXiv 2026) - *Replaces a hierarchical evolutionary tree search running separate policy and execution models under two learned critics with a single left-to-right generation trained by outcome-level reinforcement against a programmatic reward read off the gold call chain, keeping no learned critic and no judge in the training loop, and still improves Tool F1 by 5.5 per cent and Return F1 by 9.6 per cent on Qwen-2.5-7B at one model invocation per question.*
+
 </details>
 
 <sub><a href="#contents">↑ Back to Contents</a></sub>
 
 <a id="multi-agent"></a>
 
-### 🤝 Multi-Agent Systems (49)
+### 🤝 Multi-Agent Systems (51)
 
 *Corresponds to §7 (Multi-Agent Systems).*
 
 <details>
-<summary><b>Show 49 papers</b></summary>
+<summary><b>Show 51 papers</b></summary>
 
-* **[AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation](https://arxiv.org/abs/2308.08155)** (Wu et al., arXiv 2023) - *Widely adopted industrial multi-agent orchestration framework (Microsoft).* \[[code](https://github.com/microsoft/autogen) ⭐ 60,846 | 🐛 1,053 | 🌐 Python | 📅 2026-04-15]
+* **[AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation](https://arxiv.org/abs/2308.08155)** (Wu et al., arXiv 2023) - *Widely adopted industrial multi-agent orchestration framework (Microsoft).* \[[code](https://github.com/microsoft/autogen) ⭐ 60,868 | 🐛 1,058 | 🌐 Python | 📅 2026-04-15]
 
-* **[ChatDev: Communicative Agents for Software Development](https://arxiv.org/abs/2307.07924)** (Qian et al., ACL 2024) - *Widely cited demonstration of end-to-end multi-agent collaboration for a complex real-world workflow.* \[[code](https://github.com/OpenBMB/ChatDev) ⭐ 34,227 | 🐛 72 | 🌐 Python | 📅 2026-07-24]
+* **[ChatDev: Communicative Agents for Software Development](https://arxiv.org/abs/2307.07924)** (Qian et al., ACL 2024) - *Widely cited demonstration of end-to-end multi-agent collaboration for a complex real-world workflow.* \[[code](https://github.com/OpenBMB/ChatDev) ⭐ 34,233 | 🐛 73 | 🌐 Python | 📅 2026-07-24]
 
-* **[CAMEL: Communicative Agents for "Mind" Exploration of Large Language Model Society](https://arxiv.org/abs/2303.17760)** (Li et al., NeurIPS 2023) - *One of the earliest and most cited frameworks establishing autonomous agent-to-agent cooperation via role-play.* \[[code](https://github.com/camel-ai/camel) ⭐ 17,678 | 🐛 471 | 🌐 Python | 📅 2026-09-07]
+* **[CAMEL: Communicative Agents for "Mind" Exploration of Large Language Model Society](https://arxiv.org/abs/2303.17760)** (Li et al., NeurIPS 2023) - *One of the earliest and most cited frameworks establishing autonomous agent-to-agent cooperation via role-play.* \[[code](https://github.com/camel-ai/camel) ⭐ 17,684 | 🐛 473 | 🌐 Python | 📅 2026-09-07]
 
 * **[AgentVerse: Facilitating Multi-Agent Collaboration and Exploring Emergent Behaviors in Agents](https://arxiv.org/abs/2308.10848)** (Chen et al., ICLR 2024) - *General-purpose, dynamically-composed multi-agent collaboration framework and study of emergent social dynamics.* \[[code](https://github.com/OpenBMB/AgentVerse) ⭐ 5,120 | 🐛 35 | 🌐 JavaScript | 📅 2024-09-09]
 
-* **[Mixture-of-Agents Enhances Large Language Model Capabilities](https://arxiv.org/abs/2406.04692)** (Wang et al., ICLR 2025) - *Influential architecture showing structured multi-agent aggregation can outperform any single strong proprietary model.* \[[code](https://github.com/togethercomputer/MoA) ⭐ 2,977 | 🐛 23 | 🌐 Python | 📅 2025-01-07]
+* **[Mixture-of-Agents Enhances Large Language Model Capabilities](https://arxiv.org/abs/2406.04692)** (Wang et al., ICLR 2025) - *Influential architecture showing structured multi-agent aggregation can outperform any single strong proprietary model.* \[[code](https://github.com/togethercomputer/MoA) ⭐ 2,978 | 🐛 23 | 🌐 Python | 📅 2025-01-07]
 
-* **[Language Agents as Optimizable Graphs](https://arxiv.org/abs/2402.16823)** (Zhuge et al., ICML 2024) - *GPTSwarm: formalizes multi-agent systems as computational graphs whose prompts and edges are jointly learned.* \[[code](https://github.com/metauto-ai/GPTSwarm) ⭐ 1,041 | 🐛 4 | 🌐 Python | 📅 2026-02-05]
+* **[Language Agents as Optimizable Graphs](https://arxiv.org/abs/2402.16823)** (Zhuge et al., ICML 2024) - *GPTSwarm: formalizes multi-agent systems as computational graphs whose prompts and edges are jointly learned.* \[[code](https://github.com/metauto-ai/GPTSwarm) ⭐ 1,043 | 🐛 4 | 🌐 Python | 📅 2026-02-05]
 
-* **[Encouraging Divergent Thinking in Large Language Models through Multi-Agent Debate](https://arxiv.org/abs/2305.19118)** (Liang et al., EMNLP 2024) - *Diagnoses a core failure mode motivating why multi-agent debate helps beyond self-consistency.* \[[code](https://github.com/Skytliang/Multi-Agents-Debate) ⭐ 610 | 🐛 0 | 🌐 Python | 📅 2025-12-16]
+* **[Encouraging Divergent Thinking in Large Language Models through Multi-Agent Debate](https://arxiv.org/abs/2305.19118)** (Liang et al., EMNLP 2024) - *Diagnoses a core failure mode motivating why multi-agent debate helps beyond self-consistency.* \[[code](https://github.com/Skytliang/Multi-Agents-Debate) ⭐ 611 | 🐛 0 | 🌐 Python | 📅 2025-12-16]
 
 * **[Improving Factuality and Reasoning in Language Models through Multiagent Debate](https://arxiv.org/abs/2305.14325)** (Du et al., ICML 2024) - *Seminal multi-agent debate paper popularizing 'society of minds'-style debate as a test-time technique.* \[[code](https://github.com/composable-models/llm_multiagent_debate) ⭐ 551 | 🐛 8 | 🌐 Python | 📅 2025-04-24]
 
@@ -771,6 +791,10 @@ Fresh 2026 work that is already drawing attention.
 
 * **[OrchMAS: Orchestrated Reasoning with Multi Collaborative Heterogeneous Scientific Expert Structured Agents](https://arxiv.org/abs/2603.03005)** (Feng et al., arXiv 2026) - *Splits orchestration from execution across two tiers for scientific reasoning: an orchestrator model reads the task, builds a domain-aware pipeline and writes the role and prompt for each expert agent it instantiates, then revises that pipeline mid-run from intermediate feedback, while a separate execution model carries out the steps, which lets backbones of different capacity and cost be mixed inside one run.*
 
+* **[At Equal Inference Cost, Multi-Agent Structure Does Not Beat a Single Frozen Agent](https://arxiv.org/abs/2609.04217)** (Dylan et al., arXiv 2026) - *Fixes the total number of model calls instead of the number of environment rollouts, and the reported advantage of a Planner-Executor-Critic team over a single evolved executor disappears: 0.769 against 0.754 on ALFWorld at p = 0.80 while spending 1.8 times the evaluation calls, with leave-one-in analysis putting the realized value entirely in the executor as planner and critic evolve to empty or inert prompts, and the team trending worse on WebShop.*
+
+* **[A Case Study on Emergent Cheating and Whistleblowing in Autonomous Research Swarms](https://arxiv.org/abs/2609.04170)** (Paglieri et al., arXiv 2026) - *One agent in a collective of 100 proving formal conjectures found an exploit in the evaluation system, and it spread through the shared knowledge library and then peer-to-peer messages under competitive pressure, while a separate cohort audited the fraudulent proofs, alerted peers, staged boycotts and proposed validation patches; the transparent channels that carried the exploit are the same ones that made the resistance possible, which the authors read as a commons-governance problem rather than a failure inside any single agent.*
+
 </details>
 
 <sub><a href="#contents">↑ Back to Contents</a></sub>
@@ -779,30 +803,30 @@ Fresh 2026 work that is already drawing attention.
 
 <a id="environments"></a>
 
-### 🌐 Interactive Environments (54)
+### 🌐 Interactive Environments (56)
 
 *Corresponds to §8 (Agents in Interactive Environments).*
 
 <details>
-<summary><b>Show 54 papers</b></summary>
+<summary><b>Show 56 papers</b></summary>
 
-* **[CLI-Anything: Towards Agent-Native Computer Use](https://arxiv.org/abs/2606.03854)** (Yang et al., arXiv 2026) - *Argues computer use should be agent-native through the CLI instead of pixel-level screen imitation.* \[[code](https://github.com/HKUDS/CLI-Anything) ⭐ 49,084 | 🐛 85 | 🌐 Python | 📅 2026-08-21]
+* **[CLI-Anything: Towards Agent-Native Computer Use](https://arxiv.org/abs/2606.03854)** (Yang et al., arXiv 2026) - *Argues computer use should be agent-native through the CLI instead of pixel-level screen imitation.* \[[code](https://github.com/HKUDS/CLI-Anything) ⭐ 49,128 | 🐛 85 | 🌐 Python | 📅 2026-08-21]
 
-* **[Do As I Can, Not As I Say: Grounding Language in Robotic Affordances](https://arxiv.org/abs/2204.01691)** (al., CoRL 2022) - *Foundational demonstration of LLM-as-planner grounded by real-world affordances for embodied robotic agents.* \[[code](https://github.com/google-research/google-research/tree/master/saycan) ⭐ 38,703 | 🐛 1,990 | 🌐 Jupyter Notebook | 📅 2026-09-03]
+* **[Do As I Can, Not As I Say: Grounding Language in Robotic Affordances](https://arxiv.org/abs/2204.01691)** (al., CoRL 2022) - *Foundational demonstration of LLM-as-planner grounded by real-world affordances for embodied robotic agents.* \[[code](https://github.com/google-research/google-research/tree/master/saycan) ⭐ 38,712 | 🐛 1,990 | 🌐 Jupyter Notebook | 📅 2026-09-07]
 
-* **[Tongyi DeepResearch Technical Report](https://arxiv.org/abs/2510.24701)** (Tongyi DeepResearch Team, arXiv 2025) - *Open end-to-end deep-research agent model for long-horizon web research and synthesis.* \[[code](https://github.com/Alibaba-NLP/DeepResearch) ⭐ 19,914 | 🐛 92 | 🌐 Python | 📅 2026-02-27]
+* **[Tongyi DeepResearch Technical Report](https://arxiv.org/abs/2510.24701)** (Tongyi DeepResearch Team, arXiv 2025) - *Open end-to-end deep-research agent model for long-horizon web research and synthesis.* \[[code](https://github.com/Alibaba-NLP/DeepResearch) ⭐ 19,915 | 🐛 92 | 🌐 Python | 📅 2026-02-27]
 
-* **[π0: A Vision-Language-Action Flow Model for General Robot Control](https://arxiv.org/abs/2410.24164)** (Black et al., arXiv 2024) - *Flow-matching action expert on a pretrained VLM, controlling many robot embodiments.* \[[code](https://github.com/Physical-Intelligence/openpi) ⭐ 13,673 | 🐛 339 | 🌐 Python | 📅 2026-08-24]
+* **[π0: A Vision-Language-Action Flow Model for General Robot Control](https://arxiv.org/abs/2410.24164)** (Black et al., arXiv 2024) - *Flow-matching action expert on a pretrained VLM, controlling many robot embodiments.* \[[code](https://github.com/Physical-Intelligence/openpi) ⭐ 13,699 | 🐛 340 | 🌐 Python | 📅 2026-08-24]
 
-* **[UI-TARS: Pioneering Automated GUI Interaction with Native Agents](https://arxiv.org/abs/2501.12326)** (al., arXiv 2025) - *State-of-the-art open 'native' GUI/computer-use agent model showing the field's shift toward end-to-end trained GUI action models.* \[[code](https://github.com/bytedance/UI-TARS) ⭐ 11,431 | 🐛 56 | 🌐 Python | 📅 2026-01-27]
+* **[UI-TARS: Pioneering Automated GUI Interaction with Native Agents](https://arxiv.org/abs/2501.12326)** (al., arXiv 2025) - *State-of-the-art open 'native' GUI/computer-use agent model showing the field's shift toward end-to-end trained GUI action models.* \[[code](https://github.com/bytedance/UI-TARS) ⭐ 11,433 | 🐛 56 | 🌐 Python | 📅 2026-01-27]
 
-* **[Mobile-Agent: Autonomous Multi-Modal Mobile Device Agent with Visual Perception](https://arxiv.org/abs/2401.16158)** (Wang et al., arXiv 2024) - *Representative vision-centric mobile GUI agent design demonstrating cross-app, metadata-free operation.* \[[code](https://github.com/X-PLUG/MobileAgent) ⭐ 9,173 | 🐛 195 | 🌐 Python | 📅 2026-07-07]
+* **[Mobile-Agent: Autonomous Multi-Modal Mobile Device Agent with Visual Perception](https://arxiv.org/abs/2401.16158)** (Wang et al., arXiv 2024) - *Representative vision-centric mobile GUI agent design demonstrating cross-app, metadata-free operation.* \[[code](https://github.com/X-PLUG/MobileAgent) ⭐ 9,180 | 🐛 195 | 🌐 Python | 📅 2026-07-07]
 
-* **[Mobile-Agent-v3.5: Multi-platform Fundamental GUI Agents](https://arxiv.org/abs/2602.16855)** (Xu et al., arXiv 2026) - *GUI-Owl-1.5 native multi-platform (mobile/desktop/browser) agent family with a data flywheel and MRPO RL, SOTA on 20+ GUI benchmarks.* \[[code](https://github.com/X-PLUG/MobileAgent) ⭐ 9,173 | 🐛 195 | 🌐 Python | 📅 2026-07-07]
+* **[Mobile-Agent-v3.5: Multi-platform Fundamental GUI Agents](https://arxiv.org/abs/2602.16855)** (Xu et al., arXiv 2026) - *GUI-Owl-1.5 native multi-platform (mobile/desktop/browser) agent family with a data flywheel and MRPO RL, SOTA on 20+ GUI benchmarks.* \[[code](https://github.com/X-PLUG/MobileAgent) ⭐ 9,180 | 🐛 195 | 🌐 Python | 📅 2026-07-07]
 
-* **[OpenVLA: An Open-Source Vision-Language-Action Model](https://arxiv.org/abs/2406.09246)** (al., CoRL 2024) - *Open-source counterpart to closed VLA models, democratizing research on LLM-driven robotic control.* \[[code](https://github.com/openvla/openvla) ⭐ 6,961 | 🐛 117 | 🌐 Python | 📅 2025-03-23]
+* **[OpenVLA: An Open-Source Vision-Language-Action Model](https://arxiv.org/abs/2406.09246)** (al., CoRL 2024) - *Open-source counterpart to closed VLA models, democratizing research on LLM-driven robotic control.* \[[code](https://github.com/openvla/openvla) ⭐ 6,967 | 🐛 117 | 🌐 Python | 📅 2025-03-23]
 
-* **[OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments](https://arxiv.org/abs/2404.07972)** (Xie et al., NeurIPS 2024) - *Standard benchmark for evaluating 'computer-use' agents, used to evaluate essentially every major computer-use agent since 2024.* \[[code](https://github.com/xlang-ai/OSWorld) ⭐ 3,127 | 🐛 202 | 🌐 Python | 📅 2026-08-30]
+* **[OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments](https://arxiv.org/abs/2404.07972)** (Xie et al., NeurIPS 2024) - *Standard benchmark for evaluating 'computer-use' agents, used to evaluate essentially every major computer-use agent since 2024.* \[[code](https://github.com/xlang-ai/OSWorld) ⭐ 3,130 | 🐛 203 | 🌐 Python | 📅 2026-08-30]
 
 * **[RT-1: Robotics Transformer for Real-World Control at Scale](https://arxiv.org/abs/2212.06817)** (al., RSS 2023) - *Foundational large-scale robot-transformer model establishing the recipe later extended by RT-2 and OpenVLA.* \[[code](https://github.com/google-research/robotics_transformer) ⚠️ Archived]
 
@@ -812,9 +836,9 @@ Fresh 2026 work that is already drawing attention.
 
 * **[Mind2Web: Towards a Generalist Agent for the Web](https://arxiv.org/abs/2306.06070)** (Deng et al., NeurIPS 2023) - *First benchmark and LLM-based agent explicitly designed for generalist web navigation on real websites; standard reference cited by subsequent web/GUI agent papers.* \[[code](https://github.com/OSU-NLP-Group/Mind2Web) ⭐ 1,025 | 🐛 12 | 🌐 Jupyter Notebook | 📅 2025-11-05]
 
-* **[AndroidWorld: A Dynamic Benchmarking Environment for Autonomous Agents](https://arxiv.org/abs/2405.14573)** (al., ICLR 2025) - *Dominant reproducible benchmark for mobile GUI agents enabling dynamic task variation.* \[[code](https://github.com/google-research/android_world) ⭐ 874 | 🐛 48 | 🌐 Python | 📅 2026-07-16]
+* **[AndroidWorld: A Dynamic Benchmarking Environment for Autonomous Agents](https://arxiv.org/abs/2405.14573)** (al., ICLR 2025) - *Dominant reproducible benchmark for mobile GUI agents enabling dynamic task variation.* \[[code](https://github.com/google-research/android_world) ⭐ 875 | 🐛 48 | 🌐 Python | 📅 2026-07-16]
 
-* **[ALFWorld: Aligning Text and Embodied Environments for Interactive Learning](https://arxiv.org/abs/2010.03768)** (Shridhar et al., ICLR 2021) - *Widely used benchmark for evaluating LLM-based embodied/household agents (ReAct, Reflexion), bridging text reasoning and embodied execution.* \[[code](https://github.com/alfworld/alfworld) ⭐ 851 | 🐛 14 | 🌐 Python | 📅 2026-02-08]
+* **[ALFWorld: Aligning Text and Embodied Environments for Interactive Learning](https://arxiv.org/abs/2010.03768)** (Shridhar et al., ICLR 2021) - *Widely used benchmark for evaluating LLM-based embodied/household agents (ReAct, Reflexion), bridging text reasoning and embodied execution.* \[[code](https://github.com/alfworld/alfworld) ⭐ 853 | 🐛 14 | 🌐 Python | 📅 2026-02-08]
 
 * **[GPT-4V(ision) is a Generalist Web Agent, if Grounded](https://arxiv.org/abs/2401.01614)** (Zheng et al., ICML 2024) - *First systematic demonstration that multimodal LLMs can act as generalist visual web agents, catalyzing the shift to vision-grounded web/GUI agents.* \[[code](https://github.com/OSU-NLP-Group/SeeAct) ⭐ 851 | 🐛 15 | 🌐 Python | 📅 2025-02-03]
 
@@ -846,7 +870,7 @@ Fresh 2026 work that is already drawing attention.
 
 * **[ISE: An Execution-Grounded Recipe for Multi-Turn OS-Agent Trajectories](https://arxiv.org/abs/2606.11520)** (Luo et al., arXiv 2026) - *Proposes ISE, a three-stage Intent-Simulate-Execute pipeline that synthesizes multi-turn OS-agent training trajectories by pairing a role-locked user simulator with real tool execution in isolated OS workspaces.* \[[code](https://github.com/Valiere01/ISE-Trace) ⭐ 7 | 🐛 0 | 📅 2026-06-12]
 
-* **[Beyond Sequential Interaction: Benchmarking Parallel Execution and Coordination for GUI Agents](https://arxiv.org/abs/2607.22689)** (Yu et al., arXiv 2026) - *First benchmark for parallel GUI agents: splitting long-horizon desktop tasks across concurrent workers on separate machines beats the best serial baseline by 12.9 points at roughly half the steps and tokens.* \[[code](https://github.com/pkgunboat/ParaGUIBench) ⭐ 6 | 🐛 1 | 🌐 Python | 📅 2026-09-01]
+* **[Beyond Sequential Interaction: Benchmarking Parallel Execution and Coordination for GUI Agents](https://arxiv.org/abs/2607.22689)** (Yu et al., arXiv 2026) - *First benchmark for parallel GUI agents: splitting long-horizon desktop tasks across concurrent workers on separate machines beats the best serial baseline by 12.9 points at roughly half the steps and tokens.* \[[code](https://github.com/pkgunboat/ParaGUIBench) ⭐ 6 | 🐛 1 | 🌐 Python | 📅 2026-09-07]
 
 * **[Generalization in Online Reinforcement Learning for Mobile Agents](https://arxiv.org/abs/2603.07432)** (Gu et al., arXiv 2026) - *Introduces AndroidWorld-Generalization, a benchmark and GRPO-based online RL training system for GUI mobile agents, reporting zero-shot generalization gains of 26.1% on unseen instances that diminish to 15.7% on unseen templates.* \[[code](https://github.com/zihuanjiang/AndroidWorld-Generalization) ⭐ 3 | 🐛 2 | 📅 2026-03-15]
 
@@ -894,34 +918,38 @@ Fresh 2026 work that is already drawing attention.
 
 * **[Neurosymbolic Embodied Agents](https://arxiv.org/abs/2608.16794)** (Albinhassan et al., arXiv 2026) - *Factors household tasks into task-directed visual exploration and PDDL-constrained decoding with Monte Carlo tree search, letting open 4B to 27B models exceed 90% success on both VirtualHome and ALFWorld, where constraints or search alone solve under a third of ALFWorld tasks but their combination solves over 95%, and residual failures localize to state acquisition rather than plan generation.*
 
+* **[CUA-Universe: A Scalable and Dynamic Environment for Hybrid GUI+CLI Agents](https://arxiv.org/abs/2609.05374)** (Shi et al., arXiv 2026) - *Builds environments where the same application state is reachable through both the screen and the command line, adapting 16 real desktop applications into reproducible virtual machines with command surfaces that are discovered, wrapped or generated, and training on the harvested trajectories moves a 9B model from inefficient clicking and brittle scripting toward using whichever interface is cheaper: 16.8 points of success on OSWorld with 57 per cent fewer steps and 44 per cent fewer tokens.*
+
+* **[Discriminative World Models for Web Agents](https://arxiv.org/abs/2609.02885)** (Li et al., arXiv 2026) - *Argues that a world model trained by supervised next-state prediction is optimized for the wrong thing once a ranker consumes it, since ranking needs predicted states that separate the candidate actions rather than states that merely look plausible, and trains instead on predicted-state matching over branching WebArena trajectories where every decision point carries the alternative actions alongside the states each of them produces.*
+
 </details>
 
 <sub><a href="#contents">↑ Back to Contents</a></sub>
 
 <a id="applications"></a>
 
-### 🚀 Applications (51)
+### 🚀 Applications (53)
 
 *Corresponds to §10 (Applications).*
 
 <details>
-<summary><b>Show 51 papers</b></summary>
+<summary><b>Show 53 papers</b></summary>
 
-* **[TradingAgents: Multi-Agents LLM Financial Trading Framework](https://arxiv.org/abs/2412.20138)** (Xiao et al., arXiv 2024) - *A recent, popular multi-role multi-agent finance system widely used as a reference architecture.* \[[code](https://github.com/TauricResearch/TradingAgents) ⭐ 102,788 | 🐛 365 | 🌐 Python | 📅 2026-09-01]
+* **[TradingAgents: Multi-Agents LLM Financial Trading Framework](https://arxiv.org/abs/2412.20138)** (Xiao et al., arXiv 2024) - *A recent, popular multi-role multi-agent finance system widely used as a reference architecture.* \[[code](https://github.com/TauricResearch/TradingAgents) ⭐ 103,001 | 🐛 364 | 🌐 Python | 📅 2026-09-07]
 
-* **[OpenHands: An Open Platform for AI Software Developers as Generalist Agents](https://arxiv.org/abs/2407.16741)** (al., ICLR 2025) - *The leading open community platform underlying much subsequent applied coding-agent research.* \[[code](https://github.com/OpenHands/OpenHands) ⭐ 86,403 | 🐛 670 | 🌐 TypeScript | 📅 2026-09-07]
+* **[OpenHands: An Open Platform for AI Software Developers as Generalist Agents](https://arxiv.org/abs/2407.16741)** (al., ICLR 2025) - *The leading open community platform underlying much subsequent applied coding-agent research.* \[[code](https://github.com/OpenHands/OpenHands) ⭐ 86,767 | 🐛 680 | 🌐 TypeScript | 📅 2026-09-08]
 
-* **[FinGPT: Open-Source Financial Large Language Models](https://arxiv.org/abs/2306.06031)** (Yang et al., IJCAI 2023) - *One of the most cited open-source financial LLM/agent efforts, providing base-model infrastructure underlying many downstream financial agent systems.* \[[code](https://github.com/AI4Finance-Foundation/FinGPT) ⭐ 21,217 | 🐛 84 | 🌐 Jupyter Notebook | 📅 2026-09-07]
+* **[FinGPT: Open-Source Financial Large Language Models](https://arxiv.org/abs/2306.06031)** (Yang et al., IJCAI 2023) - *One of the most cited open-source financial LLM/agent efforts, providing base-model infrastructure underlying many downstream financial agent systems.* \[[code](https://github.com/AI4Finance-Foundation/FinGPT) ⭐ 21,223 | 🐛 85 | 🌐 Jupyter Notebook | 📅 2026-09-07]
 
-* **[The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery](https://arxiv.org/abs/2408.06292)** (Lu et al., arXiv 2024) - *A landmark, widely publicized attempt at fully automating the scientific-paper lifecycle.* \[[code](https://github.com/SakanaAI/AI-Scientist) ⭐ 14,507 | 🐛 119 | 🌐 Jupyter Notebook | 📅 2025-12-19]
+* **[The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery](https://arxiv.org/abs/2408.06292)** (Lu et al., arXiv 2024) - *A landmark, widely publicized attempt at fully automating the scientific-paper lifecycle.* \[[code](https://github.com/SakanaAI/AI-Scientist) ⭐ 14,508 | 🐛 119 | 🌐 Jupyter Notebook | 📅 2025-12-19]
 
-* **[The AI Scientist-v2: Workshop-Level Automated Scientific Discovery via Agentic Tree Search](https://arxiv.org/abs/2504.08066)** (Yamada et al., arXiv 2025) - *Marks a concrete, verifiable milestone for autonomous scientific discovery agents.* \[[code](https://github.com/SakanaAI/AI-Scientist-v2) ⭐ 7,098 | 🐛 78 | 🌐 Python | 📅 2025-12-19]
+* **[The AI Scientist-v2: Workshop-Level Automated Scientific Discovery via Agentic Tree Search](https://arxiv.org/abs/2504.08066)** (Yamada et al., arXiv 2025) - *Marks a concrete, verifiable milestone for autonomous scientific discovery agents.* \[[code](https://github.com/SakanaAI/AI-Scientist-v2) ⭐ 7,104 | 🐛 78 | 🌐 Python | 📅 2025-12-19]
 
 * **[AutoCodeRover: Autonomous Program Improvement](https://arxiv.org/abs/2404.05427)** (Zhang et al., arXiv 2024) - *One of the first cost-efficient autonomous program-repair agents grounded in structured code search.* \[[code](https://github.com/nus-apr/auto-code-rover) ⭐ 3,100 | 🐛 20 | 🌐 Python | 📅 2025-04-24]
 
 * **[Agentless: Demystifying LLM-based Software Engineering Agents](https://arxiv.org/abs/2407.01489)** (Xia et al., arXiv 2024) - *Influential counter-narrative showing simpler non-agentic pipelines can rival complex agents.* \[[code](https://github.com/OpenAutoCoder/Agentless) ⭐ 2,107 | 🐛 54 | 🌐 Python | 📅 2024-12-22]
 
-* **[AutoSci: A Memory-Centric Agentic System for the Full Scientific Research Lifecycle](https://arxiv.org/abs/2605.31468)** (Qian et al., arXiv 2026) - *Memory-centric agentic system automating the full scientific research loop.* \[[code](https://github.com/skyllwt/AutoSci) ⭐ 1,661 | 🐛 3 | 🌐 Python | 📅 2026-09-06]
+* **[AutoSci: A Memory-Centric Agentic System for the Full Scientific Research Lifecycle](https://arxiv.org/abs/2605.31468)** (Qian et al., arXiv 2026) - *Memory-centric agentic system automating the full scientific research loop.* \[[code](https://github.com/skyllwt/AutoSci) ⭐ 1,663 | 🐛 3 | 🌐 Python | 📅 2026-09-06]
 
 * **[SWE-Lancer: Can Frontier LLMs Earn $1 Million from Real-World Freelance Software Engineering?](https://arxiv.org/abs/2502.12115)** (Miserendino et al., arXiv 2025) - *Prices coding-agent competence in real freelance dollars; frontier models leave most of the posted value unearned.* \[[code](https://github.com/openai/SWELancer-Benchmark) ⚠️ Archived]
 
@@ -933,11 +961,11 @@ Fresh 2026 work that is already drawing attention.
 
 * **[SWE-Pruner: Self-Adaptive Context Pruning for Coding Agents](https://arxiv.org/abs/2601.16746)** (Wang et al., arXiv 2026) - *Self-adaptive context pruning that keeps coding agents effective under long repository contexts.* \[[code](https://github.com/Ayanami1314/swe-pruner) ⭐ 317 | 🐛 2 | 🌐 Python | 📅 2026-06-30]
 
-* **[MDAgents: An Adaptive Collaboration of LLMs for Medical Decision-Making](https://arxiv.org/abs/2404.15155)** (al., NeurIPS 2024) - *A widely cited example of adaptive multi-agent orchestration tailored to medical reasoning complexity.* \[[code](https://github.com/mitmedialab/MDAgents) ⭐ 292 | 🐛 10 | 🌐 Python | 📅 2024-11-10]
+* **[MDAgents: An Adaptive Collaboration of LLMs for Medical Decision-Making](https://arxiv.org/abs/2404.15155)** (al., NeurIPS 2024) - *A widely cited example of adaptive multi-agent orchestration tailored to medical reasoning complexity.* \[[code](https://github.com/mitmedialab/MDAgents) ⭐ 293 | 🐛 10 | 🌐 Python | 📅 2024-11-10]
 
 * **[Autonomous chemical research with large language models](https://www.nature.com/articles/s41586-023-06792-0)** (Boiko et al., Nature 2023) - *One of the earliest and most-cited demonstrations of an LLM agent performing autonomous physical-world scientific experimentation.* \[[code](https://github.com/gomesgroup/coscientist) ⭐ 210 | 🐛 3 | 🌐 Python | 📅 2025-08-11]
 
-* **[ScienceAgentBench: Toward Rigorous Assessment of Language Agents for Data-Driven Scientific Discovery](https://arxiv.org/abs/2410.05080)** (al., ICLR 2025) - *A rigorous, expert-validated benchmark quantifying the gap between current LLM agents and end-to-end scientific-discovery automation.* \[[code](https://github.com/OSU-NLP-Group/ScienceAgentBench) ⭐ 168 | 🐛 0 | 🌐 Python | 📅 2026-07-18]
+* **[ScienceAgentBench: Toward Rigorous Assessment of Language Agents for Data-Driven Scientific Discovery](https://arxiv.org/abs/2410.05080)** (al., ICLR 2025) - *A rigorous, expert-validated benchmark quantifying the gap between current LLM agents and end-to-end scientific-discovery automation.* \[[code](https://github.com/OSU-NLP-Group/ScienceAgentBench) ⭐ 169 | 🐛 0 | 🌐 Python | 📅 2026-07-18]
 
 * **[LiteResearcher: A Scalable Agentic RL Training Framework for Deep Research Agent](https://arxiv.org/abs/2604.17931)** (Li et al., arXiv 2026) - *Scalable agentic-RL training framework for deep-research agents.* \[[code](https://github.com/simplex-ai-inc/LiteResearcher) ⭐ 131 | 🐛 0 | 🌐 Python | 📅 2026-08-07]
 
@@ -945,11 +973,11 @@ Fresh 2026 work that is already drawing attention.
 
 * **[LawThinker: A Deep Research Legal Agent in Dynamic Environments](https://arxiv.org/abs/2602.12056)** (Yang et al., arXiv 2026) - *Deep-research legal agent operating in dynamic legal environments.* \[[code](https://github.com/RUC-NLPIR/LawThinker-agent) ⭐ 64 | 🐛 1 | 🌐 Python | 📅 2026-05-07]
 
+* **[HealthAgentBench: A Unified Benchmark Suite of Realistic Agentic Healthcare Environments for Challenging Frontier AI Agents](https://arxiv.org/abs/2606.31179)** (Liu et al., arXiv 2026) - *Benchmark suite of realistic agentic healthcare environments rather than static clinical question answering.* \[[code](https://github.com/microsoft/HealthAgentBench) ⭐ 48 | 🐛 14 | 🌐 Python | 📅 2026-09-01]
+
 * **[MiroEval: Benchmarking Multimodal Deep Research Agents in Process and Outcome](https://arxiv.org/abs/2603.28407)** (Ye et al., arXiv 2026) - *MiroEval is a benchmark of 100 tasks (70 text-only, 30 multimodal) that evaluates deep research agents along synthesis quality, factuality, and research-process dimensions.* \[[code](https://github.com/MiroMindAI/MiroEval) ⭐ 48 | 🐛 1 | 🌐 Python | 📅 2026-07-06]
 
-* **[HealthAgentBench: A Unified Benchmark Suite of Realistic Agentic Healthcare Environments for Challenging Frontier AI Agents](https://arxiv.org/abs/2606.31179)** (Liu et al., arXiv 2026) - *Benchmark suite of realistic agentic healthcare environments rather than static clinical question answering.* \[[code](https://github.com/microsoft/HealthAgentBench) ⭐ 47 | 🐛 14 | 🌐 Python | 📅 2026-09-01]
-
-* **[Agon: An Autonomous Large-Scale Omnidisciplinary Research System Built on Prompt Economy](https://arxiv.org/abs/2606.24177)** (Sun et al., arXiv 2026) - *A research orchestrator that validates what can be checked inside the workflow and leaves the rest to human scientists; 444 loop iterations across disciplines with no human-written experimental code, and a failure taxonomy separating what the loop can fix from what it cannot.* \[[code](https://github.com/AutoResearch-Factory/Agon) ⭐ 47 | 🐛 1 | 🌐 Python | 📅 2026-09-05]
+* **[Agon: An Autonomous Large-Scale Omnidisciplinary Research System Built on Prompt Economy](https://arxiv.org/abs/2606.24177)** (Sun et al., arXiv 2026) - *A research orchestrator that validates what can be checked inside the workflow and leaves the rest to human scientists; 444 loop iterations across disciplines with no human-written experimental code, and a failure taxonomy separating what the loop can fix from what it cannot.* \[[code](https://github.com/AutoResearch-Factory/Agon) ⭐ 46 | 🐛 1 | 🌐 Python | 📅 2026-09-05]
 
 * **[PatientAgentBench: A Benchmark Framework for Evaluating Patient-Facing Health AI Agents](https://arxiv.org/abs/2607.25485)** (Vatanparvar et al., arXiv 2026) - *Benchmarks patient-facing health agents over 1,200 tool-using conversations; triage separates models most sharply (32% to 88% pass rates), and even the strongest scores only 4.25 of 5 overall.* \[[code](https://github.com/amazon-science/PatientAgentBench) ⭐ 23 | 🐛 1 | 🌐 Python | 📅 2026-07-29]
 
@@ -964,6 +992,8 @@ Fresh 2026 work that is already drawing attention.
 * **[ClinicalAgents: Multi-Agent Orchestration for Clinical Decision Making with Dual-Memory](https://arxiv.org/abs/2603.26182)** (Ge et al., arXiv 2026) - *Multi-agent orchestration for clinical decision making with a dual-memory design.* \[[code](https://github.com/ZhuohanGe/ClinicalAgents-Code) ⭐ 4 | 🐛 0 | 🌐 Python | 📅 2026-08-10]
 
 * **[AutoNumerics: An Autonomous, PDE-Agnostic Multi-Agent Pipeline for Scientific Computing](https://arxiv.org/abs/2602.17607)** (Du et al., arXiv 2026) - *Builds and residual-verifies classical numerical PDE solvers straight from natural-language problem statements, keeping the solver transparent rather than neural.* \[[code](https://github.com/Daviddjddu/Autonumerics) ⭐ 3 | 🐛 1 | 🌐 Python | 📅 2026-07-30]
+
+* **[SWE-Gate: Passing Functional Tests Is Not Enough for Software Engineering Agents](https://arxiv.org/abs/2609.04167)** (He et al., arXiv 2026) - *Derives review constraints from real pull-request review comments and scores them separately from functional correctness across 303 repository-level instances in 75 Python projects, finding that 221 of 644 patches that pass the functional tests still violate a constraint a reviewer had stated, so functional-only scoring overstates what an agent has actually delivered.* \[[code](https://github.com/DeepSoftwareAnalytics/SWE-Gate) ⭐ 0 | 🐛 1 | 🌐 Python | 📅 2026-09-02]
 
 * **[Towards an AI co-scientist](https://arxiv.org/abs/2502.18864)** (Gottweis et al., arXiv 2025) - *A major industry (Google) applied-agent system for hypothesis generation in science.*
 
@@ -1009,6 +1039,8 @@ Fresh 2026 work that is already drawing attention.
 
 * **[Auditing Self-Evolution in Financial Agents: Capability Gains, Security Drift, and Execution-Interface Mismatch](https://arxiv.org/abs/2608.17684)** (Li et al., arXiv 2026) - *Audits three self-evolving agent designs (SkillOpt, Agent Workflow Memory, ReasoningBank) in simulated e-banking and finds capability and exposure rising together: SkillOpt lifts benign utility from 0.741 to 0.837 while exposure to injected content rises from 0.820 to 0.943, overall attack success rises from 0.496 to 0.530, and unauthorized financial state changes rise to 0.685.*
 
+* **[Why Better Models Can Create Riskier Systems: Evidence from LLM Agents in Financial Markets](https://arxiv.org/abs/2609.04373)** (Ross et al., arXiv 2026) - *Argues that shared training and architecture make more capable models behave more alike, so their correlated actions leave a risk floor no amount of diversification removes, and tests it with LLM traders in an agent-based market: correlation rises with capability, more agents lower market-level risk while the shared reasoning is accurate, and the same correlation turns into a liability once the agents share a misinformation environment.*
+
 </details>
 
 <sub><a href="#contents">↑ Back to Contents</a></sub>
@@ -1017,24 +1049,24 @@ Fresh 2026 work that is already drawing attention.
 
 <a id="evaluation"></a>
 
-### 📊 Evaluation & Benchmarks (46)
+### 📊 Evaluation & Benchmarks (48)
 
 *Corresponds to §9 (Evaluation and Benchmarks).*
 
 <details>
-<summary><b>Show 46 papers</b></summary>
+<summary><b>Show 48 papers</b></summary>
 
-* **[SWE-bench: Can Language Models Resolve Real-World GitHub Issues?](https://arxiv.org/abs/2310.06770)** (Jimenez et al., ICLR 2024) - *De facto standard benchmark for coding/software-engineering agents; spawned the SWE-bench Verified/Lite/Live/Multimodal family.* \[[code](https://github.com/SWE-bench/SWE-bench) ⭐ 5,789 | 🐛 10 | 🌐 Python | 📅 2026-09-02]
+* **[SWE-bench: Can Language Models Resolve Real-World GitHub Issues?](https://arxiv.org/abs/2310.06770)** (Jimenez et al., ICLR 2024) - *De facto standard benchmark for coding/software-engineering agents; spawned the SWE-bench Verified/Lite/Live/Multimodal family.* \[[code](https://github.com/SWE-bench/SWE-bench) ⭐ 5,799 | 🐛 7 | 🌐 Python | 📅 2026-09-02]
 
-* **[Terminal-Bench: Benchmarking Agents on Hard, Realistic Tasks in Command Line Interfaces](https://arxiv.org/abs/2601.11868)** (Merrill et al., arXiv 2026) - *Hard, realistic command-line tasks; a de facto standard for terminal agents.* \[[code](https://github.com/laude-institute/terminal-bench) ⭐ 2,568 | 🐛 319 | 🌐 Python | 📅 2026-07-11]
+* **[Terminal-Bench: Benchmarking Agents on Hard, Realistic Tasks in Command Line Interfaces](https://arxiv.org/abs/2601.11868)** (Merrill et al., arXiv 2026) - *Hard, realistic command-line tasks; a de facto standard for terminal agents.* \[[code](https://github.com/laude-institute/terminal-bench) ⭐ 2,569 | 🐛 319 | 🌐 Python | 📅 2026-07-11]
 
-* **[τ²-Bench: Evaluating Conversational Agents in a Dual-Control Environment](https://arxiv.org/abs/2506.07982)** (Barres et al., arXiv 2025) - *Extends τ-bench to settings where user and agent both act on the environment.* \[[code](https://github.com/sierra-research/tau2-bench) ⭐ 1,962 | 🐛 190 | 🌐 Python | 📅 2026-09-04]
+* **[τ²-Bench: Evaluating Conversational Agents in a Dual-Control Environment](https://arxiv.org/abs/2506.07982)** (Barres et al., arXiv 2025) - *Extends τ-bench to settings where user and agent both act on the environment.* \[[code](https://github.com/sierra-research/tau2-bench) ⭐ 1,974 | 🐛 194 | 🌐 Python | 📅 2026-09-07]
 
-* **[τ-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains](https://arxiv.org/abs/2406.12045)** (Yao et al., arXiv 2024) - *Pioneered evaluation of agent-user interaction and policy compliance; standard reference for enterprise/customer-service agent evaluation.* \[[code](https://github.com/sierra-research/tau-bench) ⭐ 1,425 | 🐛 53 | 🌐 Python | 📅 2026-03-18]
+* **[τ-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains](https://arxiv.org/abs/2406.12045)** (Yao et al., arXiv 2024) - *Pioneered evaluation of agent-user interaction and policy compliance; standard reference for enterprise/customer-service agent evaluation.* \[[code](https://github.com/sierra-research/tau-bench) ⭐ 1,426 | 🐛 53 | 🌐 Python | 📅 2026-03-18]
 
-* **[Agent-as-a-Judge: Evaluate Agents with Agents](https://arxiv.org/abs/2410.10934)** (Zhuge et al., arXiv 2024) - *Systematizes agentic evaluation of agents; the reference point for judge-circularity concerns.* \[[code](https://github.com/metauto-ai/agent-as-a-judge) ⭐ 824 | 🐛 10 | 🌐 HTML | 📅 2026-03-28]
+* **[Agent-as-a-Judge: Evaluate Agents with Agents](https://arxiv.org/abs/2410.10934)** (Zhuge et al., arXiv 2024) - *Systematizes agentic evaluation of agents; the reference point for judge-circularity concerns.* \[[code](https://github.com/metauto-ai/agent-as-a-judge) ⭐ 825 | 🐛 10 | 🌐 HTML | 📅 2026-03-28]
 
-* **[ClawBench: Can AI Agents Complete Everyday Online Tasks?](https://arxiv.org/abs/2604.08523)** (Zhang et al., arXiv 2026) - *Puts browser agents on 153 everyday tasks across 144 live production sites, intercepting the final request so nothing is actually bought or booked; the strongest model tested clears a third of them.* \[[code](https://github.com/TIGER-AI-Lab/ClawBench) ⭐ 664 | 🐛 52 | 🌐 Python | 📅 2026-09-05]
+* **[ClawBench: Can AI Agents Complete Everyday Online Tasks?](https://arxiv.org/abs/2604.08523)** (Zhang et al., arXiv 2026) - *Puts browser agents on 153 everyday tasks across 144 live production sites, intercepting the final request so nothing is actually bought or booked; the strongest model tested clears a third of them.* \[[code](https://github.com/TIGER-AI-Lab/ClawBench) ⭐ 678 | 🐛 30 | 🌐 Python | 📅 2026-09-08]
 
 * **[TravelPlanner: A Benchmark for Real-World Planning with Language Agents](https://arxiv.org/abs/2402.01622)** (Xie et al., ICML 2024) - *Widely-cited stress test for complex constrained multi-tool planning, illustrating agents' distance from reliable long-horizon planning.* \[[code](https://github.com/OSU-NLP-Group/TravelPlanner) ⭐ 545 | 🐛 2 | 🌐 Python | 📅 2026-05-24]
 
@@ -1042,13 +1074,15 @@ Fresh 2026 work that is already drawing attention.
 
 * **[MLAgentBench: Evaluating Language Agents on Machine Learning Experimentation](https://arxiv.org/abs/2310.03302)** (Huang et al., arXiv 2023) - *Seminal benchmark for the 'AI research agent'/'ML engineering agent' evaluation subfield, precursor to MLE-bench, RE-Bench, etc.* \[[code](https://github.com/snap-stanford/MLAgentBench) ⭐ 352 | 🐛 6 | 🌐 Python | 📅 2024-06-19]
 
-* **[Can AI Agents Answer Your Data Questions? A Benchmark for Data Agents (DataAgentBench)](https://arxiv.org/abs/2603.20576)** (Ma et al., arXiv 2026) - *Benchmark across heterogeneous database systems; frontier models reach only 38% accuracy on complex data questions.* \[[code](https://github.com/ucbepic/DataAgentBench) ⭐ 157 | 🐛 11 | 🌐 Python | 📅 2026-09-04]
+* **[Can AI Agents Answer Your Data Questions? A Benchmark for Data Agents (DataAgentBench)](https://arxiv.org/abs/2603.20576)** (Ma et al., arXiv 2026) - *Benchmark across heterogeneous database systems; frontier models reach only 38% accuracy on complex data questions.* \[[code](https://github.com/ucbepic/DataAgentBench) ⭐ 157 | 🐛 9 | 🌐 Python | 📅 2026-09-07]
 
 * **[GTA: A Benchmark for General Tool Agents](https://arxiv.org/abs/2407.08713)** (Wang et al., NeurIPS 2024) - *Addresses realism gaps (implicit intent, authentic multimodal context) left by earlier synthetic tool-use benchmarks.* \[[code](https://github.com/open-compass/GTA) ⭐ 152 | 🐛 1 | 🌐 Python | 📅 2026-04-20]
 
 * **[SmartPlay: A Benchmark for LLMs as Intelligent Agents](https://arxiv.org/abs/2310.01557)** (Wu et al., ICLR 2024) - *Capability-decomposed evaluation methodology that influenced later fine-grained agent capability benchmarks.* \[[code](https://github.com/microsoft/SmartPlay) ⚠️ Archived]
 
-* **[AgencyBench: Benchmarking the Frontiers of Autonomous Agents in 1M-Token Real-World Contexts](https://arxiv.org/abs/2601.11044)** (Li et al., arXiv 2026) - *32 real-world long-horizon scenarios testing autonomous agents under up to 1M-token contexts.* \[[code](https://github.com/GAIR-NLP/AgencyBench) ⭐ 96 | 🐛 6 | 🌐 Python | 📅 2026-01-23]
+* **[LoopArena: Benchmarking Models as Runtime Controllers for Loop Engineering](https://arxiv.org/abs/2608.28281)** (Wang et al., arXiv 2026) - *Scores the model that steers rather than the model that codes: after each coding round the Controller under evaluation reads a structured run summary and tells a separate fixed Worker what to do next, what to verify, or whether to stop, across three settings trading execution scope against cost; the best strict success rate on full tasks is 24.69 per cent, and the cheap setting that never runs the Worker orders Controllers almost identically to the expensive one at a Spearman correlation of 0.97.* \[[code](https://github.com/AMAP-ML/LoopArena) ⭐ 121 | 🐛 1 | 🌐 Python | 📅 2026-09-08]
+
+* **[AgencyBench: Benchmarking the Frontiers of Autonomous Agents in 1M-Token Real-World Contexts](https://arxiv.org/abs/2601.11044)** (Li et al., arXiv 2026) - *32 real-world long-horizon scenarios testing autonomous agents under up to 1M-token contexts.* \[[code](https://github.com/GAIR-NLP/AgencyBench) ⭐ 97 | 🐛 6 | 🌐 Python | 📅 2026-01-23]
 
 * **[CUBE: A Standard for Unifying Agent Benchmarks](https://arxiv.org/abs/2603.15798)** (Lacoste et al., arXiv 2026) - *Proposes a standard for unifying heterogeneous agent benchmarks under one interface.* \[[code](https://github.com/The-AI-Alliance/cube-standard) ⭐ 53 | 🐛 19 | 🌐 Python | 📅 2026-07-17]
 
@@ -1056,9 +1090,9 @@ Fresh 2026 work that is already drawing attention.
 
 * **[UniClawBench: A Universal Benchmark for Proactive Agents on Real-World Tasks](https://arxiv.org/abs/2607.08768)** (Chen et al., arXiv 2026) - *Introduces UniClawBench, a capability-driven bilingual benchmark of 400 tasks executed in live Docker environments with step-wise checkpoints, evaluating proactive LLM agents across skill usage, exploration.* \[[code](https://github.com/HKU-MMLab/UniClawBench) ⭐ 39 | 🐛 1 | 🌐 Python | 📅 2026-07-28]
 
-* **[Rethinking the Evaluation of Harness Evolution for Agents](https://arxiv.org/abs/2607.12227)** (Wang et al., arXiv 2026) - *Rethinks how harness evolution should be evaluated, given that the harness moves the number as much as the model.* \[[code](https://github.com/rethinking-harness-evolution/code) ⭐ 30 | 🐛 1 | 🌐 Python | 📅 2026-08-03]
+* **[Rethinking the Evaluation of Harness Evolution for Agents](https://arxiv.org/abs/2607.12227)** (Wang et al., arXiv 2026) - *Rethinks how harness evolution should be evaluated, given that the harness moves the number as much as the model.* \[[code](https://github.com/rethinking-harness-evolution/code) ⭐ 33 | 🐛 1 | 🌐 Python | 📅 2026-08-03]
 
-* **[Measuring Harness-Induced Belief Divergence in Multi-Step LLM Agents](https://arxiv.org/abs/2607.04528)** (Yi et al., arXiv 2026) - *Measures how much the harness alone shifts an agent's beliefs across steps, isolating a confound in agent evaluation.* \[[code](https://github.com/Hik289/Harness-induce-bias) ⭐ 26 | 🐛 0 | 🌐 Python | 📅 2026-09-06]
+* **[Measuring Harness-Induced Belief Divergence in Multi-Step LLM Agents](https://arxiv.org/abs/2607.04528)** (Yi et al., arXiv 2026) - *Measures how much the harness alone shifts an agent's beliefs across steps, isolating a confound in agent evaluation.* \[[code](https://github.com/Hik289/Harness-induce-bias) ⭐ 26 | 🐛 0 | 🌐 Python | 📅 2026-09-07]
 
 * **[Benchmark Test-Time Scaling of General LLM Agents](https://arxiv.org/abs/2602.18998)** (Li et al., arXiv 2026) - *Introduces General AgentBench, a unified benchmark for evaluating general-purpose LLM agents across search, coding, reasoning, and tool-use, and finds that sequential and parallel test-time scaling fail to improve performance due.* \[[code](https://github.com/cxcscmu/General-AgentBench) ⭐ 24 | 🐛 0 | 🌐 Python | 📅 2026-04-14]
 
@@ -1116,26 +1150,28 @@ Fresh 2026 work that is already drawing attention.
 
 * **[OmnilingualGAIA2: Evaluating the Multilingual Gap in Frontier AI Agents](https://arxiv.org/abs/2608.08775)** (Caciolai et al., arXiv 2026) - *Expanding GAIA2 into ten languages across five writing systems exposes a cross-lingual gap of 8.8 to 18.4 pass\@3 points that concentrates on tool orchestration rather than quantitative reasoning and does not close with model scale, with error attribution assigning 55% of it to the model and bounding translation contamination at 6.4% of scenario-language pairs.*
 
+* **[τ^τ-Bench: An Environment for End-To-End, Realistic Agent Construction](https://arxiv.org/abs/2609.04611)** (Shi et al., arXiv 2026) - *Makes building the agent the task: a developer agent inherits a codebase, a production API, a client holding the requirements and a cap on serving spend, then ships a customer-service agent that is scored by deploying it against held-out simulated users, and across 53 tasks the strongest configuration passes 23.9 per cent of evaluation simulations against an expert-authored ceiling of 82.2 per cent, failing in recognizably human ways by querying the records shallowly, telling the client almost nothing and shipping the first architecture that runs.*
+
 </details>
 
 <sub><a href="#contents">↑ Back to Contents</a></sub>
 
 <a id="safety"></a>
 
-### 🛡️ Safety & Alignment (55)
+### 🛡️ Safety & Alignment (57)
 
 *Corresponds to §11 (Safety, Security, and Trustworthiness).*
 
 <details>
-<summary><b>Show 55 papers</b></summary>
+<summary><b>Show 57 papers</b></summary>
 
 * **[Not what you've signed up for: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection](https://arxiv.org/abs/2302.12173)** (Greshake et al., arXiv 2023) - *The founding paper of the indirect prompt injection threat model that underlies almost all later LLM-agent security research.* ⭐ \[[code](https://github.com/greshake/llm-security) ⭐ 2,137 | 🐛 1 | 🌐 Jupyter Notebook | 📅 2025-07-17]
 
-* **[AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents](https://arxiv.org/abs/2406.13352)** (Debenedetti et al., NeurIPS 2024) - *The most widely used standardized testbed for measuring agent robustness to prompt-injection attacks and defenses.* \[[code](https://github.com/ethz-spylab/agentdojo) ⭐ 806 | 🐛 50 | 🌐 Python | 📅 2026-06-02]
+* **[AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents](https://arxiv.org/abs/2406.13352)** (Debenedetti et al., NeurIPS 2024) - *The most widely used standardized testbed for measuring agent robustness to prompt-injection attacks and defenses.* \[[code](https://github.com/ethz-spylab/agentdojo) ⭐ 808 | 🐛 51 | 🌐 Python | 📅 2026-06-02]
 
 * **[AgentDoG: A Diagnostic Guardrail Framework for AI Agent Safety and Security](https://arxiv.org/abs/2601.18491)** (Liu et al., arXiv 2026) - *Unified taxonomy of agentic risks powering a diagnostic guardrail that flags root causes of unsafe trajectories instead of binary labels.* \[[code](https://github.com/AI45Lab/AgentDoG) ⭐ 695 | 🐛 2 | 🌐 Python | 📅 2026-06-08]
 
-* **[AgentHarm: A Benchmark for Measuring Harmfulness of LLM Agents](https://arxiv.org/abs/2410.09024)** (Andriushchenko et al., ICLR 2025) - *Key benchmark distinguishing agent misuse risk from chatbot jailbreak risk, showing agentic capability compounds harm potential.* \[[code](https://github.com/UKGovernmentBEIS/inspect_evals) ⭐ 659 | 🐛 206 | 🌐 Python | 📅 2026-09-06]
+* **[AgentHarm: A Benchmark for Measuring Harmfulness of LLM Agents](https://arxiv.org/abs/2410.09024)** (Andriushchenko et al., ICLR 2025) - *Key benchmark distinguishing agent misuse risk from chatbot jailbreak risk, showing agentic capability compounds harm potential.* \[[code](https://github.com/UKGovernmentBEIS/inspect_evals) ⭐ 661 | 🐛 230 | 🌐 Python | 📅 2026-09-07]
 
 * **[Discovering Language Model Behaviors with Model-Written Evaluations](https://arxiv.org/abs/2212.09251)** (Perez et al., arXiv 2022) - *Early, seminal empirical evidence connecting RLHF training scale to emergent self-preservation and power-seeking-adjacent expressed preferences, a precursor concern for autonomous agent alignment.* \[[code](https://github.com/anthropics/evals) ⭐ 426 | 🐛 2 | 📅 2024-07-02]
 
@@ -1147,7 +1183,7 @@ Fresh 2026 work that is already drawing attention.
 
 * **[Identifying the Risks of LM Agents with an LM-Emulated Sandbox](https://arxiv.org/abs/2309.15817)** (Ruan et al., ICLR 2024) - *Foundational scalable methodology for red-teaming/risk discovery in tool-using agents without needing real-world tool access.* \[[code](https://github.com/ryoungj/ToolEmu) ⭐ 223 | 🐛 2 | 🌐 Python | 📅 2024-03-22]
 
-* **[InjecAgent: Benchmarking Indirect Prompt Injections in Tool-Integrated Large Language Model Agents](https://arxiv.org/abs/2403.02691)** (Zhan et al., ACL 2024) - *Standard reference benchmark for quantifying tool-integrated agents' susceptibility to indirect prompt injection.* \[[code](https://github.com/uiuc-kang-lab/InjecAgent) ⭐ 167 | 🐛 5 | 🌐 Python | 📅 2024-07-02]
+* **[InjecAgent: Benchmarking Indirect Prompt Injections in Tool-Integrated Large Language Model Agents](https://arxiv.org/abs/2403.02691)** (Zhan et al., ACL 2024) - *Standard reference benchmark for quantifying tool-integrated agents' susceptibility to indirect prompt injection.* \[[code](https://github.com/uiuc-kang-lab/InjecAgent) ⭐ 168 | 🐛 5 | 🌐 Python | 📅 2024-07-02]
 
 * **[Sleeper Agents: Training Deceptive LLMs that Persist Through Safety Training](https://arxiv.org/abs/2401.05566)** (Hubinger et al., arXiv 2024) - *Landmark demonstration that current safety-training pipelines can fail to remove hidden deceptive/misaligned behavior, directly informing agent trustworthiness concerns.* \[[code](https://github.com/anthropics/sleeper-agents-paper) ⚠️ Archived]
 
@@ -1239,6 +1275,10 @@ Fresh 2026 work that is already drawing attention.
 
 * **[Governance at the Boundary: How Agent Decomposition Degrades Policy Compliance](https://arxiv.org/abs/2608.16055)** (Li et al., arXiv 2026) - *Decomposing an agent degrades its governability at the handoff boundary: over 626 KYC/AML episodes a 32B open-weights model attenuated 0% of policy-relevant discovered facts under a single loop, 56% under a fixed pipeline and 85% under an orchestrator-subagent architecture, and the same mechanism produces both under-escalation and over-escalation.*
 
+* **[What's in Your Agent's Context? Context Privilege Escalation Attacks against AI Agent Harness](https://arxiv.org/abs/2609.01222)** (Li et al., arXiv 2026) - *Systematizes how real harnesses assemble context and names two escalation paths that fall out of those designs: attacker-controlled content from a low-privileged source landing in a higher-privileged message role, and attacker-controlled content persisting past the scope it entered in, demonstrated against 12 harnesses including Claude Code and Codex with consequences running to remote code execution and manipulated tool or skill invocation.*
+
+* **[BAITBENCH: Measuring Agent Reward Hacking with Optional Shortcuts Planted in ML Tasks](https://arxiv.org/abs/2608.30724)** (Prasad et al., arXiv 2026) - *Plants an optional shortcut in each of three synthetic tabular ML tasks that inflates the public score while failing a hidden test set and breaks no stated rule, and 57.1 per cent of runs across seven frontier agents take it, five of the seven above half, with the mean staying above half even when the prompt asks them not to cheat.*
+
 </details>
 
 <sub><a href="#contents">↑ Back to Contents</a></sub>
@@ -1247,13 +1287,13 @@ Fresh 2026 work that is already drawing attention.
 
 Other useful reading lists in the same space:
 
-* [e2b-dev/awesome-ai-agents](https://github.com/e2b-dev/awesome-ai-agents) ⭐ 29,921 | 🐛 1,001 | 📅 2026-08-21: a large, media-rich directory of open- and closed-source **agent products & frameworks** (the build side). ![stars](https://img.shields.io/github/stars/e2b-dev/awesome-ai-agents?style=social)
-* [Hannibal046/Awesome-LLM](https://github.com/Hannibal046/Awesome-LLM) ⭐ 27,330 | 🐛 448 | 📅 2025-07-31: the canonical hub of large language model papers, tools, and resources. ![stars](https://img.shields.io/github/stars/Hannibal046/Awesome-LLM?style=social)
+* [e2b-dev/awesome-ai-agents](https://github.com/e2b-dev/awesome-ai-agents) ⭐ 29,925 | 🐛 1,004 | 📅 2026-08-21: a large, media-rich directory of open- and closed-source **agent products & frameworks** (the build side). ![stars](https://img.shields.io/github/stars/e2b-dev/awesome-ai-agents?style=social)
+* [Hannibal046/Awesome-LLM](https://github.com/Hannibal046/Awesome-LLM) ⭐ 27,339 | 🐛 449 | 📅 2025-07-31: the canonical hub of large language model papers, tools, and resources. ![stars](https://img.shields.io/github/stars/Hannibal046/Awesome-LLM?style=social)
 * [WooooDyy/LLM-Agent-Paper-List](https://github.com/WooooDyy/LLM-Agent-Paper-List) ⭐ 8,197 | 🐛 31 | 📅 2025-09-12: survey-backed agent paper list from *The Rise and Potential of LLM-Based Agents* (Fudan NLP). ![stars](https://img.shields.io/github/stars/WooooDyy/LLM-Agent-Paper-List?style=social)
-* [luo-junyu/Awesome-Agent-Papers](https://github.com/luo-junyu/Awesome-Agent-Papers) ⭐ 2,846 | 🐛 27 | 📅 2025-11-07: taxonomy-driven survey companion on agent construction, collaboration, and evolution. ![stars](https://img.shields.io/github/stars/luo-junyu/Awesome-Agent-Papers?style=social)
-* [kyrolabs/awesome-agents](https://github.com/kyrolabs/awesome-agents) ⭐ 2,802 | 🐛 1 | 📅 2026-09-07: curated agent frameworks and libraries, each with a live star badge. ![stars](https://img.shields.io/github/stars/kyrolabs/awesome-agents?style=social)
-* [ysymyth/awesome-language-agents](https://github.com/ysymyth/awesome-language-agents) ⭐ 1,256 | 🐛 8 | 🌐 TeX | 📅 2025-01-16: language-agent reading list organized around the CoALA framework. ![stars](https://img.shields.io/github/stars/ysymyth/awesome-language-agents?style=social)
-* [js-lee-AI/awesome-agent-loop-papers](https://github.com/js-lee-AI/awesome-agent-loop-papers) ⭐ 4 | 🐛 1 | 📅 2026-08-23: **the sibling of this list**, going one level down into the agent loop itself: control strategies, trained loops, skills, harnesses, and the evaluation and safety problems the loop creates. ![stars](https://img.shields.io/github/stars/js-lee-AI/awesome-agent-loop-papers?style=social)
+* [luo-junyu/Awesome-Agent-Papers](https://github.com/luo-junyu/Awesome-Agent-Papers) ⭐ 2,847 | 🐛 27 | 📅 2025-11-07: taxonomy-driven survey companion on agent construction, collaboration, and evolution. ![stars](https://img.shields.io/github/stars/luo-junyu/Awesome-Agent-Papers?style=social)
+* [kyrolabs/awesome-agents](https://github.com/kyrolabs/awesome-agents) ⭐ 2,803 | 🐛 3 | 📅 2026-09-07: curated agent frameworks and libraries, each with a live star badge. ![stars](https://img.shields.io/github/stars/kyrolabs/awesome-agents?style=social)
+* [ysymyth/awesome-language-agents](https://github.com/ysymyth/awesome-language-agents) ⭐ 1,255 | 🐛 8 | 🌐 TeX | 📅 2025-01-16: language-agent reading list organized around the CoALA framework. ![stars](https://img.shields.io/github/stars/ysymyth/awesome-language-agents?style=social)
+* [js-lee-AI/awesome-agent-loop-papers](https://github.com/js-lee-AI/awesome-agent-loop-papers) ⭐ 4 | 🐛 0 | 📅 2026-09-07: **the sibling of this list**, going one level down into the agent loop itself: control strategies, trained loops, skills, harnesses, and the evaluation and safety problems the loop creates. ![stars](https://img.shields.io/github/stars/js-lee-AI/awesome-agent-loop-papers?style=social)
 
 > Maintain a related list? [Open a PR](CONTRIBUTING.md) to add it here; we're happy to cross-link.
 
@@ -1287,7 +1327,7 @@ The companion deep-dive, *The Agent Loop: A Survey of Control Strategies, Skills
 The agent literature is arriving faster than any one person can track, on the order of a thousand new papers a month. I read hard for this list, but I have **certainly missed strong papers and methods**. If one belongs here (**including your own**), please help:
 
 * **Open a PR** adding it to the right section with a verifiable link and a one-line *why it matters* (and a `[code]` link if an implementation exists), or
-* **Open an [issue](https://github.com/js-lee-AI/awesome-llm-agent-papers/issues) ⭐ 74 | 🐛 1 | 🌐 Python | 📅 2026-09-02** with the link and I'll triage quickly.
+* **Open an [issue](https://github.com/js-lee-AI/awesome-llm-agent-papers/issues) ⭐ 76 | 🐛 0 | 🌐 Python | 📅 2026-09-07** with the link and I'll triage quickly.
 
 Corrections, sharper annotations, and whole new sections are just as welcome. See **[CONTRIBUTING.md](CONTRIBUTING.md)** for the entry format.
 
@@ -1297,18 +1337,19 @@ This list is community-maintained. Thanks to everyone who has suggested, verifie
 
 |                                                                                                                                                                 | Contributor                                                    | Contributed                                                                                                                                                                                                                                                                                                                                                                                             |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <a href="https://github.com/dukesun99"><img src="https://github.com/dukesun99.png?size=48" width="48" height="48" alt="@dukesun99"></a>                         | **[@dukesun99](https://github.com/dukesun99)**                 | Corpus2Skill in Memory, OrchMAS in Multi-Agent Systems, and an IR-for-agents position paper in Surveys & Position Papers, submitted by an author on all three ([#13](https://github.com/js-lee-AI/awesome-llm-agent-papers/pull/13) ⭐ 74 \| 🐛 1 \| 🌐 Python \| 📅 2026-09-02)                                                                                                                         |
-| <a href="https://github.com/zhongzero"><img src="https://github.com/zhongzero.png?size=48" width="48" height="48" alt="@zhongzero"></a>                         | **[@zhongzero](https://github.com/zhongzero)**                 | ForeDreamer, a dual-agent memory architecture for forecasting, submitted by one of its authors, in Memory ([#12](https://github.com/js-lee-AI/awesome-llm-agent-papers/pull/12) ⭐ 74 \| 🐛 1 \| 🌐 Python \| 📅 2026-09-02)                                                                                                                                                                             |
-| <a href="https://github.com/Nicolas99-9"><img src="https://github.com/Nicolas99-9.png?size=48" width="48" height="48" alt="@Nicolas99-9"></a>                   | **[@Nicolas99-9](https://github.com/Nicolas99-9)**             | CityReal, a large-scale human-aligned urban simulation, in Multi-Agent Systems ([#10](https://github.com/js-lee-AI/awesome-llm-agent-papers/pull/10) ⭐ 74 \| 🐛 1 \| 🌐 Python \| 📅 2026-09-02)                                                                                                                                                                                                        |
-| <a href="https://github.com/BobbyZhouZijian"><img src="https://github.com/BobbyZhouZijian.png?size=48" width="48" height="48" alt="@BobbyZhouZijian"></a>       | **[@BobbyZhouZijian](https://github.com/BobbyZhouZijian)**     | CORAL, an autonomous multi-agent evolution framework, submitted by one of its authors, in Agent Architectures & Frameworks ([#9](https://github.com/js-lee-AI/awesome-llm-agent-papers/pull/9) ⭐ 74 \| 🐛 1 \| 🌐 Python \| 📅 2026-09-02)                                                                                                                                                              |
-| <a href="https://github.com/razzant"><img src="https://github.com/razzant.png?size=48" width="48" height="48" alt="@razzant"></a>                               | **[@razzant](https://github.com/razzant)**                     | Ouroboros, a self-developing coding-agent harness, submitted by its maintainer, in Agent Architectures & Frameworks ([#8](https://github.com/js-lee-AI/awesome-llm-agent-papers/pull/8) ⭐ 74 \| 🐛 1 \| 🌐 Python \| 📅 2026-09-02)                                                                                                                                                                     |
-| <a href="https://github.com/reacher-z"><img src="https://github.com/reacher-z.png?size=48" width="48" height="48" alt="@reacher-z"></a>                         | **[@reacher-z](https://github.com/reacher-z)**                 | Dr. Bench, a deep-research-agent evaluation, submitted by one of its authors, in Evaluation & Benchmarks ([#7](https://github.com/js-lee-AI/awesome-llm-agent-papers/pull/7) ⭐ 74 \| 🐛 1 \| 🌐 Python \| 📅 2026-09-02); ClawBench, a live-web browser-agent benchmark, same section ([#3](https://github.com/js-lee-AI/awesome-llm-agent-papers/pull/3) ⭐ 74 \| 🐛 1 \| 🌐 Python \| 📅 2026-09-02)   |
-| <a href="https://github.com/JEONGSEJIN"><img src="https://github.com/JEONGSEJIN.png?size=48" width="48" height="48" alt="@JEONGSEJIN"></a>                      | **[@JEONGSEJIN](https://github.com/JEONGSEJIN)**               | WebAgent and the world-model-augmented web agent, in Interactive Environments ([#6](https://github.com/js-lee-AI/awesome-llm-agent-papers/pull/6) ⭐ 74 \| 🐛 1 \| 🌐 Python \| 📅 2026-09-02)                                                                                                                                                                                                           |
-| <a href="https://github.com/jinmang2"><img src="https://github.com/jinmang2.png?size=48" width="48" height="48" alt="@jinmang2"></a>                            | **[@jinmang2](https://github.com/jinmang2)**                   | 6 agent-memory systems: MemoryOS, Zep, Nemori, MemOS, G-Memory, ACE ([#2](https://github.com/js-lee-AI/awesome-llm-agent-papers/pull/2) ⭐ 74 \| 🐛 1 \| 🌐 Python \| 📅 2026-09-02)                                                                                                                                                                                                                     |
-| <a href="https://github.com/WhymustIhaveaname"><img src="https://github.com/WhymustIhaveaname.png?size=48" width="48" height="48" alt="@WhymustIhaveaname"></a> | **[@WhymustIhaveaname](https://github.com/WhymustIhaveaname)** | 3 research-agent and orchestration papers: AutoNumerics, OptimAI, PerspectiveGap ([#1](https://github.com/js-lee-AI/awesome-llm-agent-papers/pull/1) ⭐ 74 \| 🐛 1 \| 🌐 Python \| 📅 2026-09-02); the Agon code link, and the report that led to nine truncated glosses being rewritten ([#5](https://github.com/js-lee-AI/awesome-llm-agent-papers/pull/5) ⭐ 74 \| 🐛 1 \| 🌐 Python \| 📅 2026-09-02) |
+| <a href="https://github.com/burgerseater"><img src="https://github.com/burgerseater.png?size=48" width="48" height="48" alt="@burgerseater"></a>                | **[@burgerseater](https://github.com/burgerseater)**           | LoopArena, a benchmark that scores the model steering a coding agent rather than the one writing the code, suggested by one of its authors, in Evaluation & Benchmarks ([#14](https://github.com/js-lee-AI/awesome-llm-agent-papers/issues/14) ⭐ 76 \| 🐛 0 \| 🌐 Python \| 📅 2026-09-07)                                                                                                              |
+| <a href="https://github.com/dukesun99"><img src="https://github.com/dukesun99.png?size=48" width="48" height="48" alt="@dukesun99"></a>                         | **[@dukesun99](https://github.com/dukesun99)**                 | Corpus2Skill in Memory, OrchMAS in Multi-Agent Systems, and an IR-for-agents position paper in Surveys & Position Papers, submitted by an author on all three ([#13](https://github.com/js-lee-AI/awesome-llm-agent-papers/pull/13) ⭐ 76 \| 🐛 0 \| 🌐 Python \| 📅 2026-09-07)                                                                                                                         |
+| <a href="https://github.com/zhongzero"><img src="https://github.com/zhongzero.png?size=48" width="48" height="48" alt="@zhongzero"></a>                         | **[@zhongzero](https://github.com/zhongzero)**                 | ForeDreamer, a dual-agent memory architecture for forecasting, submitted by one of its authors, in Memory ([#12](https://github.com/js-lee-AI/awesome-llm-agent-papers/pull/12) ⭐ 76 \| 🐛 0 \| 🌐 Python \| 📅 2026-09-07)                                                                                                                                                                             |
+| <a href="https://github.com/Nicolas99-9"><img src="https://github.com/Nicolas99-9.png?size=48" width="48" height="48" alt="@Nicolas99-9"></a>                   | **[@Nicolas99-9](https://github.com/Nicolas99-9)**             | CityReal, a large-scale human-aligned urban simulation, in Multi-Agent Systems ([#10](https://github.com/js-lee-AI/awesome-llm-agent-papers/pull/10) ⭐ 76 \| 🐛 0 \| 🌐 Python \| 📅 2026-09-07)                                                                                                                                                                                                        |
+| <a href="https://github.com/BobbyZhouZijian"><img src="https://github.com/BobbyZhouZijian.png?size=48" width="48" height="48" alt="@BobbyZhouZijian"></a>       | **[@BobbyZhouZijian](https://github.com/BobbyZhouZijian)**     | CORAL, an autonomous multi-agent evolution framework, submitted by one of its authors, in Agent Architectures & Frameworks ([#9](https://github.com/js-lee-AI/awesome-llm-agent-papers/pull/9) ⭐ 76 \| 🐛 0 \| 🌐 Python \| 📅 2026-09-07)                                                                                                                                                              |
+| <a href="https://github.com/razzant"><img src="https://github.com/razzant.png?size=48" width="48" height="48" alt="@razzant"></a>                               | **[@razzant](https://github.com/razzant)**                     | Ouroboros, a self-developing coding-agent harness, submitted by its maintainer, in Agent Architectures & Frameworks ([#8](https://github.com/js-lee-AI/awesome-llm-agent-papers/pull/8) ⭐ 76 \| 🐛 0 \| 🌐 Python \| 📅 2026-09-07)                                                                                                                                                                     |
+| <a href="https://github.com/reacher-z"><img src="https://github.com/reacher-z.png?size=48" width="48" height="48" alt="@reacher-z"></a>                         | **[@reacher-z](https://github.com/reacher-z)**                 | Dr. Bench, a deep-research-agent evaluation, submitted by one of its authors, in Evaluation & Benchmarks ([#7](https://github.com/js-lee-AI/awesome-llm-agent-papers/pull/7) ⭐ 76 \| 🐛 0 \| 🌐 Python \| 📅 2026-09-07); ClawBench, a live-web browser-agent benchmark, same section ([#3](https://github.com/js-lee-AI/awesome-llm-agent-papers/pull/3) ⭐ 76 \| 🐛 0 \| 🌐 Python \| 📅 2026-09-07)   |
+| <a href="https://github.com/JEONGSEJIN"><img src="https://github.com/JEONGSEJIN.png?size=48" width="48" height="48" alt="@JEONGSEJIN"></a>                      | **[@JEONGSEJIN](https://github.com/JEONGSEJIN)**               | WebAgent and the world-model-augmented web agent, in Interactive Environments ([#6](https://github.com/js-lee-AI/awesome-llm-agent-papers/pull/6) ⭐ 76 \| 🐛 0 \| 🌐 Python \| 📅 2026-09-07)                                                                                                                                                                                                           |
+| <a href="https://github.com/jinmang2"><img src="https://github.com/jinmang2.png?size=48" width="48" height="48" alt="@jinmang2"></a>                            | **[@jinmang2](https://github.com/jinmang2)**                   | 6 agent-memory systems: MemoryOS, Zep, Nemori, MemOS, G-Memory, ACE ([#2](https://github.com/js-lee-AI/awesome-llm-agent-papers/pull/2) ⭐ 76 \| 🐛 0 \| 🌐 Python \| 📅 2026-09-07)                                                                                                                                                                                                                     |
+| <a href="https://github.com/WhymustIhaveaname"><img src="https://github.com/WhymustIhaveaname.png?size=48" width="48" height="48" alt="@WhymustIhaveaname"></a> | **[@WhymustIhaveaname](https://github.com/WhymustIhaveaname)** | 3 research-agent and orchestration papers: AutoNumerics, OptimAI, PerspectiveGap ([#1](https://github.com/js-lee-AI/awesome-llm-agent-papers/pull/1) ⭐ 76 \| 🐛 0 \| 🌐 Python \| 📅 2026-09-07); the Agon code link, and the report that led to nine truncated glosses being rewritten ([#5](https://github.com/js-lee-AI/awesome-llm-agent-papers/pull/5) ⭐ 76 \| 🐛 0 \| 🌐 Python \| 📅 2026-09-07) |
 | <a href="https://github.com/js-lee-AI"><img src="https://github.com/js-lee-AI.png?size=48" width="48" height="48" alt="@js-lee-AI"></a>                         | **[@js-lee-AI](https://github.com/js-lee-AI)**                 | Maintainer                                                                                                                                                                                                                                                                                                                                                                                              |
 
-<sub>Listed by hand rather than generated, so that credit follows the contribution rather than who happened to run <code>git commit</code>. See the [contributor graph](https://github.com/js-lee-AI/awesome-llm-agent-papers/graphs/contributors) ⭐ 74 | 🐛 1 | 🌐 Python | 📅 2026-09-02 for commit-level history.</sub>
+<sub>Listed by hand rather than generated, so that credit follows the contribution rather than who happened to run <code>git commit</code>. See the [contributor graph](https://github.com/js-lee-AI/awesome-llm-agent-papers/graphs/contributors) ⭐ 76 | 🐛 0 | 🌐 Python | 📅 2026-09-07 for commit-level history.</sub>
 
 Want your avatar here? See **[CONTRIBUTING.md](CONTRIBUTING.md)**: a single well-formatted PR is all it takes.
 
@@ -1318,11 +1359,12 @@ Released under the [MIT License](LICENSE).
 
 ## 🗓️ Updates
 
-* **2026-09-03**: Three papers added by [@dukesun99](https://github.com/dukesun99), an author on all three ([#13](https://github.com/js-lee-AI/awesome-llm-agent-papers/pull/13) ⭐ 74 | 🐛 1 | 🌐 Python | 📅 2026-09-02): Corpus2Skill to Memory, OrchMAS to Multi-Agent Systems, and Information Retrieval Misses the Mark for LLM Agents to Surveys & Position Papers. That last one is the list's first SSRN posting, which CONTRIBUTING allows since it asks for an arXiv or DOI link without restricting the host. All three glosses were rewritten from the abstracts before merging, and the Corpus2Skill one now carries the eleven-dataset result, where corpus navigation loses on three. 494 to 497.
-* **2026-08-25**: ForeDreamer added to Memory by [@zhongzero](https://github.com/zhongzero), who is one of its authors ([#12](https://github.com/js-lee-AI/awesome-llm-agent-papers/pull/12) ⭐ 74 | 🐛 1 | 🌐 Python | 📅 2026-09-02). The gloss now leads with what the system does differently, turning web evidence into structured memory before the forecast rather than feeding retrieval straight to the agent. 493 to 494.
-* **2026-08-20**: Two community additions merged: Dr. Bench ([@reacher-z](https://github.com/reacher-z), [#7](https://github.com/js-lee-AI/awesome-llm-agent-papers/pull/7) ⭐ 74 | 🐛 1 | 🌐 Python | 📅 2026-09-02) and CityReal ([@Nicolas99-9](https://github.com/Nicolas99-9), [#10](https://github.com/js-lee-AI/awesome-llm-agent-papers/pull/10) ⭐ 74 | 🐛 1 | 🌐 Python | 📅 2026-09-02). The CityReal PR moved the section heading and the disclosure summary but not the Contents line, so the count was synced on the branch first. 471 to 473.
-* **2026-08-12**: Four community additions merged: Ouroboros ([@razzant](https://github.com/razzant), [#8](https://github.com/js-lee-AI/awesome-llm-agent-papers/pull/8) ⭐ 74 | 🐛 1 | 🌐 Python | 📅 2026-09-02), CORAL ([@BobbyZhouZijian](https://github.com/BobbyZhouZijian), [#9](https://github.com/js-lee-AI/awesome-llm-agent-papers/pull/9) ⭐ 74 | 🐛 1 | 🌐 Python | 📅 2026-09-02), and WebAgent plus the world-model-augmented web agent ([@JEONGSEJIN](https://github.com/JEONGSEJIN), [#6](https://github.com/js-lee-AI/awesome-llm-agent-papers/pull/6) ⭐ 74 | 🐛 1 | 🌐 Python | 📅 2026-09-02). One code link was dropped that had been copied from the entry above it. 467 to 471.
-* **2026-08-08**: Nine glosses had been cut off mid-sentence by an earlier backfill, three of them leaving a parenthesis open. All nine rewritten from the papers' own abstracts, and Agon gained the `[code]` link that [@WhymustIhaveaname](https://github.com/WhymustIhaveaname) supplied in [#5](https://github.com/js-lee-AI/awesome-llm-agent-papers/pull/5) ⭐ 74 | 🐛 1 | 🌐 Python | 📅 2026-09-02. A checker for this now lives in `scripts/check_glosses.py`.
+* **2026-09-07**: Recency pass: +20 papers, two per section, drawn from everything posted since May 2026. LoopArena came in through [@burgerseater](https://github.com/burgerseater), one of its authors, who suggested it in [#14](https://github.com/js-lee-AI/awesome-llm-agent-papers/issues/14) ⭐ 76 | 🐛 0 | 🌐 Python | 📅 2026-09-07. The batch leans negative, which is where the useful work has been: multi-agent structure that stops paying for itself once inference cost is held equal rather than rollouts, model-written memory notes that swing thirteen points on a model upgrade where a fixed schema barely moves, 221 of 644 functionally passing patches that a reviewer would still send back, and frontier agents taking a planted shortcut in 57 per cent of runs even when the prompt asks them not to. 497 to 517.
+* **2026-09-03**: Three papers added by [@dukesun99](https://github.com/dukesun99), an author on all three ([#13](https://github.com/js-lee-AI/awesome-llm-agent-papers/pull/13) ⭐ 76 | 🐛 0 | 🌐 Python | 📅 2026-09-07): Corpus2Skill to Memory, OrchMAS to Multi-Agent Systems, and Information Retrieval Misses the Mark for LLM Agents to Surveys & Position Papers. That last one is the list's first SSRN posting, which CONTRIBUTING allows since it asks for an arXiv or DOI link without restricting the host. All three glosses were rewritten from the abstracts before merging, and the Corpus2Skill one now carries the eleven-dataset result, where corpus navigation loses on three. 494 to 497.
+* **2026-08-25**: ForeDreamer added to Memory by [@zhongzero](https://github.com/zhongzero), who is one of its authors ([#12](https://github.com/js-lee-AI/awesome-llm-agent-papers/pull/12) ⭐ 76 | 🐛 0 | 🌐 Python | 📅 2026-09-07). The gloss now leads with what the system does differently, turning web evidence into structured memory before the forecast rather than feeding retrieval straight to the agent. 493 to 494.
+* **2026-08-20**: Two community additions merged: Dr. Bench ([@reacher-z](https://github.com/reacher-z), [#7](https://github.com/js-lee-AI/awesome-llm-agent-papers/pull/7) ⭐ 76 | 🐛 0 | 🌐 Python | 📅 2026-09-07) and CityReal ([@Nicolas99-9](https://github.com/Nicolas99-9), [#10](https://github.com/js-lee-AI/awesome-llm-agent-papers/pull/10) ⭐ 76 | 🐛 0 | 🌐 Python | 📅 2026-09-07). The CityReal PR moved the section heading and the disclosure summary but not the Contents line, so the count was synced on the branch first. 471 to 473.
+* **2026-08-12**: Four community additions merged: Ouroboros ([@razzant](https://github.com/razzant), [#8](https://github.com/js-lee-AI/awesome-llm-agent-papers/pull/8) ⭐ 76 | 🐛 0 | 🌐 Python | 📅 2026-09-07), CORAL ([@BobbyZhouZijian](https://github.com/BobbyZhouZijian), [#9](https://github.com/js-lee-AI/awesome-llm-agent-papers/pull/9) ⭐ 76 | 🐛 0 | 🌐 Python | 📅 2026-09-07), and WebAgent plus the world-model-augmented web agent ([@JEONGSEJIN](https://github.com/JEONGSEJIN), [#6](https://github.com/js-lee-AI/awesome-llm-agent-papers/pull/6) ⭐ 76 | 🐛 0 | 🌐 Python | 📅 2026-09-07). One code link was dropped that had been copied from the entry above it. 467 to 471.
+* **2026-08-08**: Nine glosses had been cut off mid-sentence by an earlier backfill, three of them leaving a parenthesis open. All nine rewritten from the papers' own abstracts, and Agon gained the `[code]` link that [@WhymustIhaveaname](https://github.com/WhymustIhaveaname) supplied in [#5](https://github.com/js-lee-AI/awesome-llm-agent-papers/pull/5) ⭐ 76 | 🐛 0 | 🌐 Python | 📅 2026-09-07. A checker for this now lives in `scripts/check_glosses.py`.
 * **2026-08-20**: Recency pass: +20 papers from August 2026, two per section. Code links only where the paper names its own repository. The month leans negative, which suits this list: the MCP-versus-CLI comparison that found the scaffolding dominates, the compression that leaves task completion flat while tripling retrieval, the returned tool images that turn out to be redundant, and the multilingual gap that does not close with scale. 473 to 493.
 * **2026-08-08**: Recency pass: +16 papers from August 2026 across all ten sections, with official repos linked where they exist. 451 to 467.
 * **2026-08-06**: The survey is posted on Preprints.org with DOI `10.20944/preprints202608.0265.v1`. The citation block, `CITATION.cff` and the header link now point at the versioned record instead of the PDF in this repository.
@@ -1338,4 +1380,4 @@ Released under the [MIT License](LICENSE).
 
 ***
 
-> _Enhansomed by [enhansome](https://github.com/enhansome) on 2026-09-07._
+> _Enhansomed by [enhansome](https://github.com/enhansome) on 2026-09-08._
